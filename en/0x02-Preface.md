@@ -1,0 +1,3 @@
+# Preface
+
+Welcome to the Software Component Verification Standard (SCVS) version 1.0. The SCVS is a community-driven effort to establish a framework ....
