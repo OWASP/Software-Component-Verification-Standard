@@ -18,7 +18,7 @@
 | **2.5** | SCVS-BOM-05 | SBOM signature verification exists | | ✓ | ✓ |
 | **2.6** | SCVS-BOM-06 | SBOM signature verification is performed | | | ✓ |
 | **2.7** | SCVS-BOM-07 | SBOM can be consumed by tools capable of analyzing them | ✓ | ✓ | ✓ |
-| **2.8** | SCVS-BOM-08 | SBOM are analyzed for various forms of risk (NOTE: reference component risk assements above) | ✓ | ✓ | ✓ |
+| **2.8** | SCVS-BOM-08 | SBOM are analyzed for various forms of risk | ✓ | ✓ | ✓ |
 | **2.9** | SCVS-BOM-09 | SBOM contains an accurate inventory of all components for the asset or application it describes | ✓ | ✓ | ✓ |
 | **2.10** | SCVS-BOM-10 | Components are identified using values derived from its native ecosystem (if applicable) | ✓ | ✓ | ✓ |
 | **2.11** | SCVS-BOM-11 | Components have a valid Package URL (PURL) (if applicable) | ✓ | ✓ | ✓ |
