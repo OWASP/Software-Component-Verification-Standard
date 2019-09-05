@@ -10,7 +10,7 @@
 ## Verification Requirements
 
 | # | SCVS-ID | Description | L1 | L2 | L3 |
-| :---: | :--- | :---: | :---:| :---: |
+| :---: | :--- | :---: | :---: | :---: | :---: |
 | **3.1** | SCVS-BLD-01 | Application uses a repeatable build | ✓ | ✓ | ✓ |
 | **3.2** | SCVS-BLD-02 | Documentation exists on how the application is built and instructions for repeating the build | ✓ | ✓ | ✓ |
 | **3.3** | SCVS-BLD-03 | Application uses a continuous integration or continuous delivery build pipeline | ✓ | ✓ | ✓ |

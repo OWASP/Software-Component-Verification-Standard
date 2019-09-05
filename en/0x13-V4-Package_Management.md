@@ -10,7 +10,7 @@
 ## Verification Requirements
 
 | # | SCVS-ID | Description | L1 | L2 | L3 |
-| :---: | :--- | :---: | :---:| :---: |
+| :---: | :--- | :---: | :---: | :---: | :---: |
 | **4.1** | SCVS-PKM-01 | Components are published to and retrieved from a package repository | ✓ | ✓ | ✓ |
 | **4.2** | SCVS-PKM-02 | Package repository is centralized and an authoritative source of truth | ✓ | ✓ | ✓ |
 | **4.3** | SCVS-PKM-03 | Package repository is not specific to a component or governing project | ✓ | ✓ | ✓ |

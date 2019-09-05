@@ -14,7 +14,7 @@ Having organizational inventory of all first-party, third-party, and open source
 ## Verification Requirements
 
 | # | SCVS-ID | Description | L1 | L2 | L3 |
-| :---: | :--- | :---: | :---:| :---: |
+| :---: | :--- | :---: | :---: | :---: | :---: |
 | **1.1** | SCVS-INV-01 | All components and their versions are known prior to building | ✓ | ✓ | ✓ |
 | **1.2** | SCVS-INV-02 | Package managers are used to manage all third-party and open source components | ✓ | ✓ | ✓ |
 | **1.3** | SCVS-INV-03 | An accurate inventory of all third-party and open source components is available | ✓ | ✓ | ✓ |

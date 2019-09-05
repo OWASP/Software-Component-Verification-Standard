@@ -10,7 +10,7 @@
 ## Verification Requirements
 
 | # | SCVS-ID | Description | L1 | L2 | L3 |
-| :---: | :--- | :---: | :---:| :---: |
+| :---: | :--- | :---: | :---: | :---: | :---: |
 | **6.1** | SCVS-PED-01 | Provenance of modified components is documented and verifiable | ✓ | ✓ | ✓ |
 | **6.2** | SCVS-PED-02 | Pedigree of modified components is documented and verifiable | | ✓ | ✓ |
 | **6.3** | SCVS-PED-03 | Modified components are uniquely identified and not confused with origin component | | ✓ | ✓ |

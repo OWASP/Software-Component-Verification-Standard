@@ -10,7 +10,7 @@
 ## Verification Requirements
 
 | # | SCVS-ID | Description | L1 | L2 | L3 |
-| :---: | :--- | :---: | :---:| :---: |
+| :---: | :--- | :---: | :---: | :---: | :---: |
 | **2.1** | SCVS-BOM-01 | A standardized software bill-of-materials (SBOM) format can be produced | ✓ | ✓ | ✓ |
 | **2.2** | SCVS-BOM-02 | SBOM creation is automated and reproducable | | ✓ | ✓ |
 | **2.3** | SCVS-BOM-03 | Each SBOM has a unique identifier | ✓ | ✓ | ✓ |
