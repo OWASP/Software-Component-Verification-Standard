@@ -10,7 +10,7 @@
 ## Verification Requirements
 
 | # | SCVS-ID | Description | L1 | L2 | L3 |
-| :---: | :--- | :---: | :---: | :---: | :---: |
+| :---: | :--- | :--- | :---: | :---: | :---: |
 | **7.1** | SCVS-GOV-01 | A third-party and open source policy supported by cross-functional stakeholders exists | ✓ | ✓ | ✓ |
 | **7.2** | SCVS-GOV-02 | Compliance to policy is known | | ✓ | ✓ |
 | **7.3** | SCVS-GOV-03 | Policy is enforceable and enforced | | ✓ | ✓ |

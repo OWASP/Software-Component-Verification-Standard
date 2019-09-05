@@ -10,7 +10,7 @@
 ## Verification Requirements
 
 | # | SCVS-ID | Description | L1 | L2 | L3 |
-| :---: | :--- | :---: | :---: | :---: | :---: |
+| :---: | :--- | :--- | :---: | :---: | :---: |
 | **5.1** | SCVS-CAN-01 | Component can be analyzed with linters and static analysis tools | ✓ | ✓ | ✓ |
 | **5.2** | SCVS-CAN-02 | Component is analyzed using linters and static analysis tools prior to use | | ✓ | ✓ |
 | **5.3** | SCVS-CAN-03 | Linting and static analysis is performed with every upgrade of a component | | | ✓ |
