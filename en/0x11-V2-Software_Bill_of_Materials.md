@@ -26,3 +26,4 @@
 | **2.13** | SCVS-BOM-13 | Components defined in SBOM have valid SPDX license ID's or expressions (if applicable) | ✓ | ✓ | ✓ |
 | **2.14** | SCVS-BOM-14 | Components defined in SBOM have valid copyright statements  | | ✓ | ✓ |
 | **2.15** | SCVS-BOM-15 | Components defined in SBOM which have been modified from the original have detailed provenance and pedigree information  | | | ✓ |
+| **2.16** | SCVS-BOM-16 | Components defined in SBOM have one or more file hashes (SHA-256, SHA-512, etc) | | ✓ | ✓ |
