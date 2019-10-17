@@ -4,7 +4,7 @@
 
 OWASP, as a vendor-neutral not-for-profit organization, does not certify any vendors, verifiers or software.
 
-All such assurance assertions, trust marks, or certifications are not officially vetted, registered, or certified by OWASP, so an organization relying upon such a view needs to be cautious of the trust placed in any third party or trust mark claiming SCVS certification.
+All such assurance assertions, trust marks, or certifications are not officially vetted, registered, or certified by OWASP, so an organization relying upon such a view needs to be cautious of the trust placed in any third-party or trust mark claiming SCVS certification.
 
 This should not inhibit organizations from offering such assurance services, as long as they do not claim official OWASP certification.
 
@@ -16,4 +16,4 @@ A certifying organization must include in any report the scope of the verificati
 
 ### The Role of Automated Verification
 
-Whenever possible, automation should be used to verify the practices detailed in SCVS in order to increae efficiency and accuracy. Some practices cannot be verified through automation. However, for the practices that can, automation is encouraged if the results can be validated through other means.
+Whenever possible, automation should be used to verify the practices detailed in SCVS in order to increase efficiency and accuracy. Some practices cannot be verified through automation. However, for the practices that can, automation is encouraged if the results can be validated through other means.

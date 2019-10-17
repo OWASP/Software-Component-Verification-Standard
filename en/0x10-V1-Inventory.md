@@ -15,10 +15,10 @@ Having organizational inventory of all first-party, third-party, and open source
 
 | # | SCVS-ID | Description | L1 | L2 | L3 |
 | :---: | :--- | :--- | :---: | :---: | :---: |
-| **1.1** | SCVS-INV-01 | All components and their versions are known at completation of a build | ✓ | ✓ | ✓ |
+| **1.1** | SCVS-INV-01 | All components and their versions are known at completion of a build | ✓ | ✓ | ✓ |
 | **1.2** | SCVS-INV-02 | Package managers are used to manage all third-party binary components | ✓ | ✓ | ✓ |
 | **1.3** | SCVS-INV-03 | An accurate inventory of all third-party components is available in a machine-readable format | ✓ | ✓ | ✓ |
-| **1.4** | SCVS-INV-04 | Software bill-of-materials are generated for publically or commercially available applications | ✓ | ✓ | ✓ |
+| **1.4** | SCVS-INV-04 | Software bill-of-materials are generated for publicly or commercially available applications | ✓ | ✓ | ✓ |
 | **1.5** | SCVS-INV-05 | Software bill-of-materials are required for new procurements | | | ✓ |
 | **1.6** | SCVS-INV-06 | Software bill-of-materials are continuously maintained for all systems | | | ✓ |
 | **1.7** | SCVS-INV-07 | Package URL is used to uniquely identify all components | ✓ | ✓ | ✓ |

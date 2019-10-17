@@ -23,7 +23,7 @@
 | **4.10** | SCVS-PKM-10 | Package repository requires code signing to publish packages to production repositories | | ✓ | ✓ |
 | **4.11** | SCVS-PKM-11 | Package manager verifies the integrity of packages when they are retrieved from remote repository | ✓ | ✓ | ✓ |
 | **4.12** | SCVS-PKM-12 | Package manager verifies the integrity of packages when they are retrieved from file system | ✓ | ✓ | ✓ |
-| **4.13** | SCVS-PKM-13 | Package repository enforces use of TLS for al interactions | ✓ | ✓ | ✓ |
+| **4.13** | SCVS-PKM-13 | Package repository enforces use of TLS for all interactions | ✓ | ✓ | ✓ |
 | **4.14** | SCVS-PKM-14 | Package manager validates certificate chain to repository and fails securely when validation fails | ✓ | ✓ | ✓ |
 | **4.15** | SCVS-PKM-15 | Package repository requires and/or performs static code analysis prior to publishing a component and making it available for others to consume | | | ✓ |
 | **4.16** | SCVS-PKM-16 | Package manager does not execute code | ✓ | ✓ | ✓ |
