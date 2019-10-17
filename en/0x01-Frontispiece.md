@@ -18,7 +18,12 @@ Version 1.0, August 2019
 
 ## Contributors and Reviewers
 
-- <your name here>
+- Dave Russo
+- Garret Fink
+- JC Herz
+- John Scott
+- Mark Symons
+- Pruthvi Nallapareddy
 
 The Software Component Verification Standard is built upon the shoulders of those involved. The project is inspired by the OWASP Application Security Verification Standard and the work of their contributors.
 
