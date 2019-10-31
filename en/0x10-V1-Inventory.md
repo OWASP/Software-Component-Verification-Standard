@@ -19,10 +19,9 @@ Having organizational inventory of all first-party, third-party, and open source
 | **1.2** | SCVS-INV-02 | Package managers are used to manage all third-party binary components | ✓ | ✓ | ✓ |
 | **1.3** | SCVS-INV-03 | An accurate inventory of all third-party components is available in a machine-readable format | ✓ | ✓ | ✓ |
 | **1.4** | SCVS-INV-04 | Software bill-of-materials are generated for publicly or commercially available applications | ✓ | ✓ | ✓ |
-| **1.5** | SCVS-INV-05 | Software bill-of-materials are required for new procurements | | | ✓ |
+| **1.5** | SCVS-INV-05 | Software bill-of-materials are required for new procurements | | ✓ | ✓ |
 | **1.6** | SCVS-INV-06 | Software bill-of-materials are continuously maintained for all systems | | | ✓ |
-| **1.7** | SCVS-INV-07 | Package URL is used to uniquely identify all components | ✓ | ✓ | ✓ |
-| **1.8** | SCVS-INV-08 | Asset dependencies on each component are documented across an organization | | ✓ | ✓ |
-| **1.9** | SCVS-INV-09 | Impact analysis can identify assets potentially impacted by components with known risk | | ✓ | ✓ |
-| **1.10** | SCVS-INV-10 | The component type is known throughout inventory | | | ✓ |
-| **1.11** | SCVS-INV-11 | The component function is known throughout inventory  | | | ✓ |
+| **1.7** | SCVS-INV-07 | Uniquely identify all components in a consistent, machine-readable format | ✓ | ✓ | ✓ |
+| **1.8** | SCVS-INV-08 | The component type is known throughout inventory | | | ✓ |
+| **1.9** | SCVS-INV-09 | The component function is known throughout inventory  | | | ✓ |
+| **1.10** | SCVS-INV-10 | Point of origin is known for all components | | | ✓ |
