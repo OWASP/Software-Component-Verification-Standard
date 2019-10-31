@@ -19,7 +19,7 @@ Version 1.0, August 2019
 ## Contributors and Reviewers
 
 - Dave Russo
-- Garret Fink
+- Garret Fick
 - JC Herz
 - John Scott
 - Mark Symons
