@@ -11,20 +11,20 @@ Automatically creating accurate Software Bill-of-Materials (SBOM) in the build p
 
 | # | SCVS-ID | Description | L1 | L2 | L3 |
 | :---: | :--- | :--- | :---: | :---: | :---: |
-| **2.1** | SCVS-BOM-01 | A standardized software bill-of-materials (SBOM) format can be produced | ✓ | ✓ | ✓ |
+| **2.1** | SCVS-BOM-01 | A structured, machine readable software bill-of-materials (SBOM) format is present | ✓ | ✓ | ✓ |
 | **2.2** | SCVS-BOM-02 | SBOM creation is automated and reproducible | | ✓ | ✓ |
 | **2.3** | SCVS-BOM-03 | Each SBOM has a unique identifier | ✓ | ✓ | ✓ |
-| **2.4** | SCVS-BOM-04 | SBOM has been signed by publisher and/or supplier | | | ✓ |
+| **2.4** | SCVS-BOM-04 | SBOM has been signed by publisher, supplier, or certifying authority | | ✓ | ✓ |
 | **2.5** | SCVS-BOM-05 | SBOM signature verification exists | | ✓ | ✓ |
 | **2.6** | SCVS-BOM-06 | SBOM signature verification is performed | | | ✓ |
-| **2.7** | SCVS-BOM-07 | SBOM can be consumed by tools capable of analyzing them | ✓ | ✓ | ✓ |
-| **2.8** | SCVS-BOM-08 | SBOM are analyzed for various forms of risk | ✓ | ✓ | ✓ |
-| **2.9** | SCVS-BOM-09 | SBOM contains an accurate inventory of all delivered components for the asset or application it describes | ✓ | ✓ | ✓ |
+| **2.7** | SCVS-BOM-07 | SBOM is timestamped | ✓ | ✓ | ✓ |
+| **2.8** | SCVS-BOM-08 | SBOM is analyzed for risk | ✓ | ✓ | ✓ |
+| **2.9** | SCVS-BOM-09 | SBOM contains a complete and accurate inventory of all components the SBOM describes | ✓ | ✓ | ✓ |
 | **2.10** | SCVS-BOM-10 | SBOM contains an accurate inventory of all test components for the asset or application it describes | | ✓ | ✓ |
-| **2.11** | SCVS-BOM-11 | Components are identified using values derived from its native ecosystem (if applicable) | ✓ | ✓ | ✓ |
-| **2.12** | SCVS-BOM-12 | Uniquely identify all components in a consistent, machine-readable format (e.g. PURL) | ✓ | ✓ | ✓ |
-| **2.13** | SCVS-BOM-13 | Components defined in SBOM have accurate license information  | ✓ | ✓ | ✓ |
-| **2.14** | SCVS-BOM-14 | Components defined in SBOM have valid SPDX license ID's or expressions (if applicable) | ✓ | ✓ | ✓ |
-| **2.15** | SCVS-BOM-15 | Components defined in SBOM have valid copyright statements  | | ✓ | ✓ |
+| **2.11** | SCVS-BOM-11 | Component identifiers are derived from their native ecosystems (if applicable) | ✓ | ✓ | ✓ |
+| **2.12** | SCVS-BOM-12 | Component point of origin is identified in a consistent, machine readable format (e.g. PURL) | | | ✓ |
+| **2.13** | SCVS-BOM-13 | Components defined in SBOM have accurate license information | ✓ | ✓ | ✓ |
+| **2.14** | SCVS-BOM-14 | Components defined in SBOM have valid SPDX license ID's or expressions (if applicable) | | ✓ | ✓ |
+| **2.15** | SCVS-BOM-15 | Components defined in SBOM have valid copyright statements | | | ✓ |
 | **2.16** | SCVS-BOM-16 | Components defined in SBOM which have been modified from the original have detailed provenance and pedigree information  | | | ✓ |
-| **2.17** | SCVS-BOM-17 | Components defined in SBOM have one or more file hashes (SHA-256, SHA-512, etc) | | ✓ | ✓ |
+| **2.17** | SCVS-BOM-17 | Components defined in SBOM have one or more file hashes (SHA-256, SHA-512, etc) | | | ✓ |
