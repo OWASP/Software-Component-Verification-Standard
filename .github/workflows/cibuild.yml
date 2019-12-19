@@ -19,10 +19,25 @@ jobs:
         pip install pandoc
     - name: Export documents
       run: |
-        python3 export.py --format csv
-        python3 export.py --format json
-        python3 export.py --format xml
+        python3 export.py --format csv > OWASP_SCVS-SNAPSHOT.csv
+        python3 export.py --format json > OWASP_SCVS-SNAPSHOT.json
+        python3 export.py --format xml > OWASP_SCVS-SNAPSHOT.xml
     - name: Generate document
       run: |
         chmod +x generate-document.sh
         ./generate-document.sh
+    - name: Archive CSV export
+      uses: actions/upload-artifact@v1
+      with:
+        name: OWASP_SCVS-SNAPSHOT.csv
+        path: OWASP_SCVS-SNAPSHOT.csv
+    - name: Archive JSON export
+      uses: actions/upload-artifact@v1
+      with:
+        name: OWASP_SCVS-SNAPSHOT.json
+        path: OWASP_SCVS-SNAPSHOT.json
+    - name: Archive XML export
+      uses: actions/upload-artifact@v1
+      with:
+        name: OWASP_SCVS-SNAPSHOT.xml
+        path: OWASP_SCVS-SNAPSHOT.xml
