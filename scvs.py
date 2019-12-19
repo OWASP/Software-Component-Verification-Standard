@@ -47,12 +47,15 @@ class SCVS:
 
             if re.match("0x\d{2}-V", file):
                 for line in open(os.path.join("en", file)):
-                    regex = re.compile('\\*\\*([\d\.]+)\\*\\*\s\|\s{0,1}(.*?)\s{0,1}\|')
+                    regex = re.compile('\*\*([\d\.]+)\*\*\s\|\s{0,1}(.*?)\s{0,1}\|([\w\d,\. \u2713]*)\|([\w\d,\. \u2713]*)\|([\w\d,\. \u2713]*)\|')
                     m = re.search(regex, line)
                     if m:
                         req = {}
                         req['id'] = m.group(1)
                         req['text'] = m.group(2)
+                        req['l1'] = bool(m.group(3).strip())
+                        req['l2'] = bool(m.group(4).strip())
+                        req['l3'] = bool(m.group(5).strip())
                         req['file'] = file
 
                         self.requirements.append(req)
@@ -67,7 +70,11 @@ class SCVS:
 
         for r in self.requirements:
 
-            xml += "<requirement id = \"" + escape(r['id']) + "\">" + escape(r['text']) + "</requirement>\n"
+            xml += "<requirement id=\"" + escape(r['id']) \
+                   + "\" l1=\"" + str(r['l1']).lower() \
+                   + "\" l2=\"" + str(r['l2']).lower() \
+                   + "\" l3=\"" + str(r['l3']).lower() + "\">" \
+                   + escape(r['text']) + "</requirement>\n"
 
         return xml
 
@@ -75,7 +82,7 @@ class SCVS:
         ''' Returns CSV '''
         si = StringIO()
 
-        writer = csv.DictWriter(si, ['id', 'text'])
+        writer = csv.DictWriter(si, ['id', 'text', 'l1', 'l2', 'l3', 'file'])
         writer.writeheader()
         writer.writerows(self.requirements)
 
