@@ -22,4 +22,7 @@ jobs:
         python3 export.py --format csv
         python3 export.py --format json
         python3 export.py --format xml
-
+    - name: Generate document
+      run: |
+        chmod +x generate-document.sh
+        ./generate-document.sh
