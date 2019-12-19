@@ -43,3 +43,8 @@ jobs:
       with:
         name: OWASP_SCVS-SNAPSHOT.xml
         path: OWASP_SCVS-SNAPSHOT.xml
+    - name: Archive document
+      uses: actions/upload-artifact@v1
+      with:
+        name: OWASP_SCVS-SNAPSHOT-en.docx
+        path: OWASP_SCVS-SNAPSHOT-en.docx
