@@ -22,12 +22,11 @@
 | **4.9** | Package repository notifies users of security issues | | | ✓ |
 | TODO    | LEFT OFF HERE | | | |
 | **4.10** | Package repository provides a verifiable way of correlating component versions to specific source codes in version control | | ✓ | ✓ |
-| **4.11** | Package repository provides notifications on component updates | ✓ | ✓ | ✓ |
+| **4.11** | Package repository provides auditability when components are updated | ✓ | ✓ | ✓ |
 | **4.12** | Package repository requires code signing to publish packages to production repositories | | ✓ | ✓ |
 | **4.13** | Package manager verifies the integrity of packages when they are retrieved from remote repository | ✓ | ✓ | ✓ |
 | **4.14** | Package manager verifies the integrity of packages when they are retrieved from file system | ✓ | ✓ | ✓ |
 | **4.15** | Package repository enforces use of TLS for all interactions | ✓ | ✓ | ✓ |
-| **4.16** | Package manager validates certificate chain to repository and fails securely when validation fails | ✓ | ✓ | ✓ |
-| **4.17** | Package repository requires and/or performs static code analysis prior to publishing a component and making it available for others to consume | | | ✓ |
+| **4.16** | Package manager validates TLS certificate chain to repository and fails securely when validation fails | ✓ | ✓ | ✓ |
+| **4.17** | Package repository requires and/or performs static code analysis prior to publishing a component and makes results available for others to consume | | | ✓ |
 | **4.18** | Package manager does not execute code | ✓ | ✓ | ✓ |
-| **4.19** | Package manager does not collect information | ✓ | ✓ | ✓ |
