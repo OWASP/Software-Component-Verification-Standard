@@ -21,10 +21,11 @@ Automatically creating accurate Software Bill-of-Materials (SBOM) in the build p
 | **2.8** | SBOM is analyzed for risk | ✓ | ✓ | ✓ |
 | **2.9** | SBOM contains a complete and accurate inventory of all components the SBOM describes | ✓ | ✓ | ✓ |
 | **2.10** | SBOM contains an accurate inventory of all test components for the asset or application it describes | | ✓ | ✓ |
-| **2.11** | Component identifiers are derived from their native ecosystems (if applicable) | ✓ | ✓ | ✓ |
-| **2.12** | Component point of origin is identified in a consistent, machine readable format (e.g. PURL) | | | ✓ |
-| **2.13** | Components defined in SBOM have accurate license information | ✓ | ✓ | ✓ |
-| **2.14** | Components defined in SBOM have valid SPDX license ID's or expressions (if applicable) | | ✓ | ✓ |
-| **2.15** | Components defined in SBOM have valid copyright statements | | | ✓ |
-| **2.16** | Components defined in SBOM which have been modified from the original have detailed provenance and pedigree information  | | | ✓ |
-| **2.17** | Components defined in SBOM have one or more file hashes (SHA-256, SHA-512, etc) | | | ✓ |
+| **2.11** | SBOM contains metadata about the asset or software the SBOM describes | | ✓ | ✓ |
+| **2.12** | Component identifiers are derived from their native ecosystems (if applicable) | ✓ | ✓ | ✓ |
+| **2.13** | Component point of origin is identified in a consistent, machine readable format (e.g. PURL) | | | ✓ |
+| **2.14** | Components defined in SBOM have accurate license information | ✓ | ✓ | ✓ |
+| **2.15** | Components defined in SBOM have valid SPDX license ID's or expressions (if applicable) | | ✓ | ✓ |
+| **2.16** | Components defined in SBOM have valid copyright statements | | | ✓ |
+| **2.17** | Components defined in SBOM which have been modified from the original have detailed provenance and pedigree information  | | | ✓ |
+| **2.18** | Components defined in SBOM have one or more file hashes (SHA-256, SHA-512, etc) | | | ✓ |
