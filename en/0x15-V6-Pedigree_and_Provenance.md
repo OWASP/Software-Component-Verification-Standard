@@ -4,6 +4,8 @@
 
 > TODO
 
+REVISIT - Need to talk about import of unmodified code to new location
+
 <div style="page-break-after: always;"> 
 </div>
 
@@ -11,9 +13,8 @@
 
 | # | Description | L1 | L2 | L3 |
 | :---: | :--- | :---: | :---: | :---: |
-| **6.1** | Provenance of modified components is documented and verifiable | ✓ | ✓ | ✓ |
-| **6.2** | Pedigree of modified components is documented and verifiable | | ✓ | ✓ |
-| **6.3** | Modified components are uniquely identified and not confused with origin component | | ✓ | ✓ |
-| **6.4** | All risk intelligence from origin components is known and inherited by modified components | | ✓ | ✓ |
-| **6.5** | Risk unique to modified components can be analyzed and associated specifically to modified variant | | ✓ | ✓ |
-| **6.6** | Automated component upgrades can distinguish between modified and origin components and have business rules specific to each case | | ✓ | ✓ |
+| **6.1** | Provenance of modified components is known and documented | ✓ | ✓ | ✓ |
+| **6.2** | Pedigree of component modification is documented and verifiable | | ✓ | ✓ |
+| **6.3** | Modified components are uniquely identified and distinct from origin component | | ✓ | ✓ |
+| **6.4** | Modified components are analyzed with the same level of precision as unmodified components | ✓ | ✓ | ✓ |
+| **6.5** | Risk unique to modified components can be analyzed and associated specifically to modified variant | ✓ | ✓ | ✓ |
