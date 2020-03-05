@@ -29,3 +29,7 @@ Version 0.8, March 2020
 The Software Component Verification Standard is built upon the shoulders of those involved. The project is inspired by the OWASP Application Security Verification Standard and the work of their contributors.
 
 If a credit is missing from the credit list above, please contact steve.springett@owasp.org or log a ticket at GitHub to be recognized in future updates. 
+
+<div style="page-break-after: always; visibility: hidden">
+\newpage
+</div>

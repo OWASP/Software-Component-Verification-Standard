@@ -6,9 +6,6 @@
 
 REVISIT - Need to talk about import of unmodified code to new location
 
-<div style="page-break-after: always;"> 
-</div>
-
 ## Verification Requirements
 
 | # | Description | L1 | L2 | L3 |

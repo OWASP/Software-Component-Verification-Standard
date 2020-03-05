@@ -8,9 +8,6 @@ Package managers are often invoked during the build process and are responsible 
 
 While there are tremendous business, technical, and security benefits to using package managers and centralized repositories, they are often targets for adversaries. Implementing best practices can dramatically reduce risk of compromise in the software supply chain.
 
-<div style="page-break-after: always;"> 
-</div>
-
 ## Verification Requirements
 
 | # | Description | L1 | L2 | L3 |

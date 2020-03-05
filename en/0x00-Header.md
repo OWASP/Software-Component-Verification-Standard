@@ -2,8 +2,12 @@
 
 ![OWASP LOGO](./images/owasp_logo_1c_notext.png)
 
-# Software Component Verification Standard 1.0
+# Software Component Verification Standard 0.8
 
 ## Incubating
 
-August 2019
+March 2020
+
+<div style="page-break-after: always; visibility: hidden">
+\newpage
+</div>

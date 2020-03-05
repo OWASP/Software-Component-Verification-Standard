@@ -8,9 +8,6 @@ Component identification varies based on the ecosystem the component is part of.
 
 Having organizational inventory of all first-party, third-party, and open source components allows for greater transparency within the organization, promotes software standardization and reuse, and allows for rapid impact analysis.
 
-<div style="page-break-after: always;"> 
-</div>
-
 ## Verification Requirements
 
 | # | Description | L1 | L2 | L3 |

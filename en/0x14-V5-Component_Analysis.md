@@ -7,9 +7,6 @@ make type vague. make funtion more specific
 
 component = direct + transitive
 
-<div style="page-break-after: always;"> 
-</div>
-
 ## Verification Requirements
 
 | # | Description | L1 | L2 | L3 |
