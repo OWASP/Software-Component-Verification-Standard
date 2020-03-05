@@ -2,7 +2,11 @@
 
 ## Control Objective
 
-> TODO
+Open source components intended for reuse are often published to ecosystem-specific package repositories. Centralized repositories exist for most build systems including Maven, NPM, Python, and .NET. Repositories internal to an organization may additionally provide reuse of first-party components as well as access to trusted third-party components.
+
+Package managers are often invoked during the build process and are responsible for resolving component versions and automatically retrieving components from their repositories.
+
+While there are tremendous business, technical, and security benefits to using package managers and centralized repositories, they are often targets for adversaries. Implementing best practices can dramatically reduce risk of compromise in the software supply chain.
 
 <div style="page-break-after: always;"> 
 </div>
@@ -20,7 +24,6 @@
 | **4.7** | Package repository automates security incident reporting | | | ✓ |
 | **4.8** | Package repository notifies publishers of security issues | | ✓ | ✓ |
 | **4.9** | Package repository notifies users of security issues | | | ✓ |
-| TODO    | LEFT OFF HERE | | | |
 | **4.10** | Package repository provides a verifiable way of correlating component versions to specific source codes in version control | | ✓ | ✓ |
 | **4.11** | Package repository provides auditability when components are updated | ✓ | ✓ | ✓ |
 | **4.12** | Package repository requires code signing to publish packages to production repositories | | ✓ | ✓ |

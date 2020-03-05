@@ -2,7 +2,7 @@
 
 ## Control Objective
 
-> TODO
+Software build pipelines may consist of source code repositories, package repositories, continuous integration and delivery, test environments, along with the network infrastructure and services that make building software with these systems possible. Every system in the pipeline may provide an entry-point in which accidents or advisories can compromise the software supply chain. Hardening the systems involved and implementing best practices will reduce the likelihood of compromise.
 
 <div style="page-break-after: always;"> 
 </div>
