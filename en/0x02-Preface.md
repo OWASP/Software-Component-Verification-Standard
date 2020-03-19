@@ -20,3 +20,7 @@ Increase brand perception and loyalty, increased trust, cost savings, time-to-ma
  All of this makes software supply chains difficult to secure. Identifying and reducing risk in the software supply chain requires agility and iterative execution from cross-functional teams.
  
  < todo: insert cross-functional org + supply chain image >
+
+<div style="page-break-after: always; visibility: hidden">
+\newpage
+</div>

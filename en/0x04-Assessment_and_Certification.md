@@ -17,3 +17,7 @@ A certifying organization must include in any report the scope of the verificati
 ### The Role of Automated Verification
 
 Whenever possible, automation should be used to verify the practices detailed in SCVS in order to increase efficiency and accuracy. Some practices cannot be verified through automation. However, for the practices that can, automation is encouraged if the results can be validated through other means.
+
+<div style="page-break-after: always; visibility: hidden">
+\newpage
+</div>

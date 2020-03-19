@@ -3,7 +3,7 @@
 SCVS has the following goals:
 
 * Develop a common taxonomy of activities, controls, and best-practices that can reduce risk in a software supply chain
-* Devise a path for baselining and maturing software supply chain vigilance
+* Devise a path to baseline and mature software supply chain vigilance
 
 ## Software Component Verification Levels
 
@@ -15,12 +15,23 @@ The Software Component Verification Standard defines three security verification
 
 ## How to use this standard
 
-< todo: intro para > modify/fork
+One of the best ways to use the Software Component Verification Standard is to use it as a blueprint to create a
+checklist specific to your business unit or organization. Tailoring the SCVS to your use cases will increase the focus
+on the security requirements that are most important to your organization.
 
 
-
-< todo: detailed descriptions of L1, L2, L3 >
+< TODO: detailed descriptions of L1, L2, L3 - JC was going to work on this >
 
 ## Applying SCVS
 
-< collaboration and cross-functional >
+The Software Component Verification Standard places emphasis on controls which can be implemented or verified
+through automation. The domains and their controls are not specific to any one team. They represent a wide variety
+of stakeholders with domain expertise. Measuring and improving software supply chain vigilance requires cross-functional
+collaboration with many stakeholders. One approach to collaboration across domains is to form a Software Supply Chain
+Task Force comprising stakeholders with expertise in each domain. The task force may then begin the process of baselining
+current maturity, determining goals and timelines for improved maturity, and devising methods for which the controls
+can be implemented or verified through automation.
+
+<div style="page-break-after: always; visibility: hidden">
+\newpage
+</div>
