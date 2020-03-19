@@ -20,17 +20,18 @@ checklist specific to your business unit or organization. Tailoring the SCVS to 
 on the security requirements that are most important to your organization.
 
 
-< TODO: detailed descriptions of L1, L2, L3 - JC was going to work on this >
+< TODO: JC was going to work on use cases >
 
 ## Applying SCVS
 
 The Software Component Verification Standard places emphasis on controls which can be implemented or verified
-through automation. The domains and their controls are not specific to any one team. They represent a wide variety
-of stakeholders with domain expertise. Measuring and improving software supply chain vigilance requires cross-functional
-collaboration with many stakeholders. One approach to collaboration across domains is to form a Software Supply Chain
-Task Force comprising stakeholders with expertise in each domain. The task force may then begin the process of baselining
-current maturity, determining goals and timelines for improved maturity, and devising methods for which the controls
-can be implemented or verified through automation.
+through automation. The domains and their controls are not specific to a single development team. They represent
+stakeholders across an organization, including software developers, security and risk managers, and procurement
+departments. Active participation of all stakeholders is necessary to measure and improve cyber posture. 
+Once an organization has baselined its current maturity, it can determine goals and timelines for improved maturity
+and devise methods for which the controls can be implemented or verified through automation.
+
+Attainment of higher-level controls may be more dependent on business process than available technical methods. 
 
 <div style="page-break-after: always; visibility: hidden">
 \newpage
