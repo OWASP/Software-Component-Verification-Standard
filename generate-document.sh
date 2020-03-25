@@ -17,11 +17,11 @@ generate_docx() {
 }
 
 # generate_html() {
-#     pandoc -s -f markdown_github -t html5 -o "../OWASP Software Component Verification Standard 1.0-$1.html" *.md
+#     pandoc -s -f markdown_github -t html5 -o "../OWASP_SCVS-SNAPSHOT-$1.html" *.md
 # }
 
 generate() {
-    echo -n "Generating OWASP SCVS 1.0 ($1)..."
+    echo -n "Generating OWASP SCVS ($1)..."
     if [ -d "$1" ];
     then
         cd "$1"
@@ -74,4 +74,4 @@ generate "en"
 #generate "ukr"
 
 echo
-echo "Generated OWASP Software Component Verification Standard 1.0"
+echo "Generated OWASP Software Component Verification Standard"
