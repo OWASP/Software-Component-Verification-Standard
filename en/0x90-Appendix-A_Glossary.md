@@ -13,7 +13,7 @@ include libraries, frameworks, applications, containers, and operating systems.
 - **Package URL (PURL)** - An ecosystem-agnostic specification which standardizes the syntax and location information 
 of software components.
 
-- **Pedigree** - Data which describes the lineage or process for which software has be created or altered.
+- **Pedigree** - Data which describes the lineage or process for which software has been created or altered.
 
 - **Point of origin** - The supplier and associated metadata from which a software component has been procured, 
 transmitted, or received. Package repositories, release distribution platforms, and version control history
