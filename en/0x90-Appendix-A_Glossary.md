@@ -37,3 +37,7 @@ and commercial or proprietary software.
 
 - **Transitive dependency** - A software component that is indirectly used by a program by means of being a dependency 
 of a dependency.
+
+<div style="page-break-after: always; visibility: hidden">
+\newpage
+</div>

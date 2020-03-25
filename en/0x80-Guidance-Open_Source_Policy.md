@@ -17,3 +17,7 @@ employing them. They are not part of the SCVS taxonomy.
   - Dynamic list of unapproved or forbidden components
   - Require development teams provide all modifications back to the community producing the component
   - Prohibit modifications to open source components that are not in the best interest of the community producing the component
+
+<div style="page-break-after: always; visibility: hidden">
+\newpage
+</div>
