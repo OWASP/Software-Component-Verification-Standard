@@ -2,10 +2,9 @@
 
 ## Control Objective
 
-> TODO
-make type vague. make funtion more specific
-
-component = direct + transitive
+Component Analysis is the process of identifying potential areas of risk from the use of third-party and open-source
+software components. Every component, direct or transitive, is a candidate for analysis. Risk inherited through the use
+of third-party software may directly affect the application or systems that rely on them.
 
 ## Verification Requirements
 
