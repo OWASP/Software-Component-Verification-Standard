@@ -7,7 +7,8 @@ of analysis. The following controls incorporate single application inventories, 
 to take to improve software transparency when procuring new software or systems.
 
 Component identification varies based on the ecosystem the component is part of. Therefore, for all inventory purposes,
-the use of Package URL may be used to standardize and normalize naming conventions for managed dependencies.
+the use of identifiers such as Package URL may be used to standardize and normalize naming conventions for managed 
+dependencies.
 
 Having organizational inventory of all first-party, third-party, and open source components allows for greater
 transparency within the organization, promotes software standardization and reuse, and allows for rapid impact analysis.

@@ -27,11 +27,11 @@ vendors.
 SCVS provides a structured method to assess and qualify internal software capabilities and processes, and to identify 
 areas where verifiability can be improved. Because of the tiered and topical structure of SCVS, the same organization 
 can be at different levels within or across categories of verification. Depending on required levels of assurance for a 
-given system, different levels of SCVS components may be required for system approval.
+given system, different levels of SCVS controls may be required for system approval.
 
-SCVS components are formulated to be automatable, and to provide the basis for system approval on a continuous basis. 
+SCVS controls are formulated to be automatable, and to provide the basis for system approval on a continuous basis. 
 Given the rate of change in software composition, especially for capabilities developed in a continuous integration 
-pipeline, continuity of assurance requires continuous vs. one-time verification. 
+pipeline, continuity of assurance requires continuous rather than one-time verification. 
 
 ### Evaluating Suppliers
 SCVS provides a standardized way to assess supply chain transparency provided by contract or outsourced software 
@@ -40,7 +40,7 @@ provided with software deliverables. Specifically, the provision of a software b
 requested or required by software customers to establish supply chain visibility and differentiate suppliers. 
 
 Because of the tiered and topical structure of SCVS, it can be used for analysis of alternatives and/or used in whole 
-or in part to evaluate proposals for procurement. SCVS components at different levels can be used to qualify 
+or in part to evaluate proposals for procurement. SCVS controls at different levels can be used to qualify 
 eligibility for procurement, or as an element of numerical scoring of proposals. 
 
 Supplier provision of software bills of materials and other verification data allows customers to monitor risks present 
