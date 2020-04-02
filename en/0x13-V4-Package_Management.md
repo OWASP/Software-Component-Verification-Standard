@@ -2,11 +2,17 @@
 
 ## Control Objective
 
-Open source components intended for reuse are often published to ecosystem-specific package repositories. Centralized repositories exist for most build systems including Maven, NPM, Python, and .NET. Repositories internal to an organization may additionally provide reuse of first-party components as well as access to trusted third-party components.
+Open source components intended for reuse are often published to ecosystem-specific package repositories. 
+Centralized repositories exist for most build systems including Maven, NPM, Python, and .NET. Repositories 
+internal to an organization may additionally provide reuse of first-party components as well as access to 
+trusted third-party components.
 
-Package managers are often invoked during the build process and are responsible for resolving component versions and automatically retrieving components from their repositories.
+Package managers are often invoked during the build process and are responsible for resolving component versions 
+and automatically retrieving components from their repositories.
 
-While there are tremendous business, technical, and security benefits to using package managers and centralized repositories, they are often targets for adversaries. Implementing best practices can dramatically reduce risk of compromise in the software supply chain.
+While there are tremendous business, technical, and security benefits to using package managers and centralized 
+repositories, they are often targets for adversaries. Implementing best practices can dramatically reduce risk of 
+compromise in the software supply chain.
 
 ## Verification Requirements
 
