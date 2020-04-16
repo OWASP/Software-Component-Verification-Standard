@@ -17,9 +17,9 @@ The following resources may be useful to users and adopters of this standard:
 * NIST 800-171: [https://csrc.nist.gov/publications/detail/sp/800-171/rev-2/final](https://csrc.nist.gov/publications/detail/sp/800-171/rev-2/final) 
 * NTIA Documents on Software Bill of Materials: [https://www.ntia.doc.gov/SBOM](https://www.ntia.doc.gov/SBOM)
 
-# SBOM Formats
+## SBOM Formats
 
 * CycloneDX: [https://cyclonedx.org/](https://cyclonedx.org/)
 * SEVA: //TODO
 * SPDX: [https://spdx.org/](https://spdx.org/)
-* SWID: [https://www.iso.org/standard/65666.html](https://www.iso.org/standard/65666.html)
+* ISO/IEC 19770-2:2015 (SWID): [https://www.iso.org/standard/65666.html](https://www.iso.org/standard/65666.html)
