@@ -66,8 +66,8 @@ class SCVS:
 
     def to_xml(self):
         ''' Returns XML '''
-        xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
-        xml += '<scvs>\n
+        xml = "<?xml version="1.0" encoding="UTF-8"?>\n"
+        xml += "<scvs>\n"
 
         for r in self.requirements:
 
@@ -77,7 +77,7 @@ class SCVS:
                    + "\" l3=\"" + str(r['l3']).lower() + "\">" \
                    + escape(r['text']) + "</requirement>\n"
 
-        xml += '</scvs>\n
+        xml += "</scvs>\n"
         return xml
 
     def to_csv(self):
