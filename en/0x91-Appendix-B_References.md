@@ -4,19 +4,22 @@ The following OWASP projects are most likely to be useful to users/adopters of t
 
 ## OWASP Projects
 
-1. OWASP Packman: [https://github.com/OWASP/packman](https://github.com/OWASP/packman)
-2. OWASP Software Assurance Maturity Model (SAMM): [https://www.owasp.org/index.php/OWASP_SAMM_Project](https://www.owasp.org/index.php/OWASP_SAMM_Project)
+* OWASP Packman: [https://github.com/OWASP/packman](https://github.com/OWASP/packman)
+* OWASP Software Assurance Maturity Model (SAMM): [https://owasp.org/www-project-samm/](https://owasp.org/www-project-samm/)
 
 ## Others
 
-Similarly, the following web sites are most likely to be useful to users/adopters of this standard
+The following resources may be useful to users and adopters of this standard:
 
-1. NTIA Software Transparency: [https://www.ntia.doc.gov/sbom](https://www.ntia.doc.gov/sbom)
-2. NIST .....
-3. Others...?
+* InnerSource: [https://www.oreilly.com/library/view/adopting-innersource/9781492041863/ch01.html](https://www.oreilly.com/library/view/adopting-innersource/9781492041863/ch01.html)
+* Cybersecurity Maturity Model Certification (CMMC): [https://www.acq.osd.mil/cmmc/](https://www.acq.osd.mil/cmmc/)
+* NIST 800-53: [https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/draft](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/draft)
+* NIST 800-171: [https://csrc.nist.gov/publications/detail/sp/800-171/rev-2/final](https://csrc.nist.gov/publications/detail/sp/800-171/rev-2/final) 
+* NTIA Documents on Software Bill of Materials: [https://www.ntia.doc.gov/SBOM](https://www.ntia.doc.gov/SBOM)
 
 # SBOM Formats
 
-1. CycloneDX: [https://cyclonedx.org/](https://cyclonedx.org/)
-2. SPDX: [https://spdx.org/](https://spdx.org/)
-3. MITRE/Nashville...?
+* CycloneDX: [https://cyclonedx.org/](https://cyclonedx.org/)
+* SEVA: //TODO
+* SPDX: [https://spdx.org/](https://spdx.org/)
+* SWID: [https://www.iso.org/standard/65666.html](https://www.iso.org/standard/65666.html)

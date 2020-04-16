@@ -1,5 +1,8 @@
 # Appendix A: Glossary
 
+- **Chain of custody** - Auditable documentation of point of origin as well as the method of transfer from point of 
+origin to point of destination and the identity of the transfer agent.
+
 - **Component function** - The purpose for which a software component exists. Examples of component functions include 
 parsers, database persistence, and authentication providers.
 
@@ -9,6 +12,8 @@ include libraries, frameworks, applications, containers, and operating systems.
 - **CycloneDX** - A software bill-of-materials specification designed to be lightweight and security-focused.
 
 - **Direct dependency** - A software component that is referenced by a program itself.
+
+- **Package manager** - A distribution mechanism that makes software artifacts discoverable by requesters.
 
 - **Package URL (PURL)** - An ecosystem-agnostic specification which standardizes the syntax and location information 
 of software components.

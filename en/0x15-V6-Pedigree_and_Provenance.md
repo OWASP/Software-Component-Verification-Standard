@@ -2,9 +2,9 @@
 
 ## Control Objective
 
-> TODO
-
-REVISIT - Need to talk about import of unmodified code to new location
+Identify point-of-origin and chain of custody in order to manage system risk if either point-of-origin or 
+chain of custody is compromised. For internal package managers and repositories it is important to maintain
+pedigree and provenance data for imported components.
 
 ## Verification Requirements
 
