@@ -66,7 +66,7 @@ class SCVS:
 
     def to_xml(self):
         ''' Returns XML '''
-        xml = "<?xml version="1.0" encoding="UTF-8"?>\n"
+        xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
         xml += "<scvs>\n"
 
         for r in self.requirements:
