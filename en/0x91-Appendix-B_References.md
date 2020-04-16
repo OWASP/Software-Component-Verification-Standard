@@ -1,6 +1,6 @@
 # Appendix B: References
 
-The following OWASP projects are most likely to be useful to users/adopters of this standard:
+The following resources may be useful to users and adopters of this standard:
 
 ## OWASP Projects
 
@@ -8,8 +8,6 @@ The following OWASP projects are most likely to be useful to users/adopters of t
 * OWASP Software Assurance Maturity Model (SAMM): [https://owasp.org/www-project-samm/](https://owasp.org/www-project-samm/)
 
 ## Others
-
-The following resources may be useful to users and adopters of this standard:
 
 * InnerSource: [https://www.oreilly.com/library/view/adopting-innersource/9781492041863/ch01.html](https://www.oreilly.com/library/view/adopting-innersource/9781492041863/ch01.html)
 * Cybersecurity Maturity Model Certification (CMMC): [https://www.acq.osd.mil/cmmc/](https://www.acq.osd.mil/cmmc/)
@@ -20,6 +18,6 @@ The following resources may be useful to users and adopters of this standard:
 ## SBOM Formats
 
 * CycloneDX: [https://cyclonedx.org/](https://cyclonedx.org/)
-* SEVA: //TODO
 * SPDX: [https://spdx.org/](https://spdx.org/)
+* SPDX XML: [https://spdx-ccm.specchain.org/xsdccm/home](https://spdx-ccm.specchain.org/xsdccm/home)
 * ISO/IEC 19770-2:2015 (SWID): [https://www.iso.org/standard/65666.html](https://www.iso.org/standard/65666.html)
