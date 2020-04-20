@@ -57,7 +57,7 @@ departments. Active participation of all stakeholders is necessary to measure an
 Once an organization has baselined its current maturity, it can determine goals and timelines for improved maturity
 and devise methods for which the controls can be implemented or verified through automation.
 
-Attainment of higher-level controls may be more dependent on business process than available technical methods. 
+Satisfying control requirements at a higher SCVS level may be more dependent on business process than available technical methods. 
 
 <div style="page-break-after: always; visibility: hidden">
 \newpage
