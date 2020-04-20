@@ -6,28 +6,28 @@ Component Analysis is the process of identifying potential areas of risk from th
 software components. Every component, direct or transitive, is a candidate for analysis. Risk inherited through the use
 of third-party software may directly affect the application or systems that rely on them.
 
-#### Known vulnerabilities 
+#### Known Vulnerabilities 
 There are multiple public and commercial sources of vulnerability intelligence. Vulnerabilities become known when they
 are published to services such as the National Vulnerability Database (NVD), or are otherwise documented in public 
 defect trackers, commit logs, or other public source.
 
-#### Component version currency
+#### Component Version Currency
 If component versions are specified, then determining if a component is out-of-date or end-of-life is possible. 
 Outdated and end-of-life components are more likely to be vulnerable and less likely to be supported as first-class
 entities. Out-of-date components can slow down system remediation due to interoperability issues. Using up-to-date 
 components reduces exposure time and may include remediations of non-disclosed vulnerabilities. 
 
-#### Component type
+#### Component Type
 Frameworks and libraries have unique upgrade challenges and associated risk. Abstractions, coupling, and architectural 
 design patterns may affect the risk of using a given component type. Libraries, frameworks, applications, containers, 
 and operating systems are common component types.
 
-#### Component function
+#### Component Function
 Identifying and analyzing the purpose of each component may reveal the existence of components with duplicate or
 similar functionality. Potential risk can be reduced by minimizing the number of components for each function and by
 choosing the highest quality components for each function.
 
-#### Component quantity
+#### Component Quantity
 The operational and maintenance cost of using open source may increase with the adoption of every new component. 
 Decreased ability to maintain growing sets of components over time can be expected. This is especially true for teams
 with time-boxed constraints.
