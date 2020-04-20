@@ -8,7 +8,7 @@ Managing risk in the software supply chain is important to reduce the surface ar
 and to measure technical debt as a barrier to remediation. 
 
 Measuring and improving software supply chain assurance is crucial for success. Organizations with supply chain
-visibility can protect their brand, increase trust, reduce time-to-market, and impact costs in the event of a
+visibility can protect their brand, increase trust, reduce time-to-market, and manage costs in the event of a
 supply chain incident. 
 
 Software supply chains involve:
