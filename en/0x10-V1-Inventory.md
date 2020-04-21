@@ -2,15 +2,15 @@
 
 ## Control Objective
 
-An accurate inventory of all components used in the creation of software is a foundational requirement for further forms
-of analysis. The following controls incorporate single application inventories, organizational inventories, and steps
-to take to improve software transparency when procuring new software or systems.
+An accurate inventory of all components used in the creation of software is a foundational requirement for further
+analysis. The following controls incorporate single application inventories, organizational inventories, and approaches
+to enable software transparency when procuring new software or systems.
 
-Component identification varies based on the ecosystem the component is part of. Therefore, for all inventory purposes,
-the use of identifiers such as Package URL may be used to standardize and normalize naming conventions for managed 
-dependencies.
+Component identification varies based on the ecosystem, or lack thereof, of the component. Therefore, for all inventory
+purposes, the use of identifiers, such as Package URL, may be used to standardize and normalize naming conventions for
+managed dependencies.
 
-Having organizational inventory of all first-party, third-party, and open source components allows for greater
+An organization-wide inventory of all first-party, third-party, and open source components allows for greater
 transparency within the organization, promotes software standardization and reuse, and allows for rapid impact analysis.
 
 ## Verification Requirements
