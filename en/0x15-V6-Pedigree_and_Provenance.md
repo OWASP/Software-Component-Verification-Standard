@@ -3,7 +3,7 @@
 ## Control Objective
 
 Identify point-of-origin and chain of custody in order to manage system risk if either point-of-origin or 
-chain of custody is compromised. For internal package managers and repositories it is important to maintain
+chain of custody is compromised. For internally maintained repositories it is important to maintain
 pedigree and provenance data for imported components.
 
 ## Verification Requirements
