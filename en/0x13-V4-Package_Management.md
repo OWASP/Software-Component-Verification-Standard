@@ -2,13 +2,13 @@
 
 ## Control Objective
 
-Open source components intended for reuse are often published to ecosystem-specific package repositories. 
-Centralized repositories exist for most build systems including Maven, .NET, NPM, and Python. Repositories 
+Open source components intended for reuse are often made available through a package repository.
+Third-party operated repositories exist for many ecosystems, such as Maven Central, NPM, and PyPI. Repositories 
 internal to an organization may additionally provide reuse of first-party components as well as access to 
 trusted third-party components.
 
 Package managers are often invoked during the build process and are responsible for resolving component versions 
-and automatically retrieving components from repositories.
+and retrieving components from repositories.
 
 While there are tremendous business, technical, and security benefits to using package managers and centralized 
 repositories, they are often targets for adversaries. Implementing best practices can dramatically reduce risk of 
@@ -21,7 +21,7 @@ compromise in the software supply chain.
 | **4.1** | Binary components are retrieved from a package repository | ✓ | ✓ | ✓ |
 | **4.2** | Package repository contents are congruent to an authoritative point of origin for open source components | ✓ | ✓ | ✓ |
 | **4.3** | Package repository requires strong authentication | | ✓ | ✓ |
-| **4.4** | Package repository enables multi-factor authentication component publishing | | ✓ | ✓ |
+| **4.4** | Package repository supports multi-factor authentication component publishing | | ✓ | ✓ |
 | **4.5** | Package repository components have been published with multi-factor authentication | | | ✓ |
 | **4.6** | Package repository supports security incident reporting | | ✓ | ✓ |
 | **4.7** | Package repository automates security incident reporting | | | ✓ |
@@ -35,4 +35,4 @@ compromise in the software supply chain.
 | **4.15** | Package repository enforces use of TLS for all interactions | ✓ | ✓ | ✓ |
 | **4.16** | Package manager validates TLS certificate chain to repository and fails securely when validation fails | ✓ | ✓ | ✓ |
 | **4.17** | Package repository requires and/or performs static code analysis prior to publishing a component and makes results available for others to consume | | | ✓ |
-| **4.18** | Package manager does not execute code | ✓ | ✓ | ✓ |
+| **4.18** | Package manager does not execute component code | ✓ | ✓ | ✓ |
