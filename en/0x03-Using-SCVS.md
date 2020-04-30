@@ -54,7 +54,7 @@ The Software Component Verification Standard places emphasis on controls that ca
 through automation. The domains and their controls are not specific to a single development team. They represent
 stakeholders across an organization, including software developers, security and risk managers, and procurement
 departments. Active participation of all stakeholders is necessary to measure and improve cyber posture. 
-Once an organization has identified the current maturity baseline, it can determine goals and timelines to improve maturity
+Once an organization has determined the current maturity baseline, it can determine goals and timelines to improve maturity
 and devise methods for which the controls can be implemented or verified through automation.
 
 Attainment of higher-level controls may be more dependent on business process than available technical methods. 
