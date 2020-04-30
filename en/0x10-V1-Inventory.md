@@ -6,7 +6,7 @@ An accurate inventory of all components used in the creation of software is a fo
 analysis. The following controls incorporate single application inventories, organizational inventories, and approaches
 to enable software transparency when procuring new software or systems.
 
-Component identification varies based on the ecosystem, or lack thereof, of the component. Therefore, for all inventory
+Component identification varies based on the ecosystem the component is part of. Therefore, for all inventory
 purposes, the use of identifiers, such as Package URL, may be used to standardize and normalize naming conventions for
 managed dependencies.
 
