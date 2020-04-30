@@ -13,7 +13,7 @@ The Software Component Verification Standard defines three security verification
 * SCVS Level 2 is for moderately sensitive software where additional analysis or due diligence is required.
 * SCVS Level 3 is for high-assurance requirements due to the sensitivity of data or use of the software.
 
-## How to use this standard
+## How to Use This Standard
 
 One of the best ways to use the Software Component Verification Standard is to use it as a method of assessment and a 
 way to sequence incremental improvement. Tailoring the SCVS to your use cases will increase the focus on the security 
