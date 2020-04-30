@@ -18,7 +18,7 @@ Software supply chains involve:
  - institutions
  - and additional variables
  
-It is important to acknowledge that raising the bar for supply chain assurance requires the active participation of
+Raising the bar for supply chain assurance requires the active participation of
 risk managers, mission owners, and business units like legal and procurement, which have not traditionally been involved
 with technical implementation. 
 
