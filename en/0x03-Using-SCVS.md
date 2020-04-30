@@ -7,7 +7,7 @@ SCVS has the following goals:
 
 ## Software Component Verification Levels
 
-The Software Component Verification Standard defines three security verification levels, with each level increasing in depth.
+The Software Component Verification Standard defines three verification levels. Higher levels include additional controls.
 
 * SCVS Level 1 is for low-assurance requirements where basic forms of analysis would suffice.
 * SCVS Level 2 is for moderately sensitive software where additional analysis or due diligence is required.
