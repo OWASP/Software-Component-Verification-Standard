@@ -34,7 +34,7 @@ Given the rate of change in software composition, especially for capabilities de
 pipeline, continuity of assurance requires continuous rather than one-time verification. 
 
 ### Evaluating Suppliers
-SCVS provides a standardized way to assess supply chain risk provided by contract or outsourced software 
+SCVS provides a standardized way to assess supply chain transparency provided by contract or outsourced software 
 suppliers, based on the documentation and metadata present in the supplier's software development workflow and/or 
 provided with software deliverables. Specifically, the provision of a software bill of materials (SBOM) can be 
 requested or required by software customers to establish supply chain visibility and differentiate suppliers. 
