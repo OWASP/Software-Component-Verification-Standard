@@ -2,8 +2,8 @@
 
 ## Control Objective
 
-Open source components intended for reuse are often made available through a package repository.
-Third-party operated repositories exist for many ecosystems, such as Maven Central, NPM, and PyPI. Repositories 
+Open source components intended for reuse are often published to ecosystem-specific package repositories.
+Centralized repositories exist for many build systems including Maven, .NET, NPM and Python. Repositories 
 internal to an organization may additionally provide reuse of first-party components as well as access to 
 trusted third-party components.
 
@@ -36,3 +36,4 @@ compromise in the software supply chain.
 | **4.16** | Package manager validates TLS certificate chain to repository and fails securely when validation fails | ✓ | ✓ | ✓ |
 | **4.17** | Package repository requires and/or performs static code analysis prior to publishing a component and makes results available for others to consume | | | ✓ |
 | **4.18** | Package manager does not execute component code | ✓ | ✓ | ✓ |
+| **4.19** | Package manager documents package installation in machine-readable form | ✓ | ✓ | ✓ |
