@@ -50,11 +50,11 @@ vulnerabilities within a specified time period.
 
 ## Applying SCVS
 
-The Software Component Verification Standard places emphasis on controls which can be implemented or verified
+The Software Component Verification Standard places emphasis on controls that can be implemented or verified
 through automation. The domains and their controls are not specific to a single development team. They represent
 stakeholders across an organization, including software developers, security and risk managers, and procurement
 departments. Active participation of all stakeholders is necessary to measure and improve cyber posture. 
-Once an organization has baselined its current maturity, it can determine goals and timelines for improved maturity
+Once an organization has determined the current maturity baseline, it can determine goals and timelines to improve maturity
 and devise methods for which the controls can be implemented or verified through automation.
 
 Satisfying control requirements at a higher SCVS level may be more dependent on business process than available technical methods. 
