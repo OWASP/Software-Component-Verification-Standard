@@ -2,10 +2,41 @@
 
 ## Control Objective
 
-> TODO
-make type vague. make funtion more specific
+Component Analysis is the process of identifying potential areas of risk from the use of third-party and open-source
+software components. Every component, direct or transitive, is a candidate for analysis. Risk inherited through the use
+of third-party software may directly affect the application or systems that rely on them.
 
-component = direct + transitive
+#### Known Vulnerabilities 
+There are multiple public and commercial sources of vulnerability intelligence. Vulnerabilities become known when they
+are published to services such as the National Vulnerability Database (NVD), or are otherwise documented in public 
+defect trackers, commit logs, or other public source.
+
+#### Component Version Currency
+If component versions are specified, then determining if a component is out-of-date or end-of-life is possible. 
+Outdated and end-of-life components are more likely to be vulnerable and less likely to be supported as first-class
+entities. Out-of-date components can slow down system remediation due to interoperability issues. Using up-to-date 
+components reduces exposure time and may include remediations of non-disclosed vulnerabilities. 
+
+#### Component Type
+Frameworks and libraries have unique upgrade challenges and associated risk. Abstractions, coupling, and architectural 
+design patterns may affect the risk of using a given component type. Libraries, frameworks, applications, containers, 
+and operating systems are common component types.
+
+#### Component Function
+Identifying and analyzing the purpose of each component may reveal the existence of components with duplicate or
+similar functionality. Potential risk can be reduced by minimizing the number of components for each function and by
+choosing the highest quality components for each function.
+
+#### Component Quantity
+The operational and maintenance cost of using open source may increase with the adoption of every new component. 
+Decreased ability to maintain growing sets of components over time can be expected. This is especially true for teams
+with time-boxed constraints.
+
+#### License
+Third-party and open-source software is typically released under one or more licenses. The chosen license may or may
+not allow certain types of usage, contain distribution requirements or limitations, or require specific actions if the
+component is modified. Utilizing components with licenses which conflict with an organizations objectives or ability 
+can create risk to the business.
 
 ## Verification Requirements
 

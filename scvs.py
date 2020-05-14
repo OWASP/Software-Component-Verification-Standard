@@ -66,16 +66,18 @@ class SCVS:
 
     def to_xml(self):
         ''' Returns XML '''
-        xml = ''
+        xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+        xml += "<scvs>\n"
 
         for r in self.requirements:
 
-            xml += "<requirement id=\"" + escape(r['id']) \
+            xml += "\t<requirement id=\"" + escape(r['id']) \
                    + "\" l1=\"" + str(r['l1']).lower() \
                    + "\" l2=\"" + str(r['l2']).lower() \
                    + "\" l3=\"" + str(r['l3']).lower() + "\">" \
                    + escape(r['text']) + "</requirement>\n"
 
+        xml += "</scvs>\n"
         return xml
 
     def to_csv(self):

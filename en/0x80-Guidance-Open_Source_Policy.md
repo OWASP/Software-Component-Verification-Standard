@@ -7,16 +7,15 @@ employing them. They are not part of the SCVS taxonomy.
 - The open source policy is supported and enforced by cross-functional stakeholders
 - The open source policy should address:
   - The age of a component based on its release or published date
-  - How many major or minor revisions old are tolerated
+  - How many major or minor revisions old are acceptable
   - Guidance for keeping components continuously updated via automation
-  - Avoidance on using components with known vulnerabilities
+  - Exclusion criteria for components with known vulnerabilities
   - Mean-time-to-remediate criteria for updating at-risk components
   - Restrictions on using components that are end-of-life or end-of-support
-  - Guidance for using fewer and better suppliers
+  - Criteria for supplier selection or exclusion
   - Usage-based list of acceptable licenses
-  - Dynamic list of unapproved or forbidden components
-  - Require development teams provide all modifications back to the community producing the component
-  - Prohibit modifications to open source components that are not in the best interest of the community producing the component
+  - Prohibited components list
+  - Mechanisms and permissions for providing modifications back to the community producing the component
 
 <div style="page-break-after: always; visibility: hidden">
 \newpage

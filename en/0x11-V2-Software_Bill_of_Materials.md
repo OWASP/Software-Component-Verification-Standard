@@ -3,11 +3,11 @@
 ## Control Objective
 
 Automatically creating accurate Software Bill-of-Materials (SBOM) in the build pipeline is one indicator of mature
-development processes. Generated SBOMs should ideally use a recognized or industry-standard format such as CycloneDX,
-SPDX, or SWID. Each format has different capabilities and use-cases they excel in. Part of adopting SBOMs is identifying
-the use-cases and capabilities necessary to achieve those use cases and aligning them to the format which best suites a
-specific purpose. While SBOM format standardization across an organization may be desirable, it may be necessary to
-adopt more then one to meet contractual, compliance, or regulatory requirements.
+development processes. SBOMs should be a machine readable format. 
+Each format has different capabilities and use-cases they excel in. Part of SBOM adoption is identifying the use-cases 
+and capabilities best suited to specific purposes. While SBOM format standardization across an organization may be 
+desirable, it may be necessary to adopt more than one to meet functional, contractual, compliance, or regulatory 
+requirements.
 
 ## Verification Requirements
 
