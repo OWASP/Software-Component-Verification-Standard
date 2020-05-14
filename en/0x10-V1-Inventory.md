@@ -17,7 +17,7 @@ transparency within the organization, promotes software standardization and reus
 
 | # | Description | L1 | L2 | L3 |
 | :---: | :--- | :---: | :---: | :---: |
-| **1.1** | All components and their versions are known at completion of a build | ✓ | ✓ | ✓ |
+| **1.1** | All direct and transitive components and their versions are known at completion of a build | ✓ | ✓ | ✓ |
 | **1.2** | Package managers are used to manage all third-party binary components | ✓ | ✓ | ✓ |
 | **1.3** | An accurate inventory of all third-party components is available in a machine-readable format | ✓ | ✓ | ✓ |
 | **1.4** | Software bill-of-materials are generated for publicly or commercially available applications | ✓ | ✓ | ✓ |
