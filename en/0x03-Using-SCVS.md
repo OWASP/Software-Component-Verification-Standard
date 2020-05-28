@@ -3,7 +3,7 @@
 SCVS has the following goals:
 
 * Develop a common taxonomy of activities, controls, and best-practices that can reduce risk in a software supply chain
-* Devise a path to baseline and mature software supply chain vigilance
+* Identify a baseline and path to mature software supply chain vigilance
 
 ## Software Component Verification Levels
 
