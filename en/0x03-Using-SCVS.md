@@ -13,11 +13,37 @@ The Software Component Verification Standard defines three verification levels. 
 * SCVS Level 2 is for moderately sensitive software where additional analysis or due diligence is required.
 * SCVS Level 3 is for high-assurance requirements due to the sensitivity of data or use of the software.
 
+![maturity](./images/maturity.png)
+
+
+### Level 1
+SCVS level 1 lays the groundwork from which to build upon. This level focuses on implementing best practices such as:
+- creating software bill-of-materials with complete and accurate inventory
+- utilizing continuous integration to produce repeatable builds
+- performing analysis of third-party components with tools and intelligence that are publicly available
+
+Adoption of level 1 can be achieved with modern software engineering practices. 
+
+
+### Level 2
+SCVS level 2 expands the breadth of level 1 capabilities. Level 2 is appropriate for software intensive enterprises and 
+organizations with existing risk management frameworks and regulatory and/or contractual requirements. Level 2 also 
+expands the number of stakeholders including those with non-technical roles. Adoption of level 2 may require 
+additional resources and domain expertise to achieve. 
+
+
+### Level 3
+SCVS level 3 extends the depth of level 2 capabilities. Level 3 is applicable in critical infrastructure and systems
+with safety requirements. Auditability and end-to-end transparency in the supply chain is required to maintain a
+high security posture in these systems and the organizations that produce and maintain them.
+
+
 ## How to Use This Standard
 
 One of the best ways to use the Software Component Verification Standard is to use it as a method of assessment and a 
 way to sequence incremental improvement. Tailoring the SCVS to your use cases will increase the focus on the security 
-requirements that are most important to your organization.
+requirements that are most important to your organization. Organizations may choose to adopt certain controls from higher 
+levels without implementing all higher-level controls.
 
 One use case for the SCVS is to assess internal software development processes and capabilities. Another is to evaluate 
 suppliers, which can include open source software maintainers, contract software developers, and commercial software 
