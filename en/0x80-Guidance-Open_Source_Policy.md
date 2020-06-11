@@ -1,7 +1,7 @@
 # Guidance: Open Source Policy
 
 The following points should be viewed as suggestions based on the success and best practices of organizations 
-employing them. They are not part of the SCVS taxonomy.
+employing them. They are not part of SCVS.
 
 - All organizations that use open source software should have an open source policy
 - The open source policy is supported and enforced by cross-functional stakeholders

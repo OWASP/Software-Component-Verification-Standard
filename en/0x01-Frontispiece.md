@@ -2,7 +2,7 @@
 
 ## About the Standard
 
-The Software Component Verification Standard is a grouping of controls, separated by domain, which can be used by architects, developers, security, legal, and compliance to define, build, and verify the integrity of their software supply chain.
+The Software Component Verification Standard is a grouping of controls, separated by control family, which can be used by architects, developers, security, legal, and compliance to define, build, and verify the integrity of their software supply chain.
 
 ## Copyright and License
 

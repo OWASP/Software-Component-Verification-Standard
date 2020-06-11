@@ -2,8 +2,19 @@
 
 SCVS has the following goals:
 
-* Develop a common taxonomy of activities, controls, and best-practices that can reduce risk in a software supply chain
+* Develop a common set of activities, controls, and best-practices that can reduce risk in a software supply chain
 * Identify a baseline and path to mature software supply chain vigilance
+
+## Control Families
+There are six control families that contain multiple controls that apply to different aspects of component verification
+or processes where component verification occurs. The control families are:
+
+* V1: Inventory
+* V2: Software Bill of Materials (SBOM)
+* V3: Build Environment
+* V4: Package Management
+* V5: Component Analysis
+* V6: Pedigree and Provenance
 
 ## Software Component Verification Levels
 
@@ -14,7 +25,6 @@ The Software Component Verification Standard defines three verification levels. 
 * SCVS Level 3 is for high-assurance requirements due to the sensitivity of data or use of the software.
 
 ![maturity](./images/maturity.png)
-
 
 ### Level 1
 SCVS level 1 lays the groundwork from which to build upon. This level focuses on implementing best practices such as:
@@ -77,7 +87,7 @@ vulnerabilities within a specified time period.
 ## Applying SCVS
 
 The Software Component Verification Standard places emphasis on controls that can be implemented or verified
-through automation. The domains and their controls are not specific to a single development team. They represent
+through automation. The control families are not specific to a single development team. They represent
 stakeholders across an organization, including software developers, security and risk managers, and procurement
 departments. Active participation of all stakeholders is necessary to measure and improve cyber posture. 
 Once an organization has determined the current maturity baseline, it can determine goals and timelines to improve maturity
