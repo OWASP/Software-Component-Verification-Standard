@@ -8,6 +8,10 @@ The following resources may be useful to users and adopters of this standard:
 * [OWASP Software Assurance Maturity Model (SAMM)](https://owasp.org/www-project-samm/)
 
 
+## Community Projects
+* [Open Source Security Coalition - Threats, Risks, and Mitigations in the Open Source Ecosystem](https://github.com/Open-Source-Security-Coalition/Open-Source-Security-Coalition/tree/master/publications/threats-risks-mitigations)
+
+
 ## Others
 
 * [InnerSource](https://www.oreilly.com/library/view/adopting-innersource/9781492041863/ch01.html)
