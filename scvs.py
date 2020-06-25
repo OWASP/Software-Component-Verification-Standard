@@ -43,7 +43,7 @@ class SCVS:
     requirements = []
 
     def __init__(self):
-        for file in os.listdir("en"):
+        for file in sorted(os.listdir("en")):
 
             if re.match("0x\d{2}-V", file):
                 for line in open(os.path.join("en", file)):
