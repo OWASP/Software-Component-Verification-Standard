@@ -27,7 +27,7 @@ The Software Component Verification Standard defines three verification levels. 
 
 ### Level 1
 SCVS level 1 lays the groundwork from which to build upon. This level focuses on implementing best practices such as:
-- creating software bill-of-materials with complete and accurate inventory
+- creating software bill of materials with complete and accurate inventory
 - utilizing continuous integration to produce repeatable builds
 - performing analysis of third-party components with tools and intelligence that are publicly available
 

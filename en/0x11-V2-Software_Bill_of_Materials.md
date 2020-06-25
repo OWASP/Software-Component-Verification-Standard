@@ -1,8 +1,8 @@
-# V2: Software Bill-of-Materials (SBOM) Requirements
+# V2: Software Bill of Materials (SBOM) Requirements
 
 ## Control Objective
 
-Automatically creating accurate Software Bill-of-Materials (SBOM) in the build pipeline is one indicator of mature
+Automatically creating accurate Software Bill of Materials (SBOM) in the build pipeline is one indicator of mature
 development processes. SBOMs should be a machine readable format. 
 Each format has different capabilities and use-cases they excel in. Part of SBOM adoption is identifying the use-cases 
 and capabilities best suited to specific purposes. While SBOM format standardization across an organization may be 
@@ -13,7 +13,7 @@ requirements.
 
 | # | Description | L1 | L2 | L3 |
 | :---: | :--- | :---: | :---: | :---: |
-| **2.1** | A structured, machine readable software bill-of-materials (SBOM) format is present | ✓ | ✓ | ✓ |
+| **2.1** | A structured, machine readable software bill of materials (SBOM) format is present | ✓ | ✓ | ✓ |
 | **2.2** | SBOM creation is automated and reproducible | | ✓ | ✓ |
 | **2.3** | Each SBOM has a unique identifier | ✓ | ✓ | ✓ |
 | **2.4** | SBOM has been signed by publisher, supplier, or certifying authority | | ✓ | ✓ |
