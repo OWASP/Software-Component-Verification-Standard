@@ -5,16 +5,16 @@
 
 # OWASP Software Component Verification Standard
 
-The Software Component Verification Standard (SCVS) is a community-driven effort to establish a framework for 
-identifying activities, controls, and best practices, which can help in identifying and reducing risk in a software 
-supply chain.
+The Software Component Verification Standard (SCVS) is a community-driven effort to
+establish a framework for identifying activities, controls, and best practices, which can help in identifying and
+reducing risk in a software supply chain.
 
 Managing risk in the software supply chain is important to reduce the surface area of systems vulnerable to exploits,
 and to measure technical debt as a barrier to remediation. 
 
-Measuring and improving software supply chain assurance is crucial for success. Organizations with supply chain
-visibility can protect their brand, increase trust, reduce time-to-market, and impact costs in the event of a
-supply chain incident. 
+Measuring and improving software supply chain assurance is crucial for success. Organizations with supply chain visibility
+are better equipped to protect their brand, increase trust, reduce time-to-market, and manage costs in the event of a
+supply chain incident.
 
 Software supply chains involve:
  - technology
@@ -23,7 +23,7 @@ Software supply chains involve:
  - institutions
  - and additional variables
  
-It is important to acknowledge that raising the bar for supply chain assurance requires the active participation of
+Raising the bar for supply chain assurance requires the active participation of
 risk managers, mission owners, and business units like legal and procurement, which have not traditionally been involved
 with technical implementation. 
 
@@ -33,10 +33,10 @@ exposure, regulatory requirements, and constrained financial and human resources
 unachievable, or that bring development or procurement to a standstill, constitute their own security and institutional
 risks. 
 
-SCVS is designed to be implemented incrementally, and to allow organizations to phase in controls at different levels 
-over time.
+SCVS is designed to be implemented incrementally, and to allow organizations to
+phase in controls at different levels over time.
 
 ### SCVS has the following goals:
 
 * Develop a common set of activities, controls, and best-practices that can reduce risk in a software supply chain
-* Devise a path to baseline and mature software supply chain vigilance
+* Identify a baseline and path to mature software supply chain vigilance
