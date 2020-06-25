@@ -37,7 +37,7 @@ def parse_md(filename):
 
 
 def main():
-    for file in os.listdir("./en"):
+    for file in sorted(os.listdir("./en")):
         if file.find("-V") != -1:
             parse_md("./en/" + file)
 
