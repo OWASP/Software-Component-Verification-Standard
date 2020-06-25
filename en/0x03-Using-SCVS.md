@@ -24,7 +24,6 @@ The Software Component Verification Standard defines three verification levels. 
 * SCVS Level 2 is for moderately sensitive software where additional analysis or due diligence is required.
 * SCVS Level 3 is for high-assurance requirements due to the sensitivity of data or use of the software.
 
-![maturity](./images/maturity.png)
 
 ### Level 1
 SCVS level 1 lays the groundwork from which to build upon. This level focuses on implementing best practices such as:
