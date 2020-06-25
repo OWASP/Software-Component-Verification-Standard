@@ -10,11 +10,13 @@ pedigree and provenance data for imported components.
 
 | # | Description | L1 | L2 | L3 |
 | :---: | :--- | :---: | :---: | :---: |
-| **6.1** | Provenance of modified components is known and documented | ✓ | ✓ | ✓ |
-| **6.2** | Pedigree of component modification is documented and verifiable | | ✓ | ✓ |
-| **6.3** | Modified components are uniquely identified and distinct from origin component | | ✓ | ✓ |
-| **6.4** | Modified components are analyzed with the same level of precision as unmodified components | ✓ | ✓ | ✓ |
-| **6.5** | Risk unique to modified components can be analyzed and associated specifically to modified variant | ✓ | ✓ | ✓ |
+| **6.1** | Point of origin is verifiable for source code and binary components |  | ✓ | ✓ |
+| **6.2** | Chain of custody if auditable for source code and binary components |  |  | ✓ |
+| **6.3** | Provenance of modified components is known and documented | ✓ | ✓ | ✓ |
+| **6.4** | Pedigree of component modification is documented and verifiable | | ✓ | ✓ |
+| **6.5** | Modified components are uniquely identified and distinct from origin component | | ✓ | ✓ |
+| **6.6** | Modified components are analyzed with the same level of precision as unmodified components | ✓ | ✓ | ✓ |
+| **6.7** | Risk unique to modified components can be analyzed and associated specifically to modified variant | ✓ | ✓ | ✓ |
 
 <div style="page-break-after: always; visibility: hidden">
 \newpage
