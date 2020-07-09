@@ -20,7 +20,7 @@ The following resources may be useful to users and adopters of this standard:
 * [NIST 800-161 Supply Chain Risk Management Practices for Federal Information Systems and Organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-161.pdf)
 * [NIST 800-171 Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations](https://csrc.nist.gov/publications/detail/sp/800-171/rev-2/final) 
 * [NTIA Documents on Software Bill of Materials](https://www.ntia.doc.gov/SBOM)
-* [Model Procurement Contract Language Addressing Cybersecurity Supply Chain Risk](https://www.eei.org/issuesandpolicy/Documents/EEI%20Law%20-%20Model%20Procurement%20Contract%20Language%20(Version%202)_031919.pdf)
+* [Model Procurement Contract Language Addressing Cybersecurity Supply Chain Risk](https://www.eei.org/issuesandpolicy/Documents/EEI%20Law%20-%20Model%20Procurement%20Contract%20Language.pdf)
 * [Guide on Cybersecurity Procurement Language in Task Order Requests for Proposals for Federal Facilities](https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-28661.pdf)
 * [Energy Sector Control Systems Working Group (ESCSWG)](https://www.energy.gov/sites/prod/files/2014/04/f15/CybersecProcurementLanguage-EnergyDeliverySystems_040714_fin.pdf)
 
