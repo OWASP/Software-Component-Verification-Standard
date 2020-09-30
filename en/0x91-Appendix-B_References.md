@@ -9,7 +9,7 @@ The following resources may be useful to users and adopters of this standard:
 
 
 ## Community Projects
-* [Open Source Security Coalition - Threats, Risks, and Mitigations in the Open Source Ecosystem](https://github.com/Open-Source-Security-Coalition/Open-Source-Security-Coalition/tree/master/publications/threats-risks-mitigations)
+* [Open Source Security Foundation: Threats, Risks, and Mitigations in the Open Source Ecosystem](https://github.com/ossf/wg-identifying-security-threats/tree/main/publications/threats-risks-mitigations)
 
 
 ## Others
