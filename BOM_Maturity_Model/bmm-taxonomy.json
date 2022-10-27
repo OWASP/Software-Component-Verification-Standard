@@ -1,0 +1,443 @@
+{
+    "$schema": "https://scvs.owasp.org/bom-maturity-model-0.1.schema.json",
+    "model": [
+        {
+            "id": "urn:owasp:scvs:bmm:inventory",
+            "domain": "Inventory",
+            "level": 1,
+            "name": "",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "base"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:inventory:resource",
+            "domain": "Inventory",
+            "level": 0,
+            "name": "Resource",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "abstract",
+                "extends": "urn:owasp:scvs:bmm:inventory"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:inventory:resource:identifiers",
+            "domain": "Inventory",
+            "element": "Identifiers",
+            "level": 1,
+            "name": "",
+            "summary": "",
+            "description": ""
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:inventory:resource:identifiers:cpe",
+            "domain": "Inventory",
+            "element": "CPE",
+            "parent": "Identifiers",
+            "level": 1,
+            "name": "Common Platform Enumeration (CPE)",
+            "summary": "CPE is a structured naming scheme for information technology systems, software, and packages.",
+            "description": "CPE is a structured naming scheme for information technology systems, software, and packages. Based upon the generic syntax for Uniform Resource Identifiers (URI), CPE includes a formal name format, a method for checking names against a system, and a description format for binding text and tests to a name. The CPE standard and official dictionary are maintained by NIST.",
+            "references": [
+                {
+                    "title": "Official Common Platform Enumeration (CPE) Dictionary",
+                    "url": "https://nvd.nist.gov/products/cpe"
+                }
+            ]
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "id": "urn:owasp:scvs:bmm:inventory:hardware",
+            "domain": "Inventory",
+            "level": 1,
+            "name": "Hardware",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "class",
+                "extends": "urn:owasp:scvs:bmm:inventory:resource"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:inventory:hardware:ebom",
+            "domain": "Inventory",
+            "level": 1,
+            "name": "Engineering Bill of Material (eBOM)",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "property"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:inventory:hardware:mbom",
+            "domain": "Inventory",
+            "level": 1,
+            "name": "Manufacturing Bill of Material (mBOM)",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "property"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:inventory:hardware:sbom",
+            "domain": "Inventory",
+            "level": 1,
+            "name": "Service Bill of Material (sBOM)",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "property"
+            }
+        },
+
+
+
+
+
+        {
+            "id": "urn:owasp:scvs:bmm:inventory:software",
+            "domain": "Inventory",
+            "level": 1,
+            "name": "Software",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "class",
+                "extends": "urn:owasp:scvs:bmm:inventory"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:inventory:software:identity",
+            "domain": "Inventory",
+            "level": 1,
+            "name": "Identity",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "property",
+                "requires": "identity"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:inventory:software:provenance",
+            "domain": "Inventory",
+            "level": 1,
+            "name": "Identity",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "property",
+                "requires": "provenance"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:inventory:software:local",
+            "domain": "Inventory",
+            "level": 1,
+            "name": "Local",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "property"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:inventory:software:remote",
+            "domain": "Inventory",
+            "level": 1,
+            "name": "Remote",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "property"
+            }
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "id": "urn:owasp:scvs:bmm:pedigree",
+            "domain": "Pedigree",
+            "level": 2,
+            "name": "Pedigree",
+            "summary": "",
+            "description": "Data which describes the lineage for which software has been created or altered. Pedigree includes the ancestors, descendants, and variants which describe component lineage from any viewpoint and the commits, patches, and diffs which make a component unique. Maintaining accurate pedigree information is especially important with open source components whos source code is readily available, modifiable, and redistributable.",
+            "structure": {
+                "type": "base"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:pedigree:source",
+            "domain": "Pedigree",
+            "level": 2,
+            "name": "Source",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "class",
+                "extends": "urn:owasp:scvs:bmm:pedigree"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:pedigree:source:commits",
+            "domain": "Pedigree",
+            "element": "",
+            "level": 2,
+            "name": "Commits",
+            "summary": "The commit information made to version control systems which document the alterations made to a component",
+            "description": "",
+            "structure": {
+                "type": "property"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:pedigree:source:diffs",
+            "domain": "Pedigree",
+            "level": 2,
+            "name": "Diffs",
+            "summary": "The comparison between two components which describe the alteration delta",
+            "description": "",
+            "structure": {
+                "type": "property"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:pedigree:relationships",
+            "domain": "Pedigree",
+            "level": 2,
+            "name": "Relationships",
+            "summary": "",
+            "description": "The lineage describing how components are related",
+            "structure": {
+                "type": "class",
+                "extends": "urn:owasp:scvs:bmm:pedigree"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:pedigree:relationships:ancestors",
+            "domain": "Pedigree",
+            "level": 2,
+            "name": "Ancestors",
+            "summary": "",
+            "description": "Describes the origin component in which a component is derived from",
+            "structure": {
+                "type": "property",
+                "requires": "urn:owasp:scvs:bmm:inventory:resource:identity"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:pedigree:relationships:descendents",
+            "domain": "Pedigree",
+            "level": 2,
+            "name": "Descendents",
+            "summary": "",
+            "description": "Describes a component that is derived from an origin component",
+            "structure": {
+                "type": "property",
+                "requires": "urn:owasp:scvs:bmm:inventory:resource:identity"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:pedigree:relationships:variants",
+            "domain": "Pedigree",
+            "level": 2,
+            "name": "Variants",
+            "summary": "",
+            "description": "Describes an ancestral relationship where the precise lineage is not known",
+            "structure": {
+                "type": "property",
+                "requires": "urn:owasp:scvs:bmm:inventory:resource:identity"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:pedigree:resolves",
+            "domain": "Pedigree",
+            "level": 2,
+            "name": "Resolves",
+            "summary": "",
+            "description": "The purposes for modifying a component as documented in an Application Lifecycle Management (ALM) system or issue tracker",
+            "structure": {
+                "type": "class",
+                "extends": "urn:owasp:scvs:bmm:pedigree"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:pedigree:resolves:enhancement",
+            "domain": "Pedigree",
+            "level": 2,
+            "name": "Enhancement",
+            "summary": "",
+            "description": "The ALM ticket describing additional features or capabilities in a modified component",
+            "structure": {
+                "type": "property"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:pedigree:resolves:defect",
+            "domain": "Pedigree",
+            "level": 2,
+            "name": "Defect",
+            "summary": "",
+            "description": "The ALM ticket describing the defects that have been corrected in a modified component",
+            "structure": {
+                "type": "property"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:pedigree:resolves:security",
+            "domain": "Pedigree",
+            "level": 2,
+            "name": "Security",
+            "summary": "",
+            "description": "The ALM ticket describing the security changes that have been made in a modified component",
+            "structure": {
+                "type": "property"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:provenance",
+            "domain": "Provenance",
+            "level": 1,
+            "name": "Provenance",
+            "summary": "",
+            "description": "The traceability of all authorship, build, release, packaging, and distribution across the entire supply chain. Provenance may include individual and community authorship of software components, manufacturers, suppliers, software repositories, and country of origin. For high assurance applications, provenance plays an important role in determining Foreign Ownership, Control, or Influence (FOCI).",
+            "structure": {
+                "type": "base"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:provenance:repository",
+            "domain": "Provenance",
+            "level": 1,
+            "name": "Repository",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "class",
+                "extends": "urn:owasp:scvs:bmm:provenance"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:provenance:repository:package",
+            "domain": "Provenance",
+            "level": 1,
+            "name": "Package Repository",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "property"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:provenance:repository:arbitrary",
+            "domain": "Provenance",
+            "level": 1,
+            "name": "Arbitrary Repository",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "property"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:provenance:vcs",
+            "domain": "Provenance",
+            "level": 1,
+            "name": "Version Control System",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "property"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:provenance:ecosystem",
+            "domain": "Provenance",
+            "level": 1,
+            "name": "Ecosystem",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "property"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:provenance:supplier",
+            "domain": "Provenance",
+            "level": 1,
+            "name": "Supplier",
+            "summary": "",
+            "description": "",
+            "structure": {
+                "type": "class",
+                "extends": "urn:owasp:scvs:bmm:provenance"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:provenance:supplier:org",
+            "domain": "Provenance",
+            "level": 1,
+            "name": "",
+            "summary": "",
+            "description": "Corporate entities, companies, foundations, and other structured and formally recognized organizations",
+            "structure": {
+                "type": "property"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:provenance:supplier:non-org",
+            "domain": "Provenance",
+            "level": 1,
+            "name": "",
+            "summary": "",
+            "description": "Non-corporate entities such as individuals",
+            "structure": {
+                "type": "property"
+            }
+        },
+        {
+            "id": "urn:owasp:scvs:bmm:provenance:chaining",
+            "domain": "Provenance",
+            "level": 1,
+            "name": "Chaining",
+            "summary": "Chain of custody over time",
+            "description": "",
+            "structure": {
+                "type": "property",
+                "requires": "urn:owasp:scvs:bmm:provenance"
+            }
+        }
+    ]
+}
