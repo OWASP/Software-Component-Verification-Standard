@@ -1,4 +1,4 @@
-name: Build and deploy offline website
+name: Build and deploy website
 
 on:
   push:
@@ -26,9 +26,12 @@ jobs:
     env:
       CI: true
       WORKFLOW_GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Setup Action
-        uses: actions/checkout@v1
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Setup Node
         uses: actions/setup-node@v2.1.5
         with:
@@ -44,20 +47,11 @@ jobs:
           yarn run build
       - name: List generated files
         run: ls -al dist/
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          # Upload entire repository
           path: 'site/dist/'
       - name: Deploy to GitHub Pages
         id: deployment
