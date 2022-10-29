@@ -9,6 +9,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "gridsome": "^0.7.0"
   },
   "devDependencies": {
