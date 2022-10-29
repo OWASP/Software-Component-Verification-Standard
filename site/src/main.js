@@ -13,5 +13,9 @@ export default function (Vue, { router, head, isClient }) {
       content: process.env.GRIDSOME_BASE_PATH + to.path,
     })
     next()
-  })
+  });
+
+  Vue.config.errorHandler = function (err, vm, info) {
+    console.log(err, vm.$options);
+  };
 }
