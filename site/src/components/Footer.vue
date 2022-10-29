@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          © OWASP Foundation - SCVS is a <a id="owaspProject" href="https://owasp.org/scvs">OWASP Labs Project</a>
+          &copy; OWASP Foundation - SCVS is a <a id="owaspProject" href="https://owasp.org/scvs">OWASP Labs Project</a>
         </div>
       </div>
     </div>

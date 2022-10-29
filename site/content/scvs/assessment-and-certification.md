@@ -38,7 +38,3 @@ and accuracy. Some controls cannot be verified through automation. However, for 
 is encouraged if the results can be validated through other means.
 
 For higher levels of assurance controls may be independently validated using automated methods.
-
-<div style="page-break-after: always; visibility: hidden">
-\newpage
-</div>

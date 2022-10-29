@@ -50,12 +50,12 @@ query ($id: ID!) {
 </page-query>
 
 <script>
-import OnThisPage from '@/components/OnThisPage.vue';
+//import OnThisPage from '@/components/OnThisPage.vue';
 import NextPrevLinks from '@/components/NextPrevLinks.vue';
 
 export default {
   components: {
-    OnThisPage,
+    //OnThisPage,
     NextPrevLinks
   },
   

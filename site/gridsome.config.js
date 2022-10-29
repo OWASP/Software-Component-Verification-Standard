@@ -7,11 +7,10 @@
 module.exports = {
   siteName: 'SCVS',
   icon: {
-    favicon: './src/assets/favicon.ico',
     touchicon: './src/assets/favicon.png'
   },
   siteUrl: 'https://scvs.owasp.org',
-    settings: {
+  settings: {
     web: false,
     twitter: 'https://twitter.com/OWASP_SCVS',
     github: 'https://github.com/OWASP/Software-Component-Verification-Standard',
@@ -77,6 +76,7 @@ module.exports = {
       }
     },
 
+      /*
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
@@ -84,9 +84,11 @@ module.exports = {
       }
     },
 
+       */
+
     {
       use: '@gridsome/plugin-sitemap',
-      options: {  
+      options: {
       }
     }
 

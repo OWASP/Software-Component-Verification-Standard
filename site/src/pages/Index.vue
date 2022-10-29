@@ -2,10 +2,7 @@
   <Layout>
     <div class="pt-8 md:pt-16">
       <div class="flex flex-col items-center">
-        <div class="flex flex-col items-center mb-2 text-ui-primary">
-          <h2 class="text-3xl text-6xl font-black tracking-tighter border-none">
-          </h2>
-        </div>
+
         <h1 class="text-4xl text-center lg:text-5xl">
           Software Component Verification Standard
         </h1>
@@ -15,8 +12,8 @@
 
         <div class="flex justify-center mt-8">
           <g-link
-            to="/scvs/"
-            class="flex items-center px-6 py-4 ml-auto text-2xl font-bold leading-none text-white border rounded-lg shadow-lg bg-ui-primary border-ui-primary transition-all duration-200 ease-out transform hover:shadow-xl hover:-translate-y-1"
+              to="/scvs/"
+              class="flex items-center px-6 py-4 ml-auto text-2xl font-bold leading-none text-white border rounded-lg shadow-lg bg-ui-primary border-ui-primary transition-all duration-200 ease-out transform hover:shadow-xl hover:-translate-y-1"
           >
             Get started
             <ArrowRightCircleIcon class="ml-4" size="1x" />
@@ -43,7 +40,7 @@
             Layered Maturity
           </h3>
           <p class="text-lg text-left">
-           SCVS requirements are organized into three layers allowing organizations to gradually adopt and mature software supply chain assurance.
+            SCVS requirements are organized into three layers allowing organizations to gradually adopt and mature software supply chain assurance.
           </p>
         </div>
 
@@ -53,7 +50,7 @@
             Community Driven
           </h3>
           <p class="text-lg text-left">
-            With guidance from industry experts, SCVS is a community-driven <a class="border-b border-dashed border-ui-primary text-ui-primary" href="https://owasp.org/scvs">OWASP standard</a> which encourages active <a class="border-b border-dashed border-ui-primary text-ui-primary" href="/participate/">participation</a>.
+            With guidance from industry experts, SCVS is a community-driven <a class="border-b border-dashed border-ui-primary text-ui-primary" href="https://owasp.org/scvs">OWASP standard</a> which encourages active <g-link class="border-b border-dashed border-ui-primary text-ui-primary" to="/participate/">participation</g-link>.
           </p>
         </div>
 

@@ -37,7 +37,3 @@ risks.
 
 SCVS is designed to be implemented incrementally, and to allow organizations to
 phase in controls at different levels over time.
-
-<div style="page-break-after: always; visibility: hidden">
-\newpage
-</div>

@@ -27,21 +27,22 @@ jobs:
       CI: true
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://scvs.owasp.org
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Node
-        uses: actions/setup-node@v2.1.5
-        with:
-          node-version: 12.x
       - name: Setup Python
-        uses: actions/setup-python@v2.2.1
+        uses: actions/setup-python@v4
         with:
-          python-version: '2.x'
+          python-version: '2.7'
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
       - name: Run build script
         run: |
           cd site
+          node --version
           yarn install
           yarn run build
       - name: List generated files

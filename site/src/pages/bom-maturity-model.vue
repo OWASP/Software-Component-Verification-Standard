@@ -6,16 +6,7 @@
           <h1 class="text-4xl font-black border-none">
             BOM Maturity Model
           </h1>
-          <p>SCVS is developing a model in which bill of materials can be evaluated for a wide range of capabilities. The model will allow users to:
-          </p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-
+          <p>SCVS is developing a model in which bill of materials can be evaluated for a wide range of capabilities. The model will allow users to:</p>
         </div>
       </div>
     </div>

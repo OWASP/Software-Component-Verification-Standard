@@ -100,7 +100,3 @@ Once an organization has determined the current maturity baseline, it can determ
 and devise methods for which the controls can be implemented or verified through automation.
 
 Satisfying control requirements at a higher SCVS level may be more dependent on business process than available technical methods. 
-
-<div style="page-break-after: always; visibility: hidden">
-\newpage
-</div>

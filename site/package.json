@@ -10,9 +10,9 @@
     "gridsome": "^0.7.0"
   },
   "devDependencies": {
-    "@gridsome/plugin-google-analytics": "^0.1.0",
-    "@gridsome/plugin-sitemap": "^0.2.3",
-    "@gridsome/remark-prismjs": "^0.3.0",
+    "@gridsome/plugin-google-analytics": "^0.1.2",
+    "@gridsome/plugin-sitemap": "^0.4.0",
+    "@gridsome/remark-prismjs": "^0.5.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.5.0",
     "fuse.js": "^3.4.6",
@@ -21,6 +21,6 @@
     "prism-themes": "^1.3.0",
     "sass-loader": "^8.0.2",
     "tailwindcss": "^1.2.0",
-    "vue-feather-icons": "^5.0.0"
+    "vue-feather-icons": "^5.1.0"
   }
 }

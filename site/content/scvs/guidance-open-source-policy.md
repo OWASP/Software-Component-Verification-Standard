@@ -23,7 +23,3 @@ employing them. They are not part of SCVS.
   - Usage-based list of acceptable licenses
   - Prohibited components list
   - Mechanisms and permissions for providing modifications back to the community producing the component
-
-<div style="page-break-after: always; visibility: hidden">
-\newpage
-</div>

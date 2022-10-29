@@ -24,7 +24,3 @@ pedigree and provenance data for imported components.
 | **6.5** | Modified components are uniquely identified and distinct from origin component | | ✓ | ✓ |
 | **6.6** | Modified components are analyzed with the same level of precision as unmodified components | ✓ | ✓ | ✓ |
 | **6.7** | Risk unique to modified components can be analyzed and associated specifically to modified variant | ✓ | ✓ | ✓ |
-
-<div style="page-break-after: always; visibility: hidden">
-\newpage
-</div>
