@@ -90,5 +90,6 @@ module.exports = {
       }
     }
 
-  ]
+  ],
+  chainWebpack: config => config.mode('development')
 }
