@@ -10,7 +10,7 @@ module.exports = {
     favicon: './src/assets/favicon.ico',
     touchicon: './src/assets/favicon.png'
   },
-  siteUrl: (process.env.SITE_URL ? process.env.SITE_URL : 'https://scvs.owasp.org'),
+  siteUrl: 'https://scvs.owasp.org',
     settings: {
     web: false,
     twitter: 'https://twitter.com/OWASP_SCVS',
@@ -80,7 +80,7 @@ module.exports = {
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: (process.env.GA_ID ? process.env.GA_ID : 'XX-999999999-9')
+        id: 'G-08FW44EP0T'
       }
     },
 
