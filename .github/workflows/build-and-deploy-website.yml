@@ -46,7 +46,7 @@ jobs:
           yarn install
           yarn run build
       - name: List generated files
-        run: ls -al dist/
+        run: ls -al site/dist/
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
