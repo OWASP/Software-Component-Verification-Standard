@@ -1,15 +1,12 @@
 {
-  "name": "docs",
+  "name": "scvs.owasp.org",
   "private": true,
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d dist"
+    "explore": "gridsome explore"
   },
   "dependencies": {
-    "gh-pages": "^4.0.0",
     "gridsome": "^0.7.0"
   },
   "devDependencies": {
