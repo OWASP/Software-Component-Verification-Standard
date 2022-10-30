@@ -6,7 +6,7 @@
           <h1 class="text-4xl font-black border-none">
             Participation
           </h1>
-          <!--
+
           <p>Welcome to the community. SCVS encourages individual and corporate participation and is open to anyone with an interest in measuring and improving software software supply chain assurance.</p>
           <h3 class="text-1xl font-black border-none" style="margin-top:3rem">
             Slack
@@ -40,7 +40,7 @@
           <ul>
             <li><a class="border-b border-dashed border-ui-primary text-ui-primary" href="https://drive.google.com/file/d/1lS4oDgWFORbhobYfsdsG-T071sjMEmzn/view">Calendar Invite</a></li>
           </ul>
--->
+
         </div>
       </div>
     </div>
