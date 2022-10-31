@@ -1,11 +1,17 @@
-A starter documentation theme for [Gridsome](https://gridsome.org/).
+# SCVS Website
 
-## Installation
+This branch contains the source code for [https://scvs.owasp.org](https://scvs.owasp.org).
 
-If you have the Gridsome CLI installed, simply run:
+## Building for Development
 
-`gridsome create your-project https://github.com/mrcrmn/docc`
+```bash
+yarn install
+yarn run develop
+```
 
-## Documentation
+## Explore GraphQL Interface
 
-Documentation can be found [here](https://docc-theme.netlify.com/).
+```bash
+yarn install
+yarn run explore
+```
