@@ -35,6 +35,16 @@
         <Footer/>
     </div>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-08FW44EP0T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-08FW44EP0T');
+    </script>
+
     <div v-if="hasSidebar" class="fixed bottom-0 right-0 z-50 p-8 lg:hidden">
       <button class="p-3 text-white rounded-full shadow-lg bg-ui-primary hover:text-white" @click="sidebarOpen = ! sidebarOpen">
         <XIcon v-if="sidebarOpen" />
