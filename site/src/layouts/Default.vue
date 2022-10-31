@@ -109,7 +109,7 @@ export default {
         {
           key: 'twitter:card',
           name: 'twitter:card',
-          content: 'https://scvs.owasp.org/social-card.jpg',
+          content: 'summary_large_image',
         },
         {
           key: 'og:image',
@@ -124,7 +124,7 @@ export default {
         {
           key: 'twitter:site',
           name: 'twitter:site',
-          content: 'OWASP_SCVS',
+          content: '@OWASP_SCVS',
         }
       ]
     }
