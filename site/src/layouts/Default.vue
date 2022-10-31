@@ -114,12 +114,12 @@ export default {
         {
           key: 'og:image',
           name: 'og:image',
-          content: process.env.SITE_URL + '/logo.jpg',
+          content: process.env.SITE_URL + '/social-card.png',
         },
         {
           key: 'twitter:image',
           name: 'twitter:image',
-          content: process.env.SITE_URL + '/logo.jpg',
+          content: process.env.SITE_URL + '/social-card.png',
         },
       ]
     }
