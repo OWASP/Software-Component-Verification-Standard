@@ -7,6 +7,9 @@
             BOM Maturity Model
           </h1>
           <h3>Coming soon...</h3>
+
+          <p><br/></p>
+
           <p>SCVS is developing a model in which bill of materials can be evaluated for a wide range of capabilities. The model consists of:</p>
           <ul class="ml-10 list-disc">
             <li>a formal taxonomy of different types of data possible in a bill of materials, independent of BOM format</li>
@@ -14,12 +17,16 @@
             <li>the level of complexity or difficulty in supporting different types of data</li>
           </ul>
 
+          <p><br/></p>
+
           <p>The model can be used to evaluate:</p>
           <ul class="ml-10 list-disc">
             <li>Incoming BOMs adhere to organizational policy by supporting the data required by various stakeholders</li>
             <li>BOM generation and consumption tools</li>
             <li>Current and future BOM formats against each other and their alignment to organizational requirements</li>
           </ul>
+
+          <p><br/></p>
 
           <p>In addition to the taxonomy, the BOM Maturity Model also provides support for profiles, which group multiple
           items in the model together along with weighted importance and other metadata. Organizations may create multiple
