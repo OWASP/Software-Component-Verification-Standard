@@ -15,7 +15,7 @@
             The SCVS project utilizes the OWASP Slack workspace. Anyone interested in SCVS or software supply chain assurance is encouraged to participate.
           </p>
           <ul>
-            <li><a class="border-b border-dashed border-ui-primary text-ui-primary" href="https://owasp.slack.com/messages/project-scvs">#project-scvs</a></li>
+            <li><a class="border-b border-dashed border-ui-primary text-ui-primary" href="https://owasp.slack.com/channels/project-scvs">#project-scvs</a></li>
             <li><a class="border-b border-dashed border-ui-primary text-ui-primary" href="https://owasp.org/slack/invite">Invite</a></li>
           </ul>
 
