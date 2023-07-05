@@ -29,10 +29,11 @@
     '''
 
 import argparse
+from cyclonedx import CycloneDX
 from scvs import SCVS
 
 parser = argparse.ArgumentParser(description='Export the SCVS requirements.')
-parser.add_argument('--format', choices=['json', 'xml', 'csv'], default='json')
+parser.add_argument('--format', choices=['cdx_json', 'json', 'xml', 'csv'], default='cdx_json')
 
 args = parser.parse_args()
 
@@ -42,5 +43,9 @@ if args.format == "csv":
     print(m.to_csv())
 elif args.format == "xml":
     print(m.to_xml())
-else:
+elif args.format == "json":
     print(m.to_json())
+else:
+    model = m.to_raw_model()
+    cdx = CycloneDX(model)
+    print(cdx.to_json())
