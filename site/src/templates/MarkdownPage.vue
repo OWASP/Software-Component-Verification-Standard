@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :taxonomy="$page.markdownPage.sidebar === 'taxonomy'">
       <div class="flex flex-wrap items-start justify-start">
 
         <!--

@@ -1,0 +1,2088 @@
+[
+  {
+    "text": "Difficulty Levels",
+    "data": {
+      "id": "difficulty-levels",
+      "path": "/bom-maturity-model/difficulty-levels/"
+    },
+    "children": []
+  },
+  {
+    "text": "Support Levels",
+    "data": {
+      "id": "support-levels",
+      "path": "/bom-maturity-model/support-levels/"
+    },
+    "children": []
+  },
+  {
+    "text": "Taxonomy",
+    "data": {
+      "id": "urn:owasp:scvs:bom"
+    },
+    "children": [
+      {
+        "text": "Resource",
+        "data": {
+          "id": "urn:owasp:scvs:bom:resource",
+          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/"
+        },
+        "children": [
+          {
+            "text": "Software",
+            "data": {
+              "id": "urn:owasp:scvs:bom:resource:software",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/"
+            },
+            "children": [
+              {
+                "text": "Identity",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:software:identity",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/identity/"
+                },
+                "children": []
+              },
+              {
+                "text": "Local",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:software:local",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/local/"
+                },
+                "children": []
+              },
+              {
+                "text": "Remote",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:software:remote",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/remote/"
+                },
+                "children": []
+              },
+              {
+                "text": "Type",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:software:type",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/type/"
+                },
+                "children": []
+              },
+              {
+                "text": "Data",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:software:data",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/data/"
+                },
+                "children": [
+                  {
+                    "text": "Dataset",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:data:dataset",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/data/dataset/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Configuration",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:data:configuration",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/data/configuration/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Source Code",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:data:sourcecode",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/data/sourcecode/"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "text": "SBOM",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:software:sbom",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/sbom/"
+                },
+                "children": []
+              },
+              {
+                "text": "Mime Type",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:software:mimetype",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/mimetype/"
+                },
+                "children": []
+              },
+              {
+                "text": "Integrity",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:software:integrity",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/integrity/"
+                },
+                "children": [
+                  {
+                    "text": "Hash",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:integrity:hash",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/integrity/hash/"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "text": "Release Notes",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:software:releasenotes",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/releasenotes/"
+                },
+                "children": [
+                  {
+                    "text": "Release Type",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:releasenotes:type",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/releasenotes/type/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Title",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:releasenotes:title",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/releasenotes/title/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Featured Image",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:releasenotes:featuredimage",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/releasenotes/featuredimage/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Social Image",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:releasenotes:socialimage",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/releasenotes/socialimage/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "description",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:releasenotes:description",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/releasenotes/description/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Timestamp",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:releasenotes:timestamp",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/releasenotes/timestamp/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Aliases",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:releasenotes:aliases",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/releasenotes/aliases/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Tags",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:releasenotes:tags",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/releasenotes/tags/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Resolves",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:releasenotes:resolves",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/releasenotes/resolves/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Notes",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:releasenotes:notes",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/releasenotes/notes/"
+                    },
+                    "children": [
+                      {
+                        "text": "Locale",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:releasenotes:notes:locale",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/releasenotes/notes/locale/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "Text",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:releasenotes:notes:text",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/releasenotes/notes/text/"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "Evidence",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:software:evidence",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/evidence/"
+                },
+                "children": [
+                  {
+                    "text": "Identity",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:evidence:identity",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/evidence/identity/"
+                    },
+                    "children": [
+                      {
+                        "text": "Field",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:evidence:identity:field",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/evidence/identity/field/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "Confidence",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:evidence:identity:confidence",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/evidence/identity/confidence/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "Method",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:evidence:identity:method",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/evidence/identity/method/"
+                        },
+                        "children": [
+                          {
+                            "text": "Technique",
+                            "data": {
+                              "id": "urn:owasp:scvs:bom:resource:software:evidence:identity:method:technique",
+                              "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/evidence/identity/method/technique/"
+                            },
+                            "children": []
+                          },
+                          {
+                            "text": "Confidence",
+                            "data": {
+                              "id": "urn:owasp:scvs:bom:resource:software:evidence:identity:method:confidence",
+                              "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/evidence/identity/method/confidence/"
+                            },
+                            "children": []
+                          },
+                          {
+                            "text": "Value",
+                            "data": {
+                              "id": "urn:owasp:scvs:bom:resource:software:evidence:identity:method:value",
+                              "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/evidence/identity/method/value/"
+                            },
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Tools",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:evidence:identity:tools",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/evidence/identity/tools/"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Occurrences",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:evidence:occurrences",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/evidence/occurrences/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Callstack",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:evidence:callstack",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/evidence/callstack/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:evidence:licenses",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/evidence/licenses/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:evidence:copyrights",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/evidence/copyrights/"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "text": "Machine Learning",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:software:machinelearning",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/"
+                },
+                "children": [
+                  {
+                    "text": "",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/"
+                    },
+                    "children": [
+                      {
+                        "text": "",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:approach",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/approach/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:task",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/task/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:architectureFamily",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/architectureFamily/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:modelArchitecture",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/modelArchitecture/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:datasets",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/datasets/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:inputs",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/inputs/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:outputs",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/outputs/"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:machinelearning:quantitativeAnalysis",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/quantitativeAnalysis/"
+                    },
+                    "children": [
+                      {
+                        "text": "",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:machinelearning:quantitativeAnalysis:performanceMetrics",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/quantitativeAnalysis/performanceMetrics/"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/considerations/"
+                    },
+                    "children": [
+                      {
+                        "text": "",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:users",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/considerations/users/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:useCases",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/considerations/useCases/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:technicalLimitations",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/considerations/technicalLimitations/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:performanceTradeoffs",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/considerations/performanceTradeoffs/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:ethicalConsiderations",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/considerations/ethicalConsiderations/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:fairnessAssessments",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/considerations/fairnessAssessments/"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "Cryptography",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:software:cryptography",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/cryptography/"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "text": "Hardware",
+            "data": {
+              "id": "urn:owasp:scvs:bom:resource:hardware",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/"
+            },
+            "children": [
+              {
+                "text": "Identity",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:identity",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/identity/"
+                },
+                "children": []
+              },
+              {
+                "text": "Planning Bill of Material",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:plbom",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/plbom/"
+                },
+                "children": []
+              },
+              {
+                "text": "Procurement Bill of Material",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:prbom",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/prbom/"
+                },
+                "children": []
+              },
+              {
+                "text": "Engineering Bill of Material (eBOM)",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:ebom",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/ebom/"
+                },
+                "children": []
+              },
+              {
+                "text": "Manufacturing Bill of Material (mBOM)",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:mbom",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/mbom/"
+                },
+                "children": []
+              },
+              {
+                "text": "Service Bill of Material (sBOM)",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:sbom",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/sbom/"
+                },
+                "children": []
+              },
+              {
+                "text": "Quantity",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:quantity",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/quantity/"
+                },
+                "children": []
+              },
+              {
+                "text": "Function",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:function",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/function/"
+                },
+                "children": []
+              },
+              {
+                "text": "Location",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:location",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/location/"
+                },
+                "children": []
+              },
+              {
+                "text": "Device Type",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:deviceType",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/deviceType/"
+                },
+                "children": []
+              },
+              {
+                "text": "Serial Number",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:serialNumber",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/serialNumber/"
+                },
+                "children": []
+              },
+              {
+                "text": "SKU",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:sku",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/sku/"
+                },
+                "children": []
+              },
+              {
+                "text": "Lot Number",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:lotNumber",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/lotNumber/"
+                },
+                "children": []
+              },
+              {
+                "text": "Production Timestamp",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:prodTimestamp",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/prodTimestamp/"
+                },
+                "children": []
+              },
+              {
+                "text": "MAC Address",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:macAddress",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/macAddress/"
+                },
+                "children": []
+              },
+              {
+                "text": "Cerfications",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:certifications",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/certifications/"
+                },
+                "children": [
+                  {
+                    "text": "Country Code",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:hardware:certifications:countryCode",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/certifications/countryCode/"
+                    },
+                    "children": [
+                      {
+                        "text": "Authority",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:resource:hardware:certifications:countryCode:authority",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/certifications/countryCode/authority/"
+                        },
+                        "children": [
+                          {
+                            "text": "Authority Identifier",
+                            "data": {
+                              "id": "urn:owasp:scvs:bom:resource:hardware:certifications:countryCode:authority:id",
+                              "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/certifications/countryCode/authority/id/"
+                            },
+                            "children": []
+                          },
+                          {
+                            "text": "Authority URL",
+                            "data": {
+                              "id": "urn:owasp:scvs:bom:resource:hardware:certifications:countryCode:authority:url",
+                              "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/certifications/countryCode/authority/url/"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "GS1",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:hardware:gs1",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/"
+                },
+                "children": [
+                  {
+                    "text": "EPC RFID",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:epcRfid",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/epcRfid/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "GIAI",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:giai",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/giai/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "GLN",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:gln",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/gln/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "GMN",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:gmn",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/gmn/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "GTIN-8",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:gtin-8",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/gtin-8/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "GTIN-12",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:gtin-12",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/gtin-12/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "GTIN-13",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:gtin-13",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/gtin-13/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "GTIN-14",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:gtin-14",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/gtin-14/"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Service",
+            "data": {
+              "id": "urn:owasp:scvs:bom:resource:service",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/"
+            },
+            "children": [
+              {
+                "text": "Identity",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:service:identity",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/identity/"
+                },
+                "children": []
+              },
+              {
+                "text": "Provider",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:service:provider",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/provider/"
+                },
+                "children": []
+              },
+              {
+                "text": "name",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:service:name",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/name/"
+                },
+                "children": []
+              },
+              {
+                "text": "Version",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:service:version",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/version/"
+                },
+                "children": []
+              },
+              {
+                "text": "description",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:service:description",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/description/"
+                },
+                "children": []
+              },
+              {
+                "text": "Authentication",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:service:authn",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/authn/"
+                },
+                "children": [
+                  {
+                    "text": "Protocols",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:service:authn:protocols",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/authn/protocols/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Factors",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:service:authn:factors",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/authn/factors/"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "text": "Data",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:service:data",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/data/"
+                },
+                "children": [
+                  {
+                    "text": "Classification",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:service:data:classifications",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/data/classifications/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Flow",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:service:data:flow",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/data/flow/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "From",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:service:data:from",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/data/from/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "To",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:service:data:to",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/data/to/"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "text": "Configuration",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:service:configuration",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/configuration/"
+                },
+                "children": []
+              },
+              {
+                "text": "SBOM",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:service:sbom",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/sbom/"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "text": "",
+            "data": {
+              "id": "urn:owasp:scvs:bom:resource:identifiers",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/"
+            },
+            "children": [
+              {
+                "text": "Common Platform Enumeration (CPE)",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:identifiers:cpe",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/cpe/"
+                },
+                "children": []
+              },
+              {
+                "text": "Package URL",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:identifiers:purl",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/purl/"
+                },
+                "children": []
+              },
+              {
+                "text": "SWID",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:identifiers:swid",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/swid/"
+                },
+                "children": [
+                  {
+                    "text": "name",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:swid:name",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/swid/name/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Version",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:swid:version",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/swid/version/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Tag ID",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:swid:tagId",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/swid/tagId/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Tag Version",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:swid:tagVersion",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/swid/tagVersion/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Patch",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:swid:patch",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/swid/patch/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Software Creator Name",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:swid:softwareCreatorName",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/swid/softwareCreatorName/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Software Creator Reg ID",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:swid:softwareCreatorRegId",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/swid/softwareCreatorRegId/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Tag Creator Name",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:swid:tagCreatorName",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/swid/tagCreatorName/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Tag Creator Reg ID",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:swid:tagCreatorRegId",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/swid/tagCreatorRegId/"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "text": "Internal Product ID's",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:identifiers:internalproductids",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/internalproductids/"
+                },
+                "children": []
+              },
+              {
+                "text": "Serial Number",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:identifiers:serialnumber",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/serialnumber/"
+                },
+                "children": []
+              },
+              {
+                "text": "SKU",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:identifiers:sku",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/sku/"
+                },
+                "children": []
+              },
+              {
+                "text": "GS1 - GIAI",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:identifiers:giai",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/giai/"
+                },
+                "children": []
+              },
+              {
+                "text": "GS1 - GLM",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:identifiers:glm",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/glm/"
+                },
+                "children": []
+              },
+              {
+                "text": "GS1 - GTIN-*",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:identifiers:gtin",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/gtin/"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "text": "License",
+            "data": {
+              "id": "urn:owasp:scvs:bom:resource:license",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/license/"
+            },
+            "children": [
+              {
+                "text": "License Type",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:license:type",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/license/type/"
+                },
+                "children": []
+              },
+              {
+                "text": "License Identifier",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:license:identifier",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/license/identifier/"
+                },
+                "children": []
+              },
+              {
+                "text": "License Name",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:license:name",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/license/name/"
+                },
+                "children": []
+              },
+              {
+                "text": "License Text",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:license:text",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/license/text/"
+                },
+                "children": []
+              },
+              {
+                "text": "License Header",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:license:header",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/license/header/"
+                },
+                "children": []
+              },
+              {
+                "text": "License URL",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:license:url",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/license/url/"
+                },
+                "children": []
+              },
+              {
+                "text": "Licensing",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:resource:license:licensing",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/license/licensing/"
+                },
+                "children": [
+                  {
+                    "text": "Licensor",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:license:licensing:licensor",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/license/licensing/licensor/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Licensee",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:license:licensing:licensee",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/license/licensing/licensee/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Purchaser",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:license:licensing:purchaser",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/license/licensing/purchaser/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Purchase Order",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:license:licensing:purchaseOrder",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/license/licensing/purchaseOrder/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "License Type",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:license:licensing:licenseType",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/license/licensing/licenseType/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Last Renewal",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:license:licensing:lastRenewal",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/license/licensing/lastRenewal/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Expiration",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:license:licensing:expiration",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/license/licensing/expiration/"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Pedigree",
+        "data": {
+          "id": "urn:owasp:scvs:bom:pedigree",
+          "path": "/bom-maturity-model/urn/owasp/scvs/bom/pedigree/"
+        },
+        "children": [
+          {
+            "text": "Source",
+            "data": {
+              "id": "urn:owasp:scvs:bom:pedigree:source",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/pedigree/source/"
+            },
+            "children": [
+              {
+                "text": "Commits",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:pedigree:source:commits",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/pedigree/source/commits/"
+                },
+                "children": []
+              },
+              {
+                "text": "Diffs",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:pedigree:source:diffs",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/pedigree/source/diffs/"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "text": "Relationships",
+            "data": {
+              "id": "urn:owasp:scvs:bom:pedigree:relationships",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/pedigree/relationships/"
+            },
+            "children": [
+              {
+                "text": "Ancestors",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:pedigree:relationships:ancestors",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/pedigree/relationships/ancestors/"
+                },
+                "children": []
+              },
+              {
+                "text": "Descendents",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:pedigree:relationships:descendents",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/pedigree/relationships/descendents/"
+                },
+                "children": []
+              },
+              {
+                "text": "Variants",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:pedigree:relationships:variants",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/pedigree/relationships/variants/"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "text": "Resolves",
+            "data": {
+              "id": "urn:owasp:scvs:bom:pedigree:resolves",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/pedigree/resolves/"
+            },
+            "children": [
+              {
+                "text": "Enhancement",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:pedigree:resolves:enhancement",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/pedigree/resolves/enhancement/"
+                },
+                "children": []
+              },
+              {
+                "text": "Defect",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:pedigree:resolves:defect",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/pedigree/resolves/defect/"
+                },
+                "children": []
+              },
+              {
+                "text": "Security",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:pedigree:resolves:security",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/pedigree/resolves/security/"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Provenance",
+        "data": {
+          "id": "urn:owasp:scvs:bom:provenance",
+          "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/"
+        },
+        "children": [
+          {
+            "text": "Repository",
+            "data": {
+              "id": "urn:owasp:scvs:bom:provenance:storage",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/storage/"
+            },
+            "children": [
+              {
+                "text": "Package Repository",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:provenance:storage:repository",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/storage/repository/"
+                },
+                "children": []
+              },
+              {
+                "text": "Arbitrary Repository",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:provenance:storage:arbitrary",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/storage/arbitrary/"
+                },
+                "children": []
+              },
+              {
+                "text": "BOM Repository",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:provenance:storage:bom",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/storage/bom/"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "text": "Version Control System",
+            "data": {
+              "id": "urn:owasp:scvs:bom:provenance:vcs",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/vcs/"
+            },
+            "children": []
+          },
+          {
+            "text": "Ecosystem",
+            "data": {
+              "id": "urn:owasp:scvs:bom:provenance:ecosystem",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/ecosystem/"
+            },
+            "children": []
+          },
+          {
+            "text": "Supplier",
+            "data": {
+              "id": "urn:owasp:scvs:bom:provenance:supplier",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/supplier/"
+            },
+            "children": [
+              {
+                "text": "Organizational Entity",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:provenance:supplier:org",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/supplier/org/"
+                },
+                "children": []
+              },
+              {
+                "text": "Non-Organizational Entity",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:provenance:supplier:non-org",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/supplier/non-org/"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "text": "Manufacturer",
+            "data": {
+              "id": "urn:owasp:scvs:bom:provenance:manufacturer",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/manufacturer/"
+            },
+            "children": []
+          },
+          {
+            "text": "Supplier",
+            "data": {
+              "id": "urn:owasp:scvs:bom:provenance:supplier",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/supplier/"
+            },
+            "children": []
+          },
+          {
+            "text": "Publisher",
+            "data": {
+              "id": "urn:owasp:scvs:bom:provenance:publisher",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/publisher/"
+            },
+            "children": []
+          },
+          {
+            "text": "Author",
+            "data": {
+              "id": "urn:owasp:scvs:bom:provenance:author",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/author/"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "text": "Formulation",
+        "data": {
+          "id": "urn:owasp:scvs:bom:formulation",
+          "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/"
+        },
+        "children": [
+          {
+            "text": "Formula",
+            "data": {
+              "id": "urn:owasp:scvs:bom:formulation:formula",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/"
+            },
+            "children": [
+              {
+                "text": "Resource",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:formulation:formula:resource",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/resource/"
+                },
+                "children": [
+                  {
+                    "text": "Components",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:formulation:formula:resource:components",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/resource/components/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Services",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:formulation:formula:resource:services",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/resource/services/"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "text": "Workflows",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:formulation:formula:workflows",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/"
+                },
+                "children": [
+                  {
+                    "text": "Tasks",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/tasks/"
+                    },
+                    "children": [
+                      {
+                        "text": "Task Type",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:taskType",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/tasks/taskType/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "Trigger",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:trigger",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/tasks/trigger/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "Steps",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:steps",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/tasks/steps/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "Inputs",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:inputs",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/tasks/inputs/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "Outputs",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:outputs",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/tasks/outputs/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "Time Started",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:timeStart",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/tasks/timeStart/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "Time Ended",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:timeEnd",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/tasks/timeEnd/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "Workspaces",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:workspaces",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/tasks/workspaces/"
+                        },
+                        "children": []
+                      },
+                      {
+                        "text": "Runtime Topology",
+                        "data": {
+                          "id": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:runtimeTopology",
+                          "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/tasks/runtimeTopology/"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Tasks",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/tasks/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Task Types",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:formulation:formula:workflows:taskTypes",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/taskTypes/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Trigger",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:formulation:formula:workflows:trigger",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/trigger/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Steps",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:formulation:formula:workflows:steps",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/steps/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Inputs",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:formulation:formula:workflows:inputs",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/inputs/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Outputs",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:formulation:formula:workflows:outputs",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/outputs/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Time Started",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:formulation:formula:workflows:timeStart",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/timeStart/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Time Ended",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:formulation:formula:workflows:timeEnd",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/timeEnd/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Workspaces",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:formulation:formula:workflows:workspaces",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/workspaces/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Runtime Topology",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:formulation:formula:workflows:runtimeTopology",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/formulation/formula/workflows/runtimeTopology/"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "",
+    "data": {
+      "id": "",
+      "path": "/bom-maturity-model//"
+    },
+    "children": [
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      },
+      {
+        "text": "",
+        "data": {
+          "id": "",
+          "path": "/bom-maturity-model//"
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "text": "",
+    "data": {
+      "id": "urn:owasp:scvs:bom:security:cryptography",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/security/cryptography/"
+    },
+    "children": []
+  },
+  {
+    "text": "",
+    "data": {
+      "id": "urn:owasp:scvs:bom:security:authn",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/security/authn/"
+    },
+    "children": []
+  },
+  {
+    "text": "",
+    "data": {
+      "id": "urn:owasp:scvs:bom:security:authz",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/security/authz/"
+    },
+    "children": []
+  },
+  {
+    "text": "Chain of Custody",
+    "data": {
+      "id": "urn:owasp:scvs:bom:provenance:ledger:chaining",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/ledger/chaining/"
+    },
+    "children": []
+  },
+  {
+    "text": "",
+    "data": {
+      "id": "urn:owasp:scvs:bom:provenance:ledger:transparencylog",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/ledger/transparencylog/"
+    },
+    "children": []
+  },
+  {
+    "text": "Version Control System",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:vcs",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/vcs/"
+    },
+    "children": []
+  },
+  {
+    "text": "Issue Tracker",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:issueTracker",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/issueTracker/"
+    },
+    "children": []
+  },
+  {
+    "text": "Website",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:website",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/website/"
+    },
+    "children": []
+  },
+  {
+    "text": "Security Advisories",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:advisories",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/advisories/"
+    },
+    "children": []
+  },
+  {
+    "text": "Bill of Materials",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:bom",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/bom/"
+    },
+    "children": []
+  },
+  {
+    "text": "Mailing List",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:mailingList",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/mailingList/"
+    },
+    "children": []
+  },
+  {
+    "text": "Social Media Account",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:social",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/social/"
+    },
+    "children": []
+  },
+  {
+    "text": "Chat",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:chat",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/chat/"
+    },
+    "children": []
+  },
+  {
+    "text": "Documentation",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:documentation",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/documentation/"
+    },
+    "children": []
+  },
+  {
+    "text": "Support",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:support",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/support/"
+    },
+    "children": []
+  },
+  {
+    "text": "Distribution",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:distribution",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/distribution/"
+    },
+    "children": []
+  },
+  {
+    "text": "Distribution Intake",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:distributionIntake",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/distributionIntake/"
+    },
+    "children": []
+  },
+  {
+    "text": "",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:buildMeta",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/buildMeta/"
+    },
+    "children": []
+  },
+  {
+    "text": "",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:buildSystem",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/buildSystem/"
+    },
+    "children": []
+  },
+  {
+    "text": "Security Contact",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:securityContact",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/securityContact/"
+    },
+    "children": []
+  },
+  {
+    "text": "Attestation",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:attestation",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/attestation/"
+    },
+    "children": []
+  },
+  {
+    "text": "Threat Model",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:threatModel",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/threatModel/"
+    },
+    "children": []
+  },
+  {
+    "text": "Vulnerability Assertion",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:vulnerabilityAssertion",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/vulnerabilityAssertion/"
+    },
+    "children": []
+  },
+  {
+    "text": "Exploitability Statement",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:exploitabilityStatement",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/exploitabilityStatement/"
+    },
+    "children": []
+  },
+  {
+    "text": "Pentest Report",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:pentestReport",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/pentestReport/"
+    },
+    "children": []
+  },
+  {
+    "text": "Static Analysis Report",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:staticAnalysisReport",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/staticAnalysisReport/"
+    },
+    "children": []
+  },
+  {
+    "text": "Dynamic Analysis Report",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:dynamicAnalysisReport",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/dynamicAnalysisReport/"
+    },
+    "children": []
+  },
+  {
+    "text": "Runtime Analysis Report",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:runtimeAnalysisReport",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/runtimeAnalysisReport/"
+    },
+    "children": []
+  },
+  {
+    "text": "Component Analysis Report",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:componentAnalysisReport",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/componentAnalysisReport/"
+    },
+    "children": []
+  },
+  {
+    "text": "Maturity Report",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:maturityReport",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/maturityReport/"
+    },
+    "children": []
+  },
+  {
+    "text": "Certification Report",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:certificationReport",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/certificationReport/"
+    },
+    "children": []
+  },
+  {
+    "text": "Quality Metrics",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:qualityMetrics",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/qualityMetrics/"
+    },
+    "children": []
+  },
+  {
+    "text": "Codified Infrastructure",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:codifiedInfrastructure",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/codifiedInfrastructure/"
+    },
+    "children": []
+  },
+  {
+    "text": "Risk Assessment",
+    "data": {
+      "id": "urn:owasp:scvs:bom:resource:references:riskAssessment",
+      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/references/riskAssessment/"
+    },
+    "children": []
+  }
+]

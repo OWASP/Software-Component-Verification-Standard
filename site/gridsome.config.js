@@ -48,7 +48,7 @@ module.exports = {
   },
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
+      use: '@gridsome/source-filesystem-scvs',
       options: {
         baseDir: './content',
         path: '**/*.md',

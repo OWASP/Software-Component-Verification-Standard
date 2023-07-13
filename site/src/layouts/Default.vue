@@ -18,7 +18,10 @@
           :class="{ 'open': sidebarOpen }"
           :style="sidebarStyle"
         >
-          <div class="w-full pb-16 bg-ui-background">
+          <div v-if="taxonomy === true" class="w-full pb-16 bg-ui-background">
+            <TaxonomyTree />
+          </div>
+          <div v-else class="w-full pb-16 bg-ui-background">
             <Sidebar @navigate="sidebarOpen = false" />
           </div>
         </aside>
@@ -54,6 +57,7 @@ query {
 
 <script>
 import Sidebar from "@/components/Sidebar";
+import TaxonomyTree from "../components/TaxonomyTree";
 import LayoutHeader from "@/components/LayoutHeader";
 import Footer from "@/components/Footer";
 import { MenuIcon, XIcon } from 'vue-feather-icons';
@@ -61,15 +65,19 @@ import { MenuIcon, XIcon } from 'vue-feather-icons';
 export default {
   components: {
     Sidebar,
+    TaxonomyTree,
     LayoutHeader,
     Footer,
     MenuIcon,
     XIcon
   },
+  props: {
+    taxonomy: Boolean
+  },
   data() {
     return {
       headerHeight: 0,
-      sidebarOpen: false,
+      sidebarOpen: false
     }
   },
   watch: {
@@ -92,7 +100,7 @@ export default {
       }
     },
     hasSidebar() {
-      return this.$page && this.headerHeight > 0;
+      return (this.$page && this.headerHeight > 0) || this.taxonomy === true;
     }
   },
   mounted() {
@@ -135,7 +143,7 @@ export default {
 <style lang="scss">
 :root {
   --color-ui-background: theme('colors.white');
-  --color-ui-typo: theme('colors.gray.700');
+  --color-ui-typo: theme('colors.gray.800');
   --color-ui-sidebar: theme('colors.gray.200');
   --color-ui-border: theme('colors.gray.300');
   --color-ui-primary: #007BE3;

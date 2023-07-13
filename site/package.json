@@ -2,12 +2,15 @@
   "name": "scvs.owasp.org",
   "private": true,
   "scripts": {
+    "generate-bmm": "node src/scripts/generateSideBar.js",
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.0"
+    "gridsome": "0.7.23",
+    "liquor-tree": "0.2.70",
+    "@gridsome/source-filesystem-scvs": "file:../packages/source-filesystem"
   },
   "devDependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.2",
