@@ -71,6 +71,7 @@ class FilesystemSource {
       // can be represented in a hierarchy using a directory structure.
       if (options.path.indexOf("urn-owasp-scvs") !== -1) {
         options.path = options.path.replace(/-/g, '/').replace(/bom\/maturity\/model/g, 'bom-maturity-model')
+        console.log("Adding node: " + options.path)
       }
       // END MODIFICATION
       const node = this.collection.addNode(options)
