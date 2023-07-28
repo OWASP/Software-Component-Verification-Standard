@@ -67,11 +67,10 @@ class FilesystemSource {
       // BEGIN MODIFICATION
       // Unique items in the taxonomy are identified as URNs. However, the colons in the URN are slugified and the colons
       // are replaced with '-'. Colons in the URL are not possible with Vue Router and the minus sign doesn't represent
-      // the structure of a taxonomy well. Therefore, the following lines replace the '-' with '/' so that the taxonomy
+      // the structure of a taxonomy well. Therefore, the following lines replace the ':' with '/' so that the taxonomy
       // can be represented in a hierarchy using a directory structure.
       if (options.path.indexOf("urn-owasp-scvs") !== -1) {
-        options.path = options.path.replace(/-/g, '/').replace(/bom\/maturity\/model/g, 'bom-maturity-model')
-        console.log("Adding node: " + options.path)
+        options.path = '/' + options.fileInfo.directory.replace(/:/g, '/') + '/'
       }
       // END MODIFICATION
       const node = this.collection.addNode(options)
