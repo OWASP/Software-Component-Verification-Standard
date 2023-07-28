@@ -12,6 +12,7 @@ function transformJSON(json, basePath = '')  {
     function createDirectory(dirPath) {
         if (!fs.existsSync(dirPath)) {
             fs.mkdirSync(dirPath);
+            console.log("Created " + dirPath)
         }
     }
 
@@ -152,11 +153,16 @@ sidebar: 'taxonomy'
     return transformedJSON;
 }
 
-const jsonString = fs.readFileSync("../BOM_Maturity_Model/bmm-taxonomy.json");
+console.log("Reading BOM Maturity Model Taxonomy")
+const jsonString = fs.readFileSync("../BOM_Maturity_Model/bom-maturity-model-1.0.0-beta.1.json");
+console.log("Parsing BOM Maturity Model Taxonomy")
 const originalJSON = JSON.parse(jsonString);
 
 // Transform the JSON
+console.log("Transforming BOM Maturity Model Taxonomy into Markdown and Sidebar Navigation")
 const transformedJSON = transformJSON(originalJSON, "content/bom-maturity-model");
 
 const transformedJSONString = JSON.stringify(transformedJSON, null, 2);
-fs.writeFileSync('src/components/sidebar-tree.json', transformedJSONString)
+let sidebarJson = 'src/components/sidebar-tree.json'
+console.log("Writing the sidebar navigation to " + sidebarJson)
+fs.writeFileSync(sidebarJson, transformedJSONString)

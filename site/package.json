@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "generate-bmm": "node src/scripts/generateSideBar.js",
-    "build": "gridsome build",
+    "build": "node src/scripts/generateSideBar.js && gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
