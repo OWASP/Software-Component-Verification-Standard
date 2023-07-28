@@ -4,7 +4,7 @@
       BOM Maturity Model v1.0 Beta 1
     </h3>
     <ClientOnly>
-      <LiquorTree class="text-ui-primary"
+      <LiquorTree class="text-ui-typo"
                   :data="treeData"
                   @node:selected="onNodeSelected" />
     </ClientOnly>
@@ -50,7 +50,7 @@ ul.tree-children {
   transition: unset;
 }
 span.tree-anchor {
-  @apply text-ui-primary;
+  @apply text-ui-typo;
   margin: 0;
   padding: 0;
 }
@@ -62,7 +62,13 @@ li.tree-node.selected > div.tree-content {
   background-color: inherit;
   @apply border-ui-border;
 }
+.tree-node.selected > .tree-content > .tree-anchor {
+  @apply text-ui-primary;
+}
 li.tree-node:not(.selected) > div.tree-content:hover {
-  background-color: #2D3748 !important;
+  background-color: var(--color-ui-sidebar) !important;
+}
+span.tree-anchor:hover {
+  @apply text-ui-primary;
 }
 </style>

@@ -77,6 +77,8 @@ query Search {
         id
         path
         title
+        description
+        content
         headings {
         	depth
           value
@@ -108,14 +110,12 @@ export default {
   computed: {
     results() {
       const fuse = new Fuse(this.headings, {
-        keys: ['value'],
+        keys: ['value', 'description', 'content'],
         threshold: .25
       });
-
       return fuse.search(this.query).slice(0, 15);
     },
     headings() {
-      console.log(this.$static.allMarkdownPage.edges);
       let result = [];
       const allPages = this.$static.allMarkdownPage.edges.map(edge => edge.node);
 
@@ -125,11 +125,12 @@ export default {
           result.push({
             ...heading,
             path: page.path,
-            title: page.title
+            title: page.title,
+            description: page.description,
+            content: page.content
           });
         });
       });
-
       return result;
     },
     showResult() {

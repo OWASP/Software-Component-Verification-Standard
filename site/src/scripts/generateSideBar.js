@@ -37,6 +37,10 @@ function transformJSON(json, basePath = '')  {
             }
         }
 
+        if (!model.kingdom) {
+            model.kingdom = ''; // Set to an empty string for display purposes
+        }
+
         return `---
 title: BOM Maturity Model - ${model.name} (${model.identifier})
 description: ${model.summary}
@@ -49,6 +53,7 @@ sidebar: 'taxonomy'
 |---|---|
 | **Identifier**: | \`${model.identifier}\` |
 | **Domain**: | ${model.domain} |
+| **Kingdom**: | ${model.kingdom} |
 | **Name**: | ${model.name} |
 | **Summary**: | ${model.summary} |
 | **Description**: | ${model.description} |
@@ -114,9 +119,7 @@ sidebar: 'taxonomy'
             text: model.name,
             data: {
                 id: model.identifier,
-                //path: `/bom-maturity-model/${model.identifier}/`
-                //path: `/bom-maturity-model/${model.identifier}/`.replace(/:/g, '-'),
-                path: `/bom-maturity-model/${model.identifier}/`.replace(/:/g, '/'),
+                path: `/bom-maturity-model/${model.identifier}/`.replace(/:/g, '/')
             },
             children: [],
         };

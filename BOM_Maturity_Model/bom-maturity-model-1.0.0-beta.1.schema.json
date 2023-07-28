@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://scvs.owasp.org/bom-maturity-model-1.0.0-beta.1.schema.json",
+  "type": "object",
+  "title": "OWASP SCVS BOM Maturity Model",
+  "$comment" : "The OWASP SCVS BOM Maturity Model JSON schema is published under the terms of the Apache License 2.0.",
+  "required": [
+    "model"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "enum": [
+        "https://scvs.owasp.org/bom-maturity-model-1.0.0-beta.1.schema.json"
+      ]
+    },
+    "model": {"$ref": "#/definitions/model_type"}
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "structure_type": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "examples": ["property"],
+          "default": ""
+        }
+      },
+      "additionalProperties": false
+    },
+    "references_type": {
+      "type": "array",
+      "minItems": 0,
+      "additionalItems": false
+    },
+    "model_type": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "properties": {
+          "identifier": {
+            "type": "string",
+            "examples": ["urn:owasp:scvs:bom:resource"]
+          },
+          "domain": {
+            "type": "string",
+            "examples": ["Resource"]
+          },
+          "kingdom": {
+            "type": "string"
+          },
+          "difficulty": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string",
+            "examples": ["Resource"]
+          },
+          "structure": {"$ref": "#/definitions/structure_type"},
+          "summary": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "references": {"$ref": "#/definitions/references_type"},
+          "Structure / Type": {
+            "type": "string",
+            "examples": ["property (array)"]
+          }
+        },
+        "required": [
+          "difficulty",
+          "summary",
+          "identifier",
+          "references",
+          "domain",
+          "name",
+          "description"
+        ],
+        "additionalProperties": false
+      },
+      "additionalItems": false
+    }
+  }
+}

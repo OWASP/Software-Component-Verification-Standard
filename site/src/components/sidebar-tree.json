@@ -109,10 +109,10 @@
                 "children": []
               },
               {
-                "text": "Mime Type",
+                "text": "Media Type",
                 "data": {
-                  "id": "urn:owasp:scvs:bom:resource:software:mimetype",
-                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/mimetype/"
+                  "id": "urn:owasp:scvs:bom:resource:software:mediatype",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/mediatype/"
                 },
                 "children": []
               },
@@ -209,6 +209,14 @@
                     "data": {
                       "id": "urn:owasp:scvs:bom:resource:software:releasenotes:resolves",
                       "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/releasenotes/resolves/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "Known Issues",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:software:releasenotes:knownIssues",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/releasenotes/knownIssues/"
                     },
                     "children": []
                   },
@@ -329,7 +337,7 @@
                     "children": []
                   },
                   {
-                    "text": "",
+                    "text": "Licenses",
                     "data": {
                       "id": "urn:owasp:scvs:bom:resource:software:evidence:licenses",
                       "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/evidence/licenses/"
@@ -337,7 +345,7 @@
                     "children": []
                   },
                   {
-                    "text": "",
+                    "text": "Copyrights",
                     "data": {
                       "id": "urn:owasp:scvs:bom:resource:software:evidence:copyrights",
                       "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/evidence/copyrights/"
@@ -354,14 +362,14 @@
                 },
                 "children": [
                   {
-                    "text": "",
+                    "text": "Model Parameters",
                     "data": {
                       "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters",
                       "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/"
                     },
                     "children": [
                       {
-                        "text": "",
+                        "text": "Approach",
                         "data": {
                           "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:approach",
                           "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/approach/"
@@ -369,7 +377,7 @@
                         "children": []
                       },
                       {
-                        "text": "",
+                        "text": "Task",
                         "data": {
                           "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:task",
                           "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/task/"
@@ -377,7 +385,7 @@
                         "children": []
                       },
                       {
-                        "text": "",
+                        "text": "Architecture Family",
                         "data": {
                           "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:architectureFamily",
                           "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/architectureFamily/"
@@ -385,7 +393,7 @@
                         "children": []
                       },
                       {
-                        "text": "",
+                        "text": "Model Architecture",
                         "data": {
                           "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:modelArchitecture",
                           "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/modelArchitecture/"
@@ -393,7 +401,7 @@
                         "children": []
                       },
                       {
-                        "text": "",
+                        "text": "Datasets",
                         "data": {
                           "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:datasets",
                           "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/datasets/"
@@ -401,7 +409,7 @@
                         "children": []
                       },
                       {
-                        "text": "",
+                        "text": "Inputs",
                         "data": {
                           "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:inputs",
                           "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/inputs/"
@@ -409,7 +417,7 @@
                         "children": []
                       },
                       {
-                        "text": "",
+                        "text": "Outputs",
                         "data": {
                           "id": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:outputs",
                           "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/modelParameters/outputs/"
@@ -419,14 +427,14 @@
                     ]
                   },
                   {
-                    "text": "",
+                    "text": "Quantitative Analysis",
                     "data": {
                       "id": "urn:owasp:scvs:bom:resource:software:machinelearning:quantitativeAnalysis",
                       "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/quantitativeAnalysis/"
                     },
                     "children": [
                       {
-                        "text": "",
+                        "text": "Performance Metrics",
                         "data": {
                           "id": "urn:owasp:scvs:bom:resource:software:machinelearning:quantitativeAnalysis:performanceMetrics",
                           "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/quantitativeAnalysis/performanceMetrics/"
@@ -436,14 +444,14 @@
                     ]
                   },
                   {
-                    "text": "",
+                    "text": "Considerations",
                     "data": {
                       "id": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations",
                       "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/considerations/"
                     },
                     "children": [
                       {
-                        "text": "",
+                        "text": "Users",
                         "data": {
                           "id": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:users",
                           "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/considerations/users/"
@@ -451,7 +459,7 @@
                         "children": []
                       },
                       {
-                        "text": "",
+                        "text": "Use Cases",
                         "data": {
                           "id": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:useCases",
                           "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/considerations/useCases/"
@@ -459,7 +467,7 @@
                         "children": []
                       },
                       {
-                        "text": "",
+                        "text": "Technical Limitations",
                         "data": {
                           "id": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:technicalLimitations",
                           "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/considerations/technicalLimitations/"
@@ -467,7 +475,7 @@
                         "children": []
                       },
                       {
-                        "text": "",
+                        "text": "Performance Tradeoffs",
                         "data": {
                           "id": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:performanceTradeoffs",
                           "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/considerations/performanceTradeoffs/"
@@ -475,7 +483,7 @@
                         "children": []
                       },
                       {
-                        "text": "",
+                        "text": "Ethical Considerations",
                         "data": {
                           "id": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:ethicalConsiderations",
                           "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/considerations/ethicalConsiderations/"
@@ -483,7 +491,7 @@
                         "children": []
                       },
                       {
-                        "text": "",
+                        "text": "Fairness Assessments",
                         "data": {
                           "id": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:fairnessAssessments",
                           "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/machinelearning/considerations/fairnessAssessments/"
@@ -493,14 +501,6 @@
                     ]
                   }
                 ]
-              },
-              {
-                "text": "Cryptography",
-                "data": {
-                  "id": "urn:owasp:scvs:bom:resource:software:cryptography",
-                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/software/cryptography/"
-                },
-                "children": []
               }
             ]
           },
@@ -618,8 +618,8 @@
               {
                 "text": "Production Timestamp",
                 "data": {
-                  "id": "urn:owasp:scvs:bom:resource:hardware:prodTimestamp",
-                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/prodTimestamp/"
+                  "id": "urn:owasp:scvs:bom:resource:hardware:productionTimestamp",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/productionTimestamp/"
                 },
                 "children": []
               },
@@ -632,7 +632,7 @@
                 "children": []
               },
               {
-                "text": "Cerfications",
+                "text": "Certifications",
                 "data": {
                   "id": "urn:owasp:scvs:bom:resource:hardware:certifications",
                   "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/certifications/"
@@ -673,79 +673,6 @@
                     ]
                   }
                 ]
-              },
-              {
-                "text": "GS1",
-                "data": {
-                  "id": "urn:owasp:scvs:bom:resource:hardware:gs1",
-                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/"
-                },
-                "children": [
-                  {
-                    "text": "EPC RFID",
-                    "data": {
-                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:epcRfid",
-                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/epcRfid/"
-                    },
-                    "children": []
-                  },
-                  {
-                    "text": "GIAI",
-                    "data": {
-                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:giai",
-                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/giai/"
-                    },
-                    "children": []
-                  },
-                  {
-                    "text": "GLN",
-                    "data": {
-                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:gln",
-                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/gln/"
-                    },
-                    "children": []
-                  },
-                  {
-                    "text": "GMN",
-                    "data": {
-                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:gmn",
-                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/gmn/"
-                    },
-                    "children": []
-                  },
-                  {
-                    "text": "GTIN-8",
-                    "data": {
-                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:gtin-8",
-                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/gtin-8/"
-                    },
-                    "children": []
-                  },
-                  {
-                    "text": "GTIN-12",
-                    "data": {
-                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:gtin-12",
-                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/gtin-12/"
-                    },
-                    "children": []
-                  },
-                  {
-                    "text": "GTIN-13",
-                    "data": {
-                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:gtin-13",
-                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/gtin-13/"
-                    },
-                    "children": []
-                  },
-                  {
-                    "text": "GTIN-14",
-                    "data": {
-                      "id": "urn:owasp:scvs:bom:resource:hardware:gs1:gtin-14",
-                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/hardware/gs1/gtin-14/"
-                    },
-                    "children": []
-                  }
-                ]
               }
             ]
           },
@@ -773,7 +700,7 @@
                 "children": []
               },
               {
-                "text": "name",
+                "text": "Name",
                 "data": {
                   "id": "urn:owasp:scvs:bom:resource:service:name",
                   "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/name/"
@@ -789,7 +716,7 @@
                 "children": []
               },
               {
-                "text": "description",
+                "text": "Description",
                 "data": {
                   "id": "urn:owasp:scvs:bom:resource:service:description",
                   "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/description/"
@@ -829,7 +756,7 @@
                 },
                 "children": [
                   {
-                    "text": "Classification",
+                    "text": "Classifications",
                     "data": {
                       "id": "urn:owasp:scvs:bom:resource:service:data:classifications",
                       "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/service/data/classifications/"
@@ -881,7 +808,7 @@
             ]
           },
           {
-            "text": "",
+            "text": "Identifiers",
             "data": {
               "id": "urn:owasp:scvs:bom:resource:identifiers",
               "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/"
@@ -1009,28 +936,77 @@
                 "children": []
               },
               {
-                "text": "GS1 - GIAI",
+                "text": "GS1",
                 "data": {
-                  "id": "urn:owasp:scvs:bom:resource:identifiers:giai",
-                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/giai/"
+                  "id": "urn:owasp:scvs:bom:resource:identifiers:gs1",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/gs1/"
                 },
-                "children": []
-              },
-              {
-                "text": "GS1 - GLM",
-                "data": {
-                  "id": "urn:owasp:scvs:bom:resource:identifiers:glm",
-                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/glm/"
-                },
-                "children": []
-              },
-              {
-                "text": "GS1 - GTIN-*",
-                "data": {
-                  "id": "urn:owasp:scvs:bom:resource:identifiers:gtin",
-                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/gtin/"
-                },
-                "children": []
+                "children": [
+                  {
+                    "text": "EPC RFID",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:gs1:epcRfid",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/gs1/epcRfid/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "GIAI",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:gs1:giai",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/gs1/giai/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "GLN",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:gs1:gln",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/gs1/gln/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "GMN",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:gs1:gmn",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/gs1/gmn/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "GTIN-8",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:gs1:gtin-8",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/gs1/gtin-8/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "GTIN-12",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:gs1:gtin-12",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/gs1/gtin-12/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "GTIN-13",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:gs1:gtin-13",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/gs1/gtin-13/"
+                    },
+                    "children": []
+                  },
+                  {
+                    "text": "GTIN-14",
+                    "data": {
+                      "id": "urn:owasp:scvs:bom:resource:identifiers:gs1:gtin-14",
+                      "path": "/bom-maturity-model/urn/owasp/scvs/bom/resource/identifiers/gs1/gtin-14/"
+                    },
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -1340,6 +1316,31 @@
             ]
           },
           {
+            "text": "Ledger",
+            "data": {
+              "id": "urn:owasp:scvs:bom:provenance:ledger",
+              "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/ledger/"
+            },
+            "children": [
+              {
+                "text": "Chain of Custody",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:provenance:ledger:chaining",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/ledger/chaining/"
+                },
+                "children": []
+              },
+              {
+                "text": "Transparency Log",
+                "data": {
+                  "id": "urn:owasp:scvs:bom:provenance:ledger:transparencylog",
+                  "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/ledger/transparencylog/"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
             "text": "Manufacturer",
             "data": {
               "id": "urn:owasp:scvs:bom:provenance:manufacturer",
@@ -1593,263 +1594,6 @@
     "data": {
       "id": "",
       "path": "/bom-maturity-model//"
-    },
-    "children": [
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      },
-      {
-        "text": "",
-        "data": {
-          "id": "",
-          "path": "/bom-maturity-model//"
-        },
-        "children": []
-      }
-    ]
-  },
-  {
-    "text": "",
-    "data": {
-      "id": "urn:owasp:scvs:bom:security:cryptography",
-      "path": "/bom-maturity-model/urn/owasp/scvs/bom/security/cryptography/"
-    },
-    "children": []
-  },
-  {
-    "text": "",
-    "data": {
-      "id": "urn:owasp:scvs:bom:security:authn",
-      "path": "/bom-maturity-model/urn/owasp/scvs/bom/security/authn/"
-    },
-    "children": []
-  },
-  {
-    "text": "",
-    "data": {
-      "id": "urn:owasp:scvs:bom:security:authz",
-      "path": "/bom-maturity-model/urn/owasp/scvs/bom/security/authz/"
-    },
-    "children": []
-  },
-  {
-    "text": "Chain of Custody",
-    "data": {
-      "id": "urn:owasp:scvs:bom:provenance:ledger:chaining",
-      "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/ledger/chaining/"
-    },
-    "children": []
-  },
-  {
-    "text": "",
-    "data": {
-      "id": "urn:owasp:scvs:bom:provenance:ledger:transparencylog",
-      "path": "/bom-maturity-model/urn/owasp/scvs/bom/provenance/ledger/transparencylog/"
     },
     "children": []
   },

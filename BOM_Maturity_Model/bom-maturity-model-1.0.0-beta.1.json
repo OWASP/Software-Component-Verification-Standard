@@ -1,0 +1,2680 @@
+{
+  "$schema": "https://scvs.owasp.org/bom-maturity-model-1.0.0-beta.1.schema.json",
+  "model": [
+    {
+      "identifier": "urn:owasp:scvs:bom:resource",
+      "domain": "Resource",
+      "kingdom": "",
+      "difficulty": 1,
+      "name": "Resource",
+      "structure": {
+        "type": "base"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Software",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "Class describing a software resource",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:identity",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Identity",
+      "Structure / Type": "property (array)",
+      "summary": "Properties describing the unique identity of software component",
+      "description": "Properties which assert the identity of BOM components in order to facilitate risk association. Assertions may include a single occurance of one or more identifer types assigned from different domains.",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:local",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Local",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "An instance of software intended to be installed or deployed to a computing device",
+      "description": "Identifies a localized instance of a software, hardware, or data component with customized configurations and subsets of components from the distributed packaging.",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:remote",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Remote",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "An instance of software that must be retrieved, on-demand, at runtime",
+      "description": "Identifies a remotely reposited software artifact for distribution.",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:type",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Type",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The class or scope which describes the form or function of the software",
+      "description": "An abstract classification of a reusable component that indicates its scope of use and assists with separation of concerns.",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:data",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Data",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:data:dataset",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Dataset",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Reference to dataset",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:data:configuration",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Configuration",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Referene to, or actual configuration supplied to the software",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:data:sourcecode",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Source Code",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Reference to, or actual source code",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:sbom",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "SBOM",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Reference to an external Software Bill of Materials for the software",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:mediatype",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Media Type",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:integrity",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Integrity",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "Values which can be used to verify the integrity of components",
+      "description": "Represents values that may be used to independently verify (software) components have not been tampered with.",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:integrity:hash",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Hash",
+      "Structure / Type": "property (array)",
+      "summary": "Using existing ciphers",
+      "description": "A unique numerical value which identifies the contents of a file after being processed through a cryptographic algorithm.",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:releasenotes",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Release Notes",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:releasenotes:type",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Release Type",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Specifies the type of release including major, minor, patch, and pre-release",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:releasenotes:title",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Title",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The title of the release",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:releasenotes:featuredimage",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Featured Image",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:releasenotes:socialimage",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Social Image",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:releasenotes:description",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "description",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:releasenotes:timestamp",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Timestamp",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:releasenotes:aliases",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Aliases",
+      "Structure / Type": "property (array)",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:releasenotes:tags",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Tags",
+      "Structure / Type": "property (array)",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:releasenotes:resolves",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Resolves",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:releasenotes:knownIssues",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Known Issues",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:releasenotes:notes",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Notes",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:releasenotes:notes:locale",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Locale",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:releasenotes:notes:text",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Text",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:evidence",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": "",
+      "name": "Evidence",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "Provides the ability to document evidence collected through various forms of extraction or analysis.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:evidence:identity",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Identity",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "Evidence that substantiates the identity of a component.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:evidence:identity:field",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Field",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The identity field of the component which the evidence describes.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:evidence:identity:confidence",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Confidence",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "The overall confidence of the evidence",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:evidence:identity:method",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Method",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "The methods used to extract and/or analyze the evidence.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:evidence:identity:method:technique",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Technique",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The technique used in this method of analysis.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:evidence:identity:method:confidence",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Confidence",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The confidence of the evidence. Confidence is specific to the technique used. Each technique of analysis can have independent confidence.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:evidence:identity:method:value",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Value",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The value or contents of the evidence.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:evidence:identity:tools",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Tools",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The tool(s) used during the analysis",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:evidence:occurrences",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Occurrences",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Evidence of individual instances of a component spread across multiple locations.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:evidence:callstack",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 3,
+      "name": "Callstack",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Evidence of the components use through the callstack.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:evidence:licenses",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Licenses",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:evidence:copyrights",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Copyrights",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Machine Learning",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "Class describing a machine learning resource",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Model Parameters",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:approach",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Approach",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:task",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Task",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:architectureFamily",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Architecture Family",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:modelArchitecture",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Model Architecture",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:datasets",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Datasets",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:inputs",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Inputs",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:modelParameters:outputs",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 1,
+      "name": "Outputs",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:quantitativeAnalysis",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Quantitative Analysis",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:quantitativeAnalysis:performanceMetrics",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 2,
+      "name": "Performance Metrics",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 3,
+      "name": "Considerations",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:users",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 3,
+      "name": "Users",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:useCases",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 3,
+      "name": "Use Cases",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:technicalLimitations",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 3,
+      "name": "Technical Limitations",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:performanceTradeoffs",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 3,
+      "name": "Performance Tradeoffs",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:ethicalConsiderations",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 3,
+      "name": "Ethical Considerations",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:software:machinelearning:considerations:fairnessAssessments",
+      "domain": "Resource",
+      "kingdom": "Software",
+      "difficulty": 3,
+      "name": "Fairness Assessments",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 1,
+      "name": "Hardware",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "Class describing a hardware resource",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:identity",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 1,
+      "name": "Identity",
+      "Structure / Type": "property (array)",
+      "summary": "Properties describing the precise identity of hardware",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:plbom",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 3,
+      "name": "Planning Bill of Material",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Reference to a Planning Bill of Materials",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:prbom",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 3,
+      "name": "Procurement Bill of Material",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Reference to a Procurement Bill of Materials",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:ebom",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 3,
+      "name": "Engineering Bill of Material (eBOM)",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Reference to an Engineering Bill of Materials",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:mbom",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 3,
+      "name": "Manufacturing Bill of Material (mBOM)",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Reference to a Manufacturing Bill of Materials",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:sbom",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 3,
+      "name": "Service Bill of Material (sBOM)",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Reference to a Service Bill of Materials",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:quantity",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 1,
+      "name": "Quantity",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The total number of the specified component.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:function",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 2,
+      "name": "Function",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The purpose of the component (Bluetooth, network, storage, microprocessor, connector, etc)",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:location",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 2,
+      "name": "Location",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The location on the board or related daughter-boards where the device exists.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:deviceType",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 1,
+      "name": "Device Type",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The type of component such as SMD, thru-hole, etc",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:serialNumber",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 1,
+      "name": "Serial Number",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Unique identifier using serial number if available",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:sku",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 1,
+      "name": "SKU",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Internal inventory reference if available",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:lotNumber",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 1,
+      "name": "Lot Number",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Lot or batch identification for the component",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:productionTimestamp",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 1,
+      "name": "Production Timestamp",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Production timestamp for the component",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:macAddress",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 1,
+      "name": "MAC Address",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Hardware address for network interfaces",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:certifications",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 2,
+      "name": "Certifications",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "Certifications",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:certifications:countryCode",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 2,
+      "name": "Country Code",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "ISO-3166-1 alpha-2 country code of a certifying authority",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:certifications:countryCode:authority",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 2,
+      "name": "Authority",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Abbreviation of the certifying authority (e.g. FCC, UL, and CE)",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:certifications:countryCode:authority:id",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 2,
+      "name": "Authority Identifier",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Identifier for radio components.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:certifications:countryCode:authority:url",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 2,
+      "name": "Authority URL",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "URL to certification details.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 2,
+      "name": "Service",
+      "structure": {
+        "type": "base"
+      },
+      "summary": "Class describing a service resource",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service:identity",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 2,
+      "name": "Identity",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Properties describing the identity of the service",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service:provider",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 2,
+      "name": "Provider",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The provider of the service",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service:name",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 2,
+      "name": "Name",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The name of the service",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service:version",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 2,
+      "name": "Version",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The version of the service",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service:description",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 2,
+      "name": "Description",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "A description of the service",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service:authn",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 2,
+      "name": "Authentication",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "Class describing the authentication parameters required by the service",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service:authn:protocols",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 2,
+      "name": "Protocols",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The authentication protocols supported by the service",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service:authn:factors",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 2,
+      "name": "Factors",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The multiple factors supported by the service",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service:data",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 2,
+      "name": "Data",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "Class describing the data",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service:data:classifications",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 3,
+      "name": "Classifications",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The data classifications supported by the service",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service:data:flow",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 2,
+      "name": "Flow",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The directional flow of data to and from the service",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service:data:from",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 2,
+      "name": "From",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The source pushing inbound data to the service",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service:data:to",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 2,
+      "name": "To",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The destination that the service pushes data to",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service:configuration",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 3,
+      "name": "Configuration",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The configuration supplied to the service",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:service:sbom",
+      "domain": "Resource",
+      "kingdom": "Service",
+      "difficulty": 2,
+      "name": "SBOM",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Reference to an external Software Bill of Materials for the service",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree",
+      "domain": "Pedigree",
+      "kingdom": null,
+      "difficulty": 2,
+      "name": "Pedigree",
+      "structure": {
+        "type": "base"
+      },
+      "summary": "",
+      "description": "Data which describes the lineage for which software has been created or altered. Pedigree includes the ancestors, descendants, and variants which describe component lineage from any viewpoint and the commits, patches, and diffs which make a component unique. Maintaining accurate pedigree information is especially important with open source components whos source code is readily available, modifiable, and redistributable.",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:source",
+      "domain": "Pedigree",
+      "kingdom": "Source",
+      "difficulty": 2,
+      "name": "Source",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:source:commits",
+      "domain": "Pedigree",
+      "kingdom": "Source",
+      "difficulty": 2,
+      "name": "Commits",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The commit information made to version control systems which document the alterations made to a component",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:source:diffs",
+      "domain": "Pedigree",
+      "kingdom": "Source",
+      "difficulty": 2,
+      "name": "Diffs",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The comparison between two components which describe the alteration delta",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:relationships",
+      "domain": "Pedigree",
+      "kingdom": "Relationships",
+      "difficulty": 2,
+      "name": "Relationships",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "The lineage describing how components are related",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:relationships:ancestors",
+      "domain": "Pedigree",
+      "kingdom": "Relationships",
+      "difficulty": 2,
+      "name": "Ancestors",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Describes the origin component in which a component is derived from",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:relationships:descendents",
+      "domain": "Pedigree",
+      "kingdom": "Relationships",
+      "difficulty": 2,
+      "name": "Descendents",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Describes a component that is derived from an origin component",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:relationships:variants",
+      "domain": "Pedigree",
+      "kingdom": "Relationships",
+      "difficulty": 2,
+      "name": "Variants",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Describes an ancestral relationship where the precise lineage is not known",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:resolves",
+      "domain": "Pedigree",
+      "kingdom": "Resolves",
+      "difficulty": 3,
+      "name": "Resolves",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "The purposes for modifying a component as documented in an ALM",
+      "description": "The purposes for modifying a component as documented in an Application Lifecycle Management (ALM) system or issue tracker",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:resolves:enhancement",
+      "domain": "Pedigree",
+      "kingdom": "Resolves",
+      "difficulty": 3,
+      "name": "Enhancement",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The ALM ticket describing additional features or capabilities in a modified component",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:resolves:defect",
+      "domain": "Pedigree",
+      "kingdom": "Resolves",
+      "difficulty": 3,
+      "name": "Defect",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The ALM ticket describing the defects that have been corrected in a modified component",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:resolves:security",
+      "domain": "Pedigree",
+      "kingdom": "Resolves",
+      "difficulty": 3,
+      "name": "Security",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The ALM ticket describing the security changes that have been made in a modified component",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance",
+      "domain": "Provenance",
+      "kingdom": null,
+      "difficulty": 1,
+      "name": "Provenance",
+      "structure": {
+        "type": "base"
+      },
+      "summary": "The traceability of all authorship, build, release, packaging, and distribution across the entire supply chain.",
+      "description": "Provenance may include individual and community authorship of software components, manufacturers, suppliers, software repositories, and country of origin. For high assurance applications, provenance plays an important role in determining Foreign Ownership, Control, or Influence (FOCI).",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:storage",
+      "domain": "Provenance",
+      "kingdom": "Storage",
+      "difficulty": 1,
+      "name": "Repository",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "A network locatable service that stores artifacts",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:storage:repository",
+      "domain": "Provenance",
+      "kingdom": "Storage",
+      "difficulty": 1,
+      "name": "Package Repository",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "A service that stores software packages using a formal structure",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:storage:arbitrary",
+      "domain": "Provenance",
+      "kingdom": "Storage",
+      "difficulty": 1,
+      "name": "Arbitrary Repository",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "A service that stores data objects",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:storage:bom",
+      "domain": "Provenance",
+      "kingdom": "Storage",
+      "difficulty": 1,
+      "name": "BOM Repository",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "A service that stores Bills of Materials",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:vcs",
+      "domain": "Provenance",
+      "difficulty": 1,
+      "name": "Version Control System",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "A category of software tools that records changes made to files by keeping track of all modifications",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:ecosystem",
+      "domain": "Provenance",
+      "difficulty": 1,
+      "name": "Ecosystem",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "An ecosystem of components that add extra functionality to core installation functions",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:supplier",
+      "domain": "Provenance",
+      "difficulty": 1,
+      "name": "Supplier",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "The organization that supplied the component. The supplier may often be the manufacturer, but may also be a distributor or repackager.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:supplier:org",
+      "domain": "Provenance",
+      "difficulty": 2,
+      "name": "Organizational Entity",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "Corporate entities, companies, foundations, and other structured and formally recognized organizations",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:supplier:non-org",
+      "domain": "Provenance",
+      "difficulty": 2,
+      "name": "Non-Organizational Entity",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "Non-corporate entities such as individuals",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:ledger",
+      "domain": "Provenance",
+      "difficulty": 3,
+      "name": "Ledger",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:ledger:chaining",
+      "domain": "Provenance",
+      "difficulty": 3,
+      "name": "Chain of Custody",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Chain ledger? Discuss.",
+      "description": "Chain of custody over time",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:ledger:transparencylog",
+      "domain": "Provenance",
+      "difficulty": "",
+      "name": "Transparency Log",
+      "Structure / Type": "property",
+      "summary": "See https://securitytrails.com/blog/what-are-certificate-transparency-logs for examples",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:manufacturer",
+      "domain": "Provenance",
+      "difficulty": 2,
+      "name": "Manufacturer",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The entity that built the software",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:supplier",
+      "domain": "Provenance",
+      "difficulty": 1,
+      "name": "Supplier",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The entity which packages the software for distribution",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:publisher",
+      "domain": "Provenance",
+      "difficulty": 2,
+      "name": "Publisher",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The entity which makes available the software for public distribution",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:author",
+      "domain": "Provenance",
+      "difficulty": 2,
+      "name": "Author",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The entities who contributed to writing the software",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "",
+      "domain": "",
+      "difficulty": "",
+      "name": "",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers",
+      "domain": "Resource",
+      "difficulty": "",
+      "name": "Identifiers",
+      "structure": {
+        "type": "abstract"
+      },
+      "summary": "Properties describing the unique identity of BOM component",
+      "description": "Properties which assert the identity of BOM components in order to facilitate risk association. Assertions may include a single occurance of one or more identifer types assigned from different domains.",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:cpe",
+      "domain": "Resource",
+      "difficulty": 3,
+      "name": "Common Platform Enumeration (CPE)",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "CPE is a structured naming scheme for information technology systems, software, and packages.",
+      "description": "CPE is a structured naming scheme for information technology systems, software, and packages. Based upon the generic syntax for Uniform Resource Identifiers (URI), CPE includes a formal name format, a method for checking names against a system, and a description format for binding text and tests to a name. The CPE standard and official dictionary are maintained by NIST.",
+      "references": [
+        {
+          "title": "Official Common Platform Enumeration (CPE) Dictionary",
+          "url": "https://nvd.nist.gov/products/cpe"
+        }
+      ]
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:purl",
+      "domain": "Resource",
+      "difficulty": 1,
+      "name": "Package URL",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "SWID",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "",
+      "description": "ISO-IEC 19770-2 Software Identification (SWID) tags",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:name",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "name",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "name as defined in the SWID SoftwareIdentity element",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:version",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Version",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "version as defined in the SWID SoftwareIdentity element",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:tagId",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Tag ID",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "tagId as defined in the SWID SoftwareIdentity element",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:tagVersion",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Tag Version",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "tagVersion as defined in the SWID SoftwareIdentity element",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:patch",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Patch",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "patch as defined in the SWID SoftwareIdentity element",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:softwareCreatorName",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Software Creator Name",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "name of the entity with a role of softwareCreator",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:softwareCreatorRegId",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Software Creator Reg ID",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "regid of the entity with a role of softwareCreator",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:tagCreatorName",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Tag Creator Name",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "If the tag creator is different from the software creator, tagCreatorName should be specified",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:tagCreatorRegId",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Tag Creator Reg ID",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "If the tag creator is different from the software creator, tagCreatorRegId should be specified",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:internalproductids",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Internal Product ID's",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:serialnumber",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Serial Number",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:sku",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "SKU",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1",
+      "domain": "Resource",
+      "kingdom": "Identifiers",
+      "difficulty": 2,
+      "name": "GS1",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "GS1 Standards",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:epcRfid",
+      "domain": "Resource",
+      "kingdom": "Identifiers",
+      "difficulty": 2,
+      "name": "EPC RFID",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Electronic Product Code - RFID (EPC Tag Data Standard)",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:giai",
+      "domain": "Resource",
+      "kingdom": "Identifiers",
+      "difficulty": 2,
+      "name": "GIAI",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Global Individual Asset Identifier (GIAI)",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:gln",
+      "domain": "Resource",
+      "kingdom": "Identifiers",
+      "difficulty": 2,
+      "name": "GLN",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Global Location Number (GLN)",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:gmn",
+      "domain": "Resource",
+      "kingdom": "Identifiers",
+      "difficulty": 2,
+      "name": "GMN",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Global Model Number (GMN)",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:gtin-8",
+      "domain": "Resource",
+      "kingdom": "Identifiers",
+      "difficulty": 2,
+      "name": "GTIN-8",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Global Trade Identification Number (GTIN-8 / EAN/UCC-8)",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:gtin-12",
+      "domain": "Resource",
+      "kingdom": "Identifiers",
+      "difficulty": 2,
+      "name": "GTIN-12",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Global Trade Identification Number (GTIN-12 / UPC-A)",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:gtin-13",
+      "domain": "Resource",
+      "kingdom": "Identifiers",
+      "difficulty": 2,
+      "name": "GTIN-13",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Global Trade Identification Number (GTIN-13 / EAN/UCC-13)",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:gtin-14",
+      "domain": "Resource",
+      "kingdom": "Identifiers",
+      "difficulty": 2,
+      "name": "GTIN-14",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Global Trade Identification Number (GTIN / EAN/UCC-14 or ITF-14)",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:license",
+      "domain": "Resource",
+      "difficulty": 1,
+      "name": "License",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:license:type",
+      "domain": "Resource",
+      "difficulty": 1,
+      "name": "License Type",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:license:identifier",
+      "domain": "Resource",
+      "difficulty": 1,
+      "name": "License Identifier",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:license:name",
+      "domain": "Resource",
+      "difficulty": 1,
+      "name": "License Name",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:license:text",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "License Text",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:license:header",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "License Header",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:license:url",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "License URL",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:license:licensing",
+      "domain": "Resource",
+      "difficulty": "",
+      "name": "Licensing",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:license:licensing:licensor",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Licensor",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The individual or organization that grants a license to another individual or organization",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:license:licensing:licensee",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Licensee",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The individual or organization for which a license was granted to",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:license:licensing:purchaser",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Purchaser",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The individual or organization that purchased the license",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:license:licensing:purchaseOrder",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Purchase Order",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The purchase order identifier the purchaser sent to a supplier or vendor to authorize a purchase",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:license:licensing:licenseType",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "License Type",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The type of license(s) that was granted to the licensee",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:license:licensing:lastRenewal",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Last Renewal",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The timestamp indicating when the license was last renewed.",
+      "description": "The timestamp indicating when the license was last renewed. For new purchases, this is often the purchase or acquisition date. For non-perpetual licenses or subscriptions, this is the timestamp of when the license was last renewed.",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:license:licensing:expiration",
+      "domain": "Resource",
+      "difficulty": 2,
+      "name": "Expiration",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The timestamp indicating when the current license expires (if applicable).",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation",
+      "domain": "Formulation",
+      "difficulty": "3",
+      "name": "Formulation",
+      "Structure / Type": "class",
+      "summary": "Declared and observed formulations for precise reproducibility",
+      "description": "A collection of formulas, each describing how a component or service was manufactured or deployed.",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Formula",
+      "Structure / Type": "",
+      "summary": "Describes how a component or service was manufactured or deployed.",
+      "description": "Describes how a component or service was manufactured or deployed. This is achieved through the use of formulas, workflows, tasks, and steps, which declare the precise steps to reproduce along with the observed formulas describing the steps which transpired in the manufacturing process.",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:resource",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Resource",
+      "Structure / Type": "class",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:resource:components",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Components",
+      "Structure / Type": "",
+      "summary": "Transient components that are used in tasks that constitute one or more of this formula's workflows",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:resource:services",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Services",
+      "Structure / Type": "",
+      "summary": "Transient services that are used in tasks that constitute one or more of this formula's workflows",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Workflows",
+      "Structure / Type": "",
+      "summary": "List of workflows that can be declared to accomplish specific orchestrated goals and independently triggered.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Tasks",
+      "Structure / Type": "",
+      "summary": "The tasks that comprise the workflow.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:taskType",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Task Type",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:trigger",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Trigger",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:steps",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Steps",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:inputs",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Inputs",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:outputs",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Outputs",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:timeStart",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Time Started",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:timeEnd",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Time Ended",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:workspaces",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Workspaces",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks:runtimeTopology",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Runtime Topology",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Tasks",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:taskTypes",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Task Types",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:trigger",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Trigger",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:steps",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Steps",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:inputs",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Inputs",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:outputs",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Outputs",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:timeStart",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Time Started",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:timeEnd",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Time Ended",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:workspaces",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Workspaces",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:runtimeTopology",
+      "domain": "Formulation",
+      "difficulty": 3,
+      "name": "Runtime Topology",
+      "Structure / Type": "",
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:vcs",
+      "domain": "",
+      "difficulty": 1,
+      "name": "Version Control System",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:issueTracker",
+      "domain": "",
+      "difficulty": 1,
+      "name": "Issue Tracker",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Issue or defect tracking system, or an Application Lifecycle Management (ALM) system",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:website",
+      "domain": "",
+      "difficulty": 1,
+      "name": "Website",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:advisories",
+      "domain": "",
+      "difficulty": 2,
+      "name": "Security Advisories",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:bom",
+      "domain": "",
+      "difficulty": 2,
+      "name": "Bill of Materials",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Bill-of-materials (SBOM, OBOM, HBOM, SaaSBOM, etc)",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:mailingList",
+      "domain": "",
+      "difficulty": 2,
+      "name": "Mailing List",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Mailing list or discussion group",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:social",
+      "domain": "",
+      "difficulty": 2,
+      "name": "Social Media Account",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:chat",
+      "domain": "",
+      "difficulty": 2,
+      "name": "Chat",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Real-time chat platform",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:documentation",
+      "domain": "",
+      "difficulty": 2,
+      "name": "Documentation",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Documentation, guides, or how-to instructions",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:support",
+      "domain": "",
+      "difficulty": 2,
+      "name": "Support",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Community or commercial support",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:distribution",
+      "domain": "",
+      "difficulty": 1,
+      "name": "Distribution",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Direct or repository download location",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:distributionIntake",
+      "domain": "",
+      "difficulty": 1,
+      "name": "Distribution Intake",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The location where a component was published to.",
+      "description": "The location where a component was published to. This is often the same as \"distribution\" but may also include specialized publishing processes that act as an intermediary",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:buildMeta",
+      "domain": "",
+      "difficulty": "",
+      "name": "",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:buildSystem",
+      "domain": "",
+      "difficulty": "",
+      "name": "",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:securityContact",
+      "domain": "",
+      "difficulty": 2,
+      "name": "Security Contact",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Specifies a way to contact the maintainer, supplier, or provider in the event of a security incident.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:attestation",
+      "domain": "",
+      "difficulty": 3,
+      "name": "Attestation",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Human or machine-readable statements containing facts, evidence, or testimony",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:threatModel",
+      "domain": "",
+      "difficulty": 3,
+      "name": "Threat Model",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "An enumeration of identified weaknesses, threats, and countermeasures, dataflow diagram (DFD), attack tree, and other supporting documentation in human-readable or machine-readable format",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:vulnerabilityAssertion",
+      "domain": "",
+      "difficulty": 2,
+      "name": "Vulnerability Assertion",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "A Vulnerability Disclosure Report (VDR) which asserts the known and previously unknown vulnerabilities that affect a component, service, or product including the analysis and findings describing the impact (or lack of impact) that the reported vulnerability has on a component, service, or product.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:exploitabilityStatement",
+      "domain": "",
+      "difficulty": 3,
+      "name": "Exploitability Statement",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "A Vulnerability Exploitability eXchange (VEX) which asserts the known vulnerabilities that do not affect a product, product family, or organization, and optionally the ones that do. The VEX should include the analysis and findings describing the impact (or lack of impact) that the reported vulnerability has on the product, product family, or organization.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:pentestReport",
+      "domain": "",
+      "difficulty": 3,
+      "name": "Pentest Report",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Results from an authorized simulated cyberattack on a component or service, otherwise known as a penetration test",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:staticAnalysisReport",
+      "domain": "",
+      "difficulty": 2,
+      "name": "Static Analysis Report",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "SARIF or proprietary machine or human-readable report for which static analysis has identified code quality, security, and other potential issues with the source code",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:dynamicAnalysisReport",
+      "domain": "",
+      "difficulty": 2,
+      "name": "Dynamic Analysis Report",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Dynamic analysis report that has identified issues such as vulnerabilities and misconfigurations",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:runtimeAnalysisReport",
+      "domain": "",
+      "difficulty": 2,
+      "name": "Runtime Analysis Report",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Report generated by analyzing the call stack of a running application",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:componentAnalysisReport",
+      "domain": "",
+      "difficulty": 2,
+      "name": "Component Analysis Report",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Report generated by Software Composition Analysis (SCA), container analysis, or other forms of component analysis",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:maturityReport",
+      "domain": "",
+      "difficulty": 3,
+      "name": "Maturity Report",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Report containing a formal assessment of an organization, business unit, or team against a maturity model",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:certificationReport",
+      "domain": "",
+      "difficulty": 3,
+      "name": "Certification Report",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Industry, regulatory, or other certification from an accredited (if applicable) certification body",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:qualityMetrics",
+      "domain": "",
+      "difficulty": 2,
+      "name": "Quality Metrics",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Report or system in which quality metrics can be obtained",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:codifiedInfrastructure",
+      "domain": "",
+      "difficulty": 2,
+      "name": "Codified Infrastructure",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Code or configuration that defines and provisions virtualized infrastructure, commonly referred to as Infrastructure as Code (IaC)",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:riskAssessment",
+      "domain": "",
+      "difficulty": 3,
+      "name": "Risk Assessment",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    }
+  ]
+}
