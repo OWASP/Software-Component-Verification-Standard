@@ -4,7 +4,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource",
       "domain": "Resource",
-      "kingdom": "",
+      "kingdom": null,
       "difficulty": 1,
       "name": "Resource",
       "structure": {
@@ -1202,381 +1202,9 @@
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:pedigree",
-      "domain": "Pedigree",
-      "kingdom": null,
-      "difficulty": 2,
-      "name": "Pedigree",
-      "structure": {
-        "type": "base"
-      },
-      "summary": "",
-      "description": "Data which describes the lineage for which software has been created or altered. Pedigree includes the ancestors, descendants, and variants which describe component lineage from any viewpoint and the commits, patches, and diffs which make a component unique. Maintaining accurate pedigree information is especially important with open source components whos source code is readily available, modifiable, and redistributable.",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:pedigree:source",
-      "domain": "Pedigree",
-      "kingdom": "Source",
-      "difficulty": 2,
-      "name": "Source",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:pedigree:source:commits",
-      "domain": "Pedigree",
-      "kingdom": "Source",
-      "difficulty": 2,
-      "name": "Commits",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The commit information made to version control systems which document the alterations made to a component",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:pedigree:source:diffs",
-      "domain": "Pedigree",
-      "kingdom": "Source",
-      "difficulty": 2,
-      "name": "Diffs",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The comparison between two components which describe the alteration delta",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:pedigree:relationships",
-      "domain": "Pedigree",
-      "kingdom": "Relationships",
-      "difficulty": 2,
-      "name": "Relationships",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "The lineage describing how components are related",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:pedigree:relationships:ancestors",
-      "domain": "Pedigree",
-      "kingdom": "Relationships",
-      "difficulty": 2,
-      "name": "Ancestors",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Describes the origin component in which a component is derived from",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:pedigree:relationships:descendents",
-      "domain": "Pedigree",
-      "kingdom": "Relationships",
-      "difficulty": 2,
-      "name": "Descendents",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Describes a component that is derived from an origin component",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:pedigree:relationships:variants",
-      "domain": "Pedigree",
-      "kingdom": "Relationships",
-      "difficulty": 2,
-      "name": "Variants",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Describes an ancestral relationship where the precise lineage is not known",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:pedigree:resolves",
-      "domain": "Pedigree",
-      "kingdom": "Resolves",
-      "difficulty": 3,
-      "name": "Resolves",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "The purposes for modifying a component as documented in an ALM",
-      "description": "The purposes for modifying a component as documented in an Application Lifecycle Management (ALM) system or issue tracker",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:pedigree:resolves:enhancement",
-      "domain": "Pedigree",
-      "kingdom": "Resolves",
-      "difficulty": 3,
-      "name": "Enhancement",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The ALM ticket describing additional features or capabilities in a modified component",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:pedigree:resolves:defect",
-      "domain": "Pedigree",
-      "kingdom": "Resolves",
-      "difficulty": 3,
-      "name": "Defect",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The ALM ticket describing the defects that have been corrected in a modified component",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:pedigree:resolves:security",
-      "domain": "Pedigree",
-      "kingdom": "Resolves",
-      "difficulty": 3,
-      "name": "Security",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The ALM ticket describing the security changes that have been made in a modified component",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance",
-      "domain": "Provenance",
-      "kingdom": null,
-      "difficulty": 1,
-      "name": "Provenance",
-      "structure": {
-        "type": "base"
-      },
-      "summary": "The traceability of all authorship, build, release, packaging, and distribution across the entire supply chain.",
-      "description": "Provenance may include individual and community authorship of software components, manufacturers, suppliers, software repositories, and country of origin. For high assurance applications, provenance plays an important role in determining Foreign Ownership, Control, or Influence (FOCI).",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:storage",
-      "domain": "Provenance",
-      "kingdom": "Storage",
-      "difficulty": 1,
-      "name": "Repository",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "A network locatable service that stores artifacts",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:storage:repository",
-      "domain": "Provenance",
-      "kingdom": "Storage",
-      "difficulty": 1,
-      "name": "Package Repository",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "A service that stores software packages using a formal structure",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:storage:arbitrary",
-      "domain": "Provenance",
-      "kingdom": "Storage",
-      "difficulty": 1,
-      "name": "Arbitrary Repository",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "A service that stores data objects",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:storage:bom",
-      "domain": "Provenance",
-      "kingdom": "Storage",
-      "difficulty": 1,
-      "name": "BOM Repository",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "A service that stores Bills of Materials",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:vcs",
-      "domain": "Provenance",
-      "difficulty": 1,
-      "name": "Version Control System",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "A category of software tools that records changes made to files by keeping track of all modifications",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:ecosystem",
-      "domain": "Provenance",
-      "difficulty": 1,
-      "name": "Ecosystem",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "An ecosystem of components that add extra functionality to core installation functions",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:supplier",
-      "domain": "Provenance",
-      "difficulty": 1,
-      "name": "Supplier",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "The organization that supplied the component. The supplier may often be the manufacturer, but may also be a distributor or repackager.",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:supplier:org",
-      "domain": "Provenance",
-      "difficulty": 2,
-      "name": "Organizational Entity",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
-      "description": "Corporate entities, companies, foundations, and other structured and formally recognized organizations",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:supplier:non-org",
-      "domain": "Provenance",
-      "difficulty": 2,
-      "name": "Non-Organizational Entity",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
-      "description": "Non-corporate entities such as individuals",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:ledger",
-      "domain": "Provenance",
-      "difficulty": 3,
-      "name": "Ledger",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:ledger:chaining",
-      "domain": "Provenance",
-      "difficulty": 3,
-      "name": "Chain of Custody",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Chain ledger? Discuss.",
-      "description": "Chain of custody over time",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:ledger:transparencylog",
-      "domain": "Provenance",
-      "difficulty": "",
-      "name": "Transparency Log",
-      "Structure / Type": "property",
-      "summary": "See https://securitytrails.com/blog/what-are-certificate-transparency-logs for examples",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:manufacturer",
-      "domain": "Provenance",
-      "difficulty": 2,
-      "name": "Manufacturer",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The entity that built the software",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:supplier",
-      "domain": "Provenance",
-      "difficulty": 1,
-      "name": "Supplier",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The entity which packages the software for distribution",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:publisher",
-      "domain": "Provenance",
-      "difficulty": 2,
-      "name": "Publisher",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The entity which makes available the software for public distribution",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:author",
-      "domain": "Provenance",
-      "difficulty": 2,
-      "name": "Author",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The entities who contributed to writing the software",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "",
-      "domain": "",
-      "difficulty": "",
-      "name": "",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
-      "references": []
-    },
-    {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": "",
       "name": "Identifiers",
       "structure": {
@@ -1589,6 +1217,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:cpe",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": 3,
       "name": "Common Platform Enumeration (CPE)",
       "structure": {
@@ -1606,6 +1235,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:purl",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": 1,
       "name": "Package URL",
       "structure": {
@@ -1618,6 +1248,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "SWID",
       "structure": {
@@ -1630,6 +1261,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:name",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "name",
       "structure": {
@@ -1642,6 +1274,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:version",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Version",
       "structure": {
@@ -1654,6 +1287,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:tagId",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Tag ID",
       "structure": {
@@ -1666,6 +1300,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:tagVersion",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Tag Version",
       "structure": {
@@ -1678,6 +1313,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:patch",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Patch",
       "structure": {
@@ -1690,6 +1326,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:softwareCreatorName",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Software Creator Name",
       "structure": {
@@ -1702,6 +1339,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:softwareCreatorRegId",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Software Creator Reg ID",
       "structure": {
@@ -1714,6 +1352,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:tagCreatorName",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Tag Creator Name",
       "structure": {
@@ -1726,6 +1365,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:tagCreatorRegId",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Tag Creator Reg ID",
       "structure": {
@@ -1738,6 +1378,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:internalproductids",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Internal Product ID's",
       "structure": {
@@ -1750,6 +1391,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:serialnumber",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Serial Number",
       "structure": {
@@ -1762,6 +1404,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:sku",
       "domain": "Resource",
+      "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "SKU",
       "structure": {
@@ -2069,6 +1712,368 @@
       "references": []
     },
     {
+      "identifier": "urn:owasp:scvs:bom:pedigree",
+      "domain": "Pedigree",
+      "kingdom": null,
+      "difficulty": 2,
+      "name": "Pedigree",
+      "structure": {
+        "type": "base"
+      },
+      "summary": "",
+      "description": "Data which describes the lineage for which software has been created or altered. Pedigree includes the ancestors, descendants, and variants which describe component lineage from any viewpoint and the commits, patches, and diffs which make a component unique. Maintaining accurate pedigree information is especially important with open source components whos source code is readily available, modifiable, and redistributable.",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:source",
+      "domain": "Pedigree",
+      "kingdom": "Source",
+      "difficulty": 2,
+      "name": "Source",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:source:commits",
+      "domain": "Pedigree",
+      "kingdom": "Source",
+      "difficulty": 2,
+      "name": "Commits",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The commit information made to version control systems which document the alterations made to a component",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:source:diffs",
+      "domain": "Pedigree",
+      "kingdom": "Source",
+      "difficulty": 2,
+      "name": "Diffs",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The comparison between two components which describe the alteration delta",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:relationships",
+      "domain": "Pedigree",
+      "kingdom": "Relationships",
+      "difficulty": 2,
+      "name": "Relationships",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "The lineage describing how components are related",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:relationships:ancestors",
+      "domain": "Pedigree",
+      "kingdom": "Relationships",
+      "difficulty": 2,
+      "name": "Ancestors",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Describes the origin component in which a component is derived from",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:relationships:descendents",
+      "domain": "Pedigree",
+      "kingdom": "Relationships",
+      "difficulty": 2,
+      "name": "Descendents",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Describes a component that is derived from an origin component",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:relationships:variants",
+      "domain": "Pedigree",
+      "kingdom": "Relationships",
+      "difficulty": 2,
+      "name": "Variants",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Describes an ancestral relationship where the precise lineage is not known",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:resolves",
+      "domain": "Pedigree",
+      "kingdom": "Resolves",
+      "difficulty": 3,
+      "name": "Resolves",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "The purposes for modifying a component as documented in an ALM",
+      "description": "The purposes for modifying a component as documented in an Application Lifecycle Management (ALM) system or issue tracker",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:resolves:enhancement",
+      "domain": "Pedigree",
+      "kingdom": "Resolves",
+      "difficulty": 3,
+      "name": "Enhancement",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The ALM ticket describing additional features or capabilities in a modified component",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:resolves:defect",
+      "domain": "Pedigree",
+      "kingdom": "Resolves",
+      "difficulty": 3,
+      "name": "Defect",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The ALM ticket describing the defects that have been corrected in a modified component",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:pedigree:resolves:security",
+      "domain": "Pedigree",
+      "kingdom": "Resolves",
+      "difficulty": 3,
+      "name": "Security",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The ALM ticket describing the security changes that have been made in a modified component",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance",
+      "domain": "Provenance",
+      "kingdom": null,
+      "difficulty": 1,
+      "name": "Provenance",
+      "structure": {
+        "type": "base"
+      },
+      "summary": "The traceability of all authorship, build, release, packaging, and distribution across the entire supply chain.",
+      "description": "Provenance may include individual and community authorship of software components, manufacturers, suppliers, software repositories, and country of origin. For high assurance applications, provenance plays an important role in determining Foreign Ownership, Control, or Influence (FOCI).",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:storage",
+      "domain": "Provenance",
+      "kingdom": "Storage",
+      "difficulty": 1,
+      "name": "Storage",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "A network locatable service that stores artifacts",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:storage:repository",
+      "domain": "Provenance",
+      "kingdom": "Storage",
+      "difficulty": 1,
+      "name": "Package Repository",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "A service that stores software packages using a formal structure",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:storage:arbitrary",
+      "domain": "Provenance",
+      "kingdom": "Storage",
+      "difficulty": 1,
+      "name": "Arbitrary Repository",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "A service that stores data objects",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:storage:bom",
+      "domain": "Provenance",
+      "kingdom": "Storage",
+      "difficulty": 1,
+      "name": "BOM Repository",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "A service that stores Bills of Materials",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:vcs",
+      "domain": "Provenance",
+      "kingdom": null,
+      "difficulty": 1,
+      "name": "Version Control System",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "A category of software tools that records changes made to files by keeping track of all modifications",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:ecosystem",
+      "domain": "Provenance",
+      "kingdom": null,
+      "difficulty": 1,
+      "name": "Ecosystem",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "An ecosystem of components that add extra functionality to core installation functions",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:supplier",
+      "domain": "Provenance",
+      "kingdom": "Supplier",
+      "difficulty": 1,
+      "name": "Supplier",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "The organization that supplied the component. The supplier may often be the manufacturer, but may also be a distributor or repackager.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:supplier:org",
+      "domain": "Provenance",
+      "kingdom": "Supplier",
+      "difficulty": 2,
+      "name": "Organizational Entity",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "Corporate entities, companies, foundations, and other structured and formally recognized organizations",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:supplier:non-org",
+      "domain": "Provenance",
+      "kingdom": "Supplier",
+      "difficulty": 2,
+      "name": "Non-Organizational Entity",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "Non-corporate entities such as individuals",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:ledger",
+      "domain": "Provenance",
+      "kingdom": "Ledger",
+      "difficulty": 3,
+      "name": "Ledger",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:ledger:chaining",
+      "domain": "Provenance",
+      "kingdom": "Ledger",
+      "difficulty": 3,
+      "name": "Chain of Custody",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Chain ledger? Discuss.",
+      "description": "Chain of custody over time",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:ledger:transparencylog",
+      "domain": "Provenance",
+      "kingdom": "Ledger",
+      "difficulty": "",
+      "name": "Transparency Log",
+      "Structure / Type": "property",
+      "summary": "See https://securitytrails.com/blog/what-are-certificate-transparency-logs for examples",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:manufacturer",
+      "domain": "Provenance",
+      "kingdom": null,
+      "difficulty": 2,
+      "name": "Manufacturer",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The entity that built the software",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:publisher",
+      "domain": "Provenance",
+      "kingdom": null,
+      "difficulty": 2,
+      "name": "Publisher",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The entity which makes available the software for public distribution",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:author",
+      "domain": "Provenance",
+      "kingdom": null,
+      "difficulty": 2,
+      "name": "Author",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The entities who contributed to writing the software",
+      "description": "",
+      "references": []
+    },
+    {
       "identifier": "urn:owasp:scvs:bom:formulation",
       "domain": "Formulation",
       "difficulty": "3",
@@ -2223,16 +2228,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Runtime Topology",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:formulation:formula:workflows:tasks",
-      "domain": "Formulation",
-      "difficulty": 3,
-      "name": "Tasks",
       "Structure / Type": "",
       "summary": "",
       "description": "",

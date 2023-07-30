@@ -49,7 +49,7 @@
             "examples": ["Resource"]
           },
           "kingdom": {
-            "type": "string"
+            "type": [ "string", "null" ]
           },
           "difficulty": {
             "type": "integer"
