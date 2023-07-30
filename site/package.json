@@ -4,7 +4,7 @@
   "scripts": {
     "generate-bmm": "node src/scripts/generateSideBar.js",
     "build": "node src/scripts/generateSideBar.js && gridsome build",
-    "develop": "gridsome develop",
+    "develop": "node src/scripts/generateSideBar.js && gridsome develop",
     "explore": "gridsome explore"
   },
   "dependencies": {
