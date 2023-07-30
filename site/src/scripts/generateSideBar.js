@@ -5,7 +5,8 @@ function transformJSON(json, basePath = '')  {
     const transformedData = [
         { "text": "Difficulty Levels", "data": { "id": "difficulty-levels", "path": "/bom-maturity-model/difficulty-levels/" }, "children": []},
         { "text": "Support Levels", "data": { "id": "support-levels", "path": "/bom-maturity-model/support-levels/" }, "children": []},
-        { "text": "Taxonomy", "data": { "id": "urn:owasp:scvs:bom" }, "children": []}
+        { "text": "Taxonomy", "data": { "id": "urn:owasp:scvs:bom" }, "children": []},
+        { "text": "Definitions", "data": { "id": "definitions", "path": "/bom-maturity-model/definitions/" }, "children": []},
     ];
 
     // Helper function to create a directory
@@ -153,10 +154,22 @@ sidebar: 'taxonomy'
     return transformedJSON;
 }
 
+function duplicateCheck(json) {
+    const identifiers = [];
+    json.model.forEach((model) => {
+        if (identifiers.includes(model.identifier)) {
+            throw new Error("Duplicate identifier " + model.identifier)
+        } else {
+            identifiers.push(model.identifier)
+        }
+    });
+}
+
 console.log("Reading BOM Maturity Model Taxonomy")
 const jsonString = fs.readFileSync("../BOM_Maturity_Model/bom-maturity-model-1.0.0-beta.1.json");
 console.log("Parsing BOM Maturity Model Taxonomy")
 const originalJSON = JSON.parse(jsonString);
+duplicateCheck(originalJSON);
 
 // Transform the JSON
 console.log("Transforming BOM Maturity Model Taxonomy into Markdown and Sidebar Navigation")
