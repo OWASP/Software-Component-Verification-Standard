@@ -1534,6 +1534,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:license",
       "domain": "Resource",
+      "kingdom": "License",
       "difficulty": 1,
       "name": "License",
       "structure": {
@@ -1546,6 +1547,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:license:type",
       "domain": "Resource",
+      "kingdom": "License",
       "difficulty": 1,
       "name": "License Type",
       "structure": {
@@ -1558,6 +1560,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:license:identifier",
       "domain": "Resource",
+      "kingdom": "License",
       "difficulty": 1,
       "name": "License Identifier",
       "structure": {
@@ -1570,6 +1573,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:license:name",
       "domain": "Resource",
+      "kingdom": "License",
       "difficulty": 1,
       "name": "License Name",
       "structure": {
@@ -1582,6 +1586,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:license:text",
       "domain": "Resource",
+      "kingdom": "License",
       "difficulty": 2,
       "name": "License Text",
       "structure": {
@@ -1594,6 +1599,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:license:header",
       "domain": "Resource",
+      "kingdom": "License",
       "difficulty": 2,
       "name": "License Header",
       "structure": {
@@ -1606,6 +1612,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:license:url",
       "domain": "Resource",
+      "kingdom": "License",
       "difficulty": 2,
       "name": "License URL",
       "structure": {
@@ -1618,6 +1625,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:license:licensing",
       "domain": "Resource",
+      "kingdom": "License",
       "difficulty": "",
       "name": "Licensing",
       "structure": {
@@ -1630,6 +1638,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:license:licensing:licensor",
       "domain": "Resource",
+      "kingdom": "License",
       "difficulty": 2,
       "name": "Licensor",
       "structure": {
@@ -1642,6 +1651,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:license:licensing:licensee",
       "domain": "Resource",
+      "kingdom": "License",
       "difficulty": 2,
       "name": "Licensee",
       "structure": {
@@ -1654,6 +1664,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:license:licensing:purchaser",
       "domain": "Resource",
+      "kingdom": "License",
       "difficulty": 2,
       "name": "Purchaser",
       "structure": {
@@ -1666,6 +1677,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:license:licensing:purchaseOrder",
       "domain": "Resource",
+      "kingdom": "License",
       "difficulty": 2,
       "name": "Purchase Order",
       "structure": {
@@ -1678,6 +1690,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:license:licensing:licenseType",
       "domain": "Resource",
+      "kingdom": "License",
       "difficulty": 2,
       "name": "License Type",
       "structure": {
@@ -1690,6 +1703,7 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:license:licensing:lastRenewal",
       "domain": "Resource",
+      "kingdom": "License",
       "difficulty": 2,
       "name": "Last Renewal",
       "structure": {
@@ -1702,12 +1716,403 @@
     {
       "identifier": "urn:owasp:scvs:bom:resource:license:licensing:expiration",
       "domain": "Resource",
+      "kingdom": "License",
       "difficulty": 2,
       "name": "Expiration",
       "structure": {
         "type": "property"
       },
       "summary": "The timestamp indicating when the current license expires (if applicable).",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Relationships",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:vcs",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 1,
+      "name": "Version Control System",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:issueTracker",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 1,
+      "name": "Issue Tracker",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Issue or defect tracking system, or an Application Lifecycle Management (ALM) system",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:website",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 1,
+      "name": "Website",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:advisories",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Security Advisories",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:bom",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Bill of Materials",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Bill-of-materials (SBOM, OBOM, HBOM, SaaSBOM, etc)",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:mailingList",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Mailing List",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Mailing list or discussion group",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:social",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Social Media Account",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:chat",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Chat",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Real-time chat platform",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:documentation",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Documentation",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Documentation, guides, or how-to instructions",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:support",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Support",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Community or commercial support",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:distribution",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 1,
+      "name": "Distribution",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Direct or repository download location",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:distributionIntake",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 1,
+      "name": "Distribution Intake",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The location where a component was published to.",
+      "description": "The location where a component was published to. This is often the same as \"distribution\" but may also include specialized publishing processes that act as an intermediary",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:buildMeta",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": "",
+      "name": "Build Metadata",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:buildSystem",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": "",
+      "name": "Build System",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:securityContact",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Security Contact",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Specifies a way to contact the maintainer, supplier, or provider in the event of a security incident.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:attestation",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 3,
+      "name": "Attestation",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Human or machine-readable statements containing facts, evidence, or testimony",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:threatModel",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 3,
+      "name": "Threat Model",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "An enumeration of identified weaknesses, threats, and countermeasures, dataflow diagram (DFD), attack tree, and other supporting documentation in human-readable or machine-readable format",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:vulnerabilityAssertion",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Vulnerability Assertion",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "A Vulnerability Disclosure Report (VDR) which asserts the known and previously unknown vulnerabilities that affect a component, service, or product including the analysis and findings describing the impact (or lack of impact) that the reported vulnerability has on a component, service, or product.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:exploitabilityStatement",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 3,
+      "name": "Exploitability Statement",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "A Vulnerability Exploitability eXchange (VEX) which asserts the known vulnerabilities that do not affect a product, product family, or organization, and optionally the ones that do. The VEX should include the analysis and findings describing the impact (or lack of impact) that the reported vulnerability has on the product, product family, or organization.",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:pentestReport",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 3,
+      "name": "Pentest Report",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Results from an authorized simulated cyberattack on a component or service, otherwise known as a penetration test",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:staticAnalysisReport",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Static Analysis Report",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "SARIF or proprietary machine or human-readable report for which static analysis has identified code quality, security, and other potential issues with the source code",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:dynamicAnalysisReport",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Dynamic Analysis Report",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Dynamic analysis report that has identified issues such as vulnerabilities and misconfigurations",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:runtimeAnalysisReport",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Runtime Analysis Report",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Report generated by analyzing the call stack of a running application",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:componentAnalysisReport",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Component Analysis Report",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Report generated by Software Composition Analysis (SCA), container analysis, or other forms of component analysis",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:maturityReport",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 3,
+      "name": "Maturity Report",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Report containing a formal assessment of an organization, business unit, or team against a maturity model",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:certificationReport",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 3,
+      "name": "Certification Report",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Industry, regulatory, or other certification from an accredited (if applicable) certification body",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:qualityMetrics",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Quality Metrics",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Report or system in which quality metrics can be obtained",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:codifiedInfrastructure",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 2,
+      "name": "Codified Infrastructure",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "Code or configuration that defines and provisions virtualized infrastructure, commonly referred to as Infrastructure as Code (IaC)",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:references:riskAssessment",
+      "domain": "Resource",
+      "kingdom": "References",
+      "difficulty": 3,
+      "name": "Risk Assessment",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
       "description": "",
       "references": []
     },
@@ -1959,9 +2364,22 @@
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:provenance:supplier",
+      "identifier": "urn:owasp:scvs:bom:provenance:role",
       "domain": "Provenance",
-      "kingdom": "Supplier",
+      "kingdom": "Role",
+      "difficulty": 1,
+      "name": "Role",
+      "structure": {
+        "type": "class"
+      },
+      "summary": "The purpose an entity plays in the supply chain",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:role:supplier",
+      "domain": "Provenance",
+      "kingdom": "Role",
       "difficulty": 1,
       "name": "Supplier",
       "structure": {
@@ -1972,9 +2390,9 @@
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:provenance:supplier:org",
+      "identifier": "urn:owasp:scvs:bom:provenance:role:supplier:org",
       "domain": "Provenance",
-      "kingdom": "Supplier",
+      "kingdom": "Role",
       "difficulty": 2,
       "name": "Organizational Entity",
       "structure": {
@@ -1985,9 +2403,126 @@
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:provenance:supplier:non-org",
+      "identifier": "urn:owasp:scvs:bom:provenance:role:supplier:non-org",
       "domain": "Provenance",
-      "kingdom": "Supplier",
+      "kingdom": "Role",
+      "difficulty": 2,
+      "name": "Non-Organizational Entity",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "Non-corporate entities such as individuals",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:role:manufacturer",
+      "domain": "Provenance",
+      "kingdom": "Role",
+      "difficulty": 2,
+      "name": "Manufacturer",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The entity that built the software",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:role:manufacturer:org",
+      "domain": "Provenance",
+      "kingdom": "Role",
+      "difficulty": 2,
+      "name": "Organizational Entity",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "Corporate entities, companies, foundations, and other structured and formally recognized organizations",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:role:manufacturer:non-org",
+      "domain": "Provenance",
+      "kingdom": "Role",
+      "difficulty": 2,
+      "name": "Non-Organizational Entity",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "Non-corporate entities such as individuals",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:role:publisher",
+      "domain": "Provenance",
+      "kingdom": "Role",
+      "difficulty": 2,
+      "name": "Publisher",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The entity which makes available the software for public distribution",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:role:publisher:org",
+      "domain": "Provenance",
+      "kingdom": "Role",
+      "difficulty": 2,
+      "name": "Organizational Entity",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "Corporate entities, companies, foundations, and other structured and formally recognized organizations",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:role:publisher:non-org",
+      "domain": "Provenance",
+      "kingdom": "Role",
+      "difficulty": 2,
+      "name": "Non-Organizational Entity",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "Non-corporate entities such as individuals",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:role:author",
+      "domain": "Provenance",
+      "kingdom": "Role",
+      "difficulty": 2,
+      "name": "Author",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "The entities who contributed to writing the software",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:role:author:org",
+      "domain": "Provenance",
+      "kingdom": "Role",
+      "difficulty": 2,
+      "name": "Organizational Entity",
+      "structure": {
+        "type": "property"
+      },
+      "summary": "",
+      "description": "Corporate entities, companies, foundations, and other structured and formally recognized organizations",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:provenance:role:author:non-org",
+      "domain": "Provenance",
+      "kingdom": "Role",
       "difficulty": 2,
       "name": "Non-Organizational Entity",
       "structure": {
@@ -2031,45 +2566,6 @@
       "name": "Transparency Log",
       "Structure / Type": "property",
       "summary": "See https://securitytrails.com/blog/what-are-certificate-transparency-logs for examples",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:manufacturer",
-      "domain": "Provenance",
-      "kingdom": null,
-      "difficulty": 2,
-      "name": "Manufacturer",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The entity that built the software",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:publisher",
-      "domain": "Provenance",
-      "kingdom": null,
-      "difficulty": 2,
-      "name": "Publisher",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The entity which makes available the software for public distribution",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:provenance:author",
-      "domain": "Provenance",
-      "kingdom": null,
-      "difficulty": 2,
-      "name": "Author",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The entities who contributed to writing the software",
       "description": "",
       "references": []
     },
@@ -2319,354 +2815,6 @@
       "difficulty": 3,
       "name": "Runtime Topology",
       "Structure / Type": "",
-      "summary": "",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:vcs",
-      "domain": "",
-      "difficulty": 1,
-      "name": "Version Control System",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:issueTracker",
-      "domain": "",
-      "difficulty": 1,
-      "name": "Issue Tracker",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Issue or defect tracking system, or an Application Lifecycle Management (ALM) system",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:website",
-      "domain": "",
-      "difficulty": 1,
-      "name": "Website",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:advisories",
-      "domain": "",
-      "difficulty": 2,
-      "name": "Security Advisories",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:bom",
-      "domain": "",
-      "difficulty": 2,
-      "name": "Bill of Materials",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Bill-of-materials (SBOM, OBOM, HBOM, SaaSBOM, etc)",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:mailingList",
-      "domain": "",
-      "difficulty": 2,
-      "name": "Mailing List",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Mailing list or discussion group",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:social",
-      "domain": "",
-      "difficulty": 2,
-      "name": "Social Media Account",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:chat",
-      "domain": "",
-      "difficulty": 2,
-      "name": "Chat",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Real-time chat platform",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:documentation",
-      "domain": "",
-      "difficulty": 2,
-      "name": "Documentation",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Documentation, guides, or how-to instructions",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:support",
-      "domain": "",
-      "difficulty": 2,
-      "name": "Support",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Community or commercial support",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:distribution",
-      "domain": "",
-      "difficulty": 1,
-      "name": "Distribution",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Direct or repository download location",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:distributionIntake",
-      "domain": "",
-      "difficulty": 1,
-      "name": "Distribution Intake",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The location where a component was published to.",
-      "description": "The location where a component was published to. This is often the same as \"distribution\" but may also include specialized publishing processes that act as an intermediary",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:buildMeta",
-      "domain": "",
-      "difficulty": "",
-      "name": "",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:buildSystem",
-      "domain": "",
-      "difficulty": "",
-      "name": "",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:securityContact",
-      "domain": "",
-      "difficulty": 2,
-      "name": "Security Contact",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Specifies a way to contact the maintainer, supplier, or provider in the event of a security incident.",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:attestation",
-      "domain": "",
-      "difficulty": 3,
-      "name": "Attestation",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Human or machine-readable statements containing facts, evidence, or testimony",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:threatModel",
-      "domain": "",
-      "difficulty": 3,
-      "name": "Threat Model",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "An enumeration of identified weaknesses, threats, and countermeasures, dataflow diagram (DFD), attack tree, and other supporting documentation in human-readable or machine-readable format",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:vulnerabilityAssertion",
-      "domain": "",
-      "difficulty": 2,
-      "name": "Vulnerability Assertion",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "A Vulnerability Disclosure Report (VDR) which asserts the known and previously unknown vulnerabilities that affect a component, service, or product including the analysis and findings describing the impact (or lack of impact) that the reported vulnerability has on a component, service, or product.",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:exploitabilityStatement",
-      "domain": "",
-      "difficulty": 3,
-      "name": "Exploitability Statement",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "A Vulnerability Exploitability eXchange (VEX) which asserts the known vulnerabilities that do not affect a product, product family, or organization, and optionally the ones that do. The VEX should include the analysis and findings describing the impact (or lack of impact) that the reported vulnerability has on the product, product family, or organization.",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:pentestReport",
-      "domain": "",
-      "difficulty": 3,
-      "name": "Pentest Report",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Results from an authorized simulated cyberattack on a component or service, otherwise known as a penetration test",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:staticAnalysisReport",
-      "domain": "",
-      "difficulty": 2,
-      "name": "Static Analysis Report",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "SARIF or proprietary machine or human-readable report for which static analysis has identified code quality, security, and other potential issues with the source code",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:dynamicAnalysisReport",
-      "domain": "",
-      "difficulty": 2,
-      "name": "Dynamic Analysis Report",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Dynamic analysis report that has identified issues such as vulnerabilities and misconfigurations",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:runtimeAnalysisReport",
-      "domain": "",
-      "difficulty": 2,
-      "name": "Runtime Analysis Report",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Report generated by analyzing the call stack of a running application",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:componentAnalysisReport",
-      "domain": "",
-      "difficulty": 2,
-      "name": "Component Analysis Report",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Report generated by Software Composition Analysis (SCA), container analysis, or other forms of component analysis",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:maturityReport",
-      "domain": "",
-      "difficulty": 3,
-      "name": "Maturity Report",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Report containing a formal assessment of an organization, business unit, or team against a maturity model",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:certificationReport",
-      "domain": "",
-      "difficulty": 3,
-      "name": "Certification Report",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Industry, regulatory, or other certification from an accredited (if applicable) certification body",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:qualityMetrics",
-      "domain": "",
-      "difficulty": 2,
-      "name": "Quality Metrics",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Report or system in which quality metrics can be obtained",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:codifiedInfrastructure",
-      "domain": "",
-      "difficulty": 2,
-      "name": "Codified Infrastructure",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Code or configuration that defines and provisions virtualized infrastructure, commonly referred to as Infrastructure as Code (IaC)",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:references:riskAssessment",
-      "domain": "",
-      "difficulty": 3,
-      "name": "Risk Assessment",
-      "structure": {
-        "type": "property"
-      },
       "summary": "",
       "description": "",
       "references": []
