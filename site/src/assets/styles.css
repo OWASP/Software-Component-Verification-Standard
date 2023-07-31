@@ -25,3 +25,15 @@
     background: none;
     border-radius: 0 4px 4px 0;
 }
+.label {
+    margin-left: -2em;
+    padding: .1em .5em .2em;
+    font-weight: normal;
+    font-size: 85%;
+    color: #ffffff;
+    border-radius: 4px;
+}
+.label-coming-soon {
+    border: 1px solid #44AAFF;
+    background: #005DAA;
+}

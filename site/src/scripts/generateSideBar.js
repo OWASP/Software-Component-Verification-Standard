@@ -2,10 +2,27 @@ const fs = require('fs');
 const path = require('path');
 
 function transformJSON(json, basePath = '')  {
+    const comingSoon = '<span class="label label-coming-soon">Coming Soon</span>'
     const transformedData = [
-        { "text": "Difficulty Levels", "data": { "id": "difficulty-levels", "path": "/bom-maturity-model/difficulty-levels/" }, "children": []},
-        { "text": "Support Levels", "data": { "id": "support-levels", "path": "/bom-maturity-model/support-levels/" }, "children": []},
+        { "text": "Difficulty Levels", "data": { "id": "difficulty-levels", "path": "/bom-maturity-model/difficulty-levels/" } },
+        { "text": "Support Levels", "data": { "id": "support-levels", "path": "/bom-maturity-model/support-levels/" } },
         { "text": "Taxonomy", "data": { "id": "urn:owasp:scvs:bom" }, "children": []},
+        { "text": "Profiles", "data": { "id": "profiles", "path": "/bom-maturity-model/profiles/" }, "children":
+            [
+                { "text": "Profile Generator", "data": { "path": "/bom-maturity-model/profiles/profile-generator/" } },
+                { "text": "Examples", "data": { "id": "profiles-examples" }, "children":
+                    [
+                        { "text": comingSoon + " NTIA Minimum Elements", "data": { "path": "/bom-maturity-model/profiles/examples/ntia-minimum-elements/" }, state: { selectable: false } },
+                        { "text": comingSoon + " Security (AppSec)", "data": { "id": "profiles-ntia-minimum", "path": "/bom-maturity-model/profiles/security-appsec/" }, state: { selectable: false } },
+                        { "text": comingSoon + " Security (FOCI)", "data": { "path": "/bom-maturity-model/profiles/examples/security-foci/" }, state: { selectable: false } },
+                        { "text": comingSoon + " Security (Operational)", "data": { "path": "/bom-maturity-model/profiles/examples/security-operational/" }, state: { selectable: false } },
+                        { "text": comingSoon + " Threat Modeling", "data": { "path": "/bom-maturity-model/profiles/examples/threat-modeling/" }, state: { selectable: false } },
+                        { "text": comingSoon + " License Compliance", "data": { "path": "/bom-maturity-model/profiles/examples/license-compliance/" }, state: { selectable: false } },
+                        { "text": comingSoon + " Procurement and M&A", "data": { "path": "/bom-maturity-model/profiles/examples/procurement-mergers-acquisitions/" }, state: { selectable: false } },
+                    ]
+                }
+            ]
+        },
         { "text": "Definitions", "data": { "id": "definitions", "path": "/bom-maturity-model/definitions/" }, "children": []},
     ];
 
@@ -90,7 +107,7 @@ sidebar: 'taxonomy'
         for (const node of transformedData) {
             if (node.data.id === identifier) {
                 return node;
-            } else if (node.children.length > 0) {
+            } else if (node.children && node.children.length > 0) {
                 const parentNode = findParentNodeInChildren(node.children, identifier);
                 if (parentNode) {
                     return parentNode;
@@ -105,7 +122,7 @@ sidebar: 'taxonomy'
         for (const node of children) {
             if (node.data.id === identifier) {
                 return node;
-            } else if (node.children.length > 0) {
+            } else if (node.children && node.children.length > 0) {
                 const parentNode = findParentNodeInChildren(node.children, identifier);
                 if (parentNode) {
                     return parentNode;
