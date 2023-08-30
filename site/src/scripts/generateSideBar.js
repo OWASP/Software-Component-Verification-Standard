@@ -50,10 +50,12 @@ function transformJSON(json, basePath = '')  {
             difficultyLabel = '<abbr data-title="Difficult to obtain; requiring manual effort, human observation, or access to data held within restricted domains"><span class="label-difficulty label-difficulty-high label-difficulty-left">3</span><span class="label-difficulty label-difficulty-high label-difficulty-right">High</span></abbr>'
 
         let references = ""
+        let referencesRow = "";
         if (model.references && model.references.length > 0) {
             for (let i=0; i<model.references.length; i++) {
                 references+= '<a href="' + model.references[i].url + '">' + model.references[i].title + '</a><br>'
             }
+            referencesRow = "| **References**: | " + references + "|";
         }
 
         if (!model.kingdom) {
@@ -76,7 +78,7 @@ sidebar: 'taxonomy'
 | **Name**: | ${model.name} |
 | **Description**: | ${model.description} |
 | **Difficulty**: | ${difficultyLabel} |
-| **References**: | ${references} |
+${referencesRow}
 
 `;
     }
