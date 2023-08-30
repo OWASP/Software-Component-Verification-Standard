@@ -43,11 +43,11 @@ function transformJSON(json, basePath = '')  {
     function generateMarkdownContent(model) {
         let difficultyLabel = ""
         if (model.difficulty === 1)
-            difficultyLabel = '<span class="label-difficulty label-difficulty-low label-difficulty-left">1</span><span class="label-difficulty label-difficulty-low label-difficulty-right">Low</span>'
+            difficultyLabel = '<abbr data-title="Simple to obtain through first-hand automated observation using existing tools"><span class="label-difficulty label-difficulty-low label-difficulty-left">1</span><span class="label-difficulty label-difficulty-low label-difficulty-right">Low</span></abbr>'
         else if (model.difficulty === 2)
-            difficultyLabel = '<span class="label-difficulty label-difficulty-moderate label-difficulty-left">2</span><span class="label-difficulty label-difficulty-moderate label-difficulty-right">Moderate</span>'
+            difficultyLabel = '<abbr data-title="Moderately difficult to obtain through automated observation using domain-specific tools and plugins"><span class="label-difficulty label-difficulty-moderate label-difficulty-left">2</span><span class="label-difficulty label-difficulty-moderate label-difficulty-right">Moderate</span></abbr>'
         else if (model.difficulty === 3)
-            difficultyLabel = '<span class="label-difficulty label-difficulty-high label-difficulty-left">3</span><span class="label-difficulty label-difficulty-high label-difficulty-right">High</span>'
+            difficultyLabel = '<abbr data-title="Difficult to obtain; requiring manual effort, human observation, or access to data held within restricted domains"><span class="label-difficulty label-difficulty-high label-difficulty-left">3</span><span class="label-difficulty label-difficulty-high label-difficulty-right">High</span></abbr>'
 
         let references = ""
         if (model.references && model.references.length > 0) {
@@ -62,7 +62,7 @@ function transformJSON(json, basePath = '')  {
 
         return `---
 title: BOM Maturity Model - ${model.name} (${model.identifier})
-description: ${model.summary}
+description: ${model.description}
 sidebar: 'taxonomy'
 ---
 
@@ -74,7 +74,6 @@ sidebar: 'taxonomy'
 | **Domain**: | ${model.domain} |
 | **Kingdom**: | ${model.kingdom} |
 | **Name**: | ${model.name} |
-| **Summary**: | ${model.summary} |
 | **Description**: | ${model.description} |
 | **Difficulty**: | ${difficultyLabel} |
 | **References**: | ${references} |

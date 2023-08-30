@@ -2,16 +2,35 @@
   "$schema": "https://scvs.owasp.org/bom-maturity-model-1.0.0-beta.1.schema.json",
   "model": [
     {
+      "identifier": "urn:owasp:scvs:bom:structure",
+      "domain": "Structure",
+      "kingdom": null,
+      "difficulty": 1,
+      "name": "Structure",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:structure:metadata",
+      "domain": "Structure",
+      "kingdom": null,
+      "difficulty": 1,
+      "name": "Metadata",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:structure:inventory",
+      "domain": "Structure",
+      "kingdom": null,
+      "difficulty": 1,
+      "name": "Inventory",
+      "references": []
+    },
+    {
       "identifier": "urn:owasp:scvs:bom:resource",
       "domain": "Resource",
       "kingdom": null,
       "difficulty": 1,
       "name": "Resource",
-      "structure": {
-        "type": "base"
-      },
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -20,11 +39,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Software",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "Class describing a software resource",
-      "description": "",
+      "description": "Class describing a software resource",
       "references": []
     },
     {
@@ -33,9 +48,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Identity",
-      "Structure / Type": "property (array)",
-      "summary": "Properties describing the unique identity of software component",
-      "description": "Properties which assert the identity of BOM components in order to facilitate risk association. Assertions may include a single occurance of one or more identifer types assigned from different domains.",
+      "description": "Properties which assert the identity of BOM components in order to facilitate inventory management and risk association. Assertions may include a single occurrence of one or more identifier types assigned from different domains.",
       "references": []
     },
     {
@@ -44,10 +57,6 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Local",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "An instance of software intended to be installed or deployed to a computing device",
       "description": "Identifies a localized instance of a software, hardware, or data component with customized configurations and subsets of components from the distributed packaging.",
       "references": []
     },
@@ -57,11 +66,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Remote",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "An instance of software that must be retrieved, on-demand, at runtime",
-      "description": "Identifies a remotely reposited software artifact for distribution.",
+      "description": "An instance of software that must be retrieved, on-demand, at runtime",
       "references": []
     },
     {
@@ -70,10 +75,6 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Type",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The class or scope which describes the form or function of the software",
       "description": "An abstract classification of a reusable component that indicates its scope of use and assists with separation of concerns.",
       "references": []
     },
@@ -83,11 +84,6 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Data",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -96,11 +92,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Dataset",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Reference to dataset",
-      "description": "",
+      "description": "Reference to dataset",
       "references": []
     },
     {
@@ -109,11 +101,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Configuration",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Referene to, or actual configuration supplied to the software",
-      "description": "",
+      "description": "Reference to, or actual configuration supplied to the software",
       "references": []
     },
     {
@@ -122,11 +110,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Source Code",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Reference to, or actual source code",
-      "description": "",
+      "description": "Reference to, or actual source code",
       "references": []
     },
     {
@@ -135,11 +119,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "SBOM",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Reference to an external Software Bill of Materials for the software",
-      "description": "",
+      "description": "Reference to an external Software Bill of Materials for the software",
       "references": []
     },
     {
@@ -148,11 +128,6 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Media Type",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -161,11 +136,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Integrity",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "Values which can be used to verify the integrity of components",
-      "description": "Represents values that may be used to independently verify (software) components have not been tampered with.",
+      "description": "Values which can be used to verify the integrity of components",
       "references": []
     },
     {
@@ -174,8 +145,6 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Hash",
-      "Structure / Type": "property (array)",
-      "summary": "Using existing ciphers",
       "description": "A unique numerical value which identifies the contents of a file after being processed through a cryptographic algorithm.",
       "references": []
     },
@@ -185,11 +154,6 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Release Notes",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -198,11 +162,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Release Type",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Specifies the type of release including major, minor, patch, and pre-release",
-      "description": "",
+      "description": "Specifies the type of release including major, minor, patch, and pre-release",
       "references": []
     },
     {
@@ -211,11 +171,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Title",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The title of the release",
-      "description": "",
+      "description": "The title of the release",
       "references": []
     },
     {
@@ -224,11 +180,6 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Featured Image",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -237,11 +188,6 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Social Image",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -250,11 +196,6 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "description",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -263,11 +204,6 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Timestamp",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -276,9 +212,6 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Aliases",
-      "Structure / Type": "property (array)",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -287,9 +220,6 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Tags",
-      "Structure / Type": "property (array)",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -298,11 +228,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Resolves",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "",
-      "description": "",
+      "description": "The defects, enhancements, and security issues that have been resolved.",
       "references": []
     },
     {
@@ -311,11 +237,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Known Issues",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "",
-      "description": "",
+      "description": "Any outstanding defects, enhancements, and security issues known to exist.",
       "references": []
     },
     {
@@ -324,11 +246,6 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Notes",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -337,11 +254,6 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Locale",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -350,11 +262,6 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Text",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -363,11 +270,7 @@
       "kingdom": "Software",
       "difficulty": "",
       "name": "Evidence",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "Provides the ability to document evidence collected through various forms of extraction or analysis.",
-      "description": "",
+      "description": "Provides the ability to document evidence collected through various forms of extraction or analysis.",
       "references": []
     },
     {
@@ -376,11 +279,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Identity",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "Evidence that substantiates the identity of a component.",
-      "description": "",
+      "description": "Evidence that substantiates the identity of a component.",
       "references": []
     },
     {
@@ -389,11 +288,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Field",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The identity field of the component which the evidence describes.",
-      "description": "",
+      "description": "The identity field of the component which the evidence describes.",
       "references": []
     },
     {
@@ -402,11 +297,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Confidence",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "The overall confidence of the evidence",
-      "description": "",
+      "description": "The overall confidence of the evidence",
       "references": []
     },
     {
@@ -415,11 +306,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Method",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "The methods used to extract and/or analyze the evidence.",
-      "description": "",
+      "description": "The methods used to extract and/or analyze the evidence.",
       "references": []
     },
     {
@@ -428,11 +315,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Technique",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The technique used in this method of analysis.",
-      "description": "",
+      "description": "The technique used in this method of analysis.",
       "references": []
     },
     {
@@ -441,11 +324,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Confidence",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The confidence of the evidence. Confidence is specific to the technique used. Each technique of analysis can have independent confidence.",
-      "description": "",
+      "description": "The confidence of the evidence. Confidence is specific to the technique used. Each technique of analysis can have independent confidence.",
       "references": []
     },
     {
@@ -454,11 +333,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Value",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The value or contents of the evidence.",
-      "description": "",
+      "description": "The value or contents of the evidence.",
       "references": []
     },
     {
@@ -467,11 +342,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Tools",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The tool(s) used during the analysis",
-      "description": "",
+      "description": "The tool(s) used during the analysis",
       "references": []
     },
     {
@@ -480,11 +351,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Occurrences",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Evidence of individual instances of a component spread across multiple locations.",
-      "description": "",
+      "description": "Evidence of individual instances of a component spread across multiple locations.",
       "references": []
     },
     {
@@ -493,11 +360,7 @@
       "kingdom": "Software",
       "difficulty": 3,
       "name": "Callstack",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Evidence of the components use through the callstack.",
-      "description": "",
+      "description": "Evidence of the components use through the callstack.",
       "references": []
     },
     {
@@ -506,9 +369,6 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Licenses",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -517,9 +377,6 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Copyrights",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -528,11 +385,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Machine Learning",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "Class describing a machine learning resource",
-      "description": "",
+      "description": "Class describing a machine learning resource",
       "references": []
     },
     {
@@ -541,9 +394,6 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Model Parameters",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -552,9 +402,6 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Approach",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -563,9 +410,6 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Task",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -574,9 +418,6 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Architecture Family",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -585,9 +426,6 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Model Architecture",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -596,9 +434,6 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Datasets",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -607,9 +442,6 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Inputs",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -618,9 +450,6 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Outputs",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -629,9 +458,6 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Quantitative Analysis",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -640,9 +466,6 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Performance Metrics",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -651,9 +474,6 @@
       "kingdom": "Software",
       "difficulty": 3,
       "name": "Considerations",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -662,9 +482,6 @@
       "kingdom": "Software",
       "difficulty": 3,
       "name": "Users",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -673,9 +490,6 @@
       "kingdom": "Software",
       "difficulty": 3,
       "name": "Use Cases",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -684,9 +498,6 @@
       "kingdom": "Software",
       "difficulty": 3,
       "name": "Technical Limitations",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -695,9 +506,6 @@
       "kingdom": "Software",
       "difficulty": 3,
       "name": "Performance Tradeoffs",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -706,9 +514,6 @@
       "kingdom": "Software",
       "difficulty": 3,
       "name": "Ethical Considerations",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -717,9 +522,6 @@
       "kingdom": "Software",
       "difficulty": 3,
       "name": "Fairness Assessments",
-      "Structure / Type": "",
-      "summary": "",
-      "description": "",
       "references": []
     },
     {
@@ -728,11 +530,7 @@
       "kingdom": "Hardware",
       "difficulty": 1,
       "name": "Hardware",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "Class describing a hardware resource",
-      "description": "",
+      "description": "Class describing a hardware resource",
       "references": []
     },
     {
@@ -741,74 +539,60 @@
       "kingdom": "Hardware",
       "difficulty": 1,
       "name": "Identity",
-      "Structure / Type": "property (array)",
-      "summary": "Properties describing the precise identity of hardware",
-      "description": "",
+      "description": "Properties describing the precise identity of hardware",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:hardware:plbom",
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:bomManagement",
+      "domain": "Resource",
+      "kingdom": "Hardware",
+      "difficulty": 3,
+      "name": "BOM Management",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:bomManagement:plbom",
       "domain": "Resource",
       "kingdom": "Hardware",
       "difficulty": 3,
       "name": "Planning Bill of Material",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Reference to a Planning Bill of Materials",
-      "description": "",
+      "description": "Reference to a Planning Bill of Materials",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:hardware:prbom",
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:bomManagement:prbom",
       "domain": "Resource",
       "kingdom": "Hardware",
       "difficulty": 3,
       "name": "Procurement Bill of Material",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Reference to a Procurement Bill of Materials",
-      "description": "",
+      "description": "Reference to a Procurement Bill of Materials",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:hardware:ebom",
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:bomManagement:ebom",
       "domain": "Resource",
       "kingdom": "Hardware",
       "difficulty": 3,
-      "name": "Engineering Bill of Material (eBOM)",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Reference to an Engineering Bill of Materials",
-      "description": "",
+      "name": "Engineering Bill of Material (EBOM)",
+      "description": "Reference to an Engineering Bill of Materials",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:hardware:mbom",
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:bomManagement:mbom",
       "domain": "Resource",
       "kingdom": "Hardware",
       "difficulty": 3,
-      "name": "Manufacturing Bill of Material (mBOM)",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Reference to a Manufacturing Bill of Materials",
-      "description": "",
+      "name": "Manufacturing Bill of Material (MBOM)",
+      "description": "Reference to a Manufacturing Bill of Materials",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:hardware:sbom",
+      "identifier": "urn:owasp:scvs:bom:resource:hardware:bomManagement:sbom",
       "domain": "Resource",
       "kingdom": "Hardware",
       "difficulty": 3,
-      "name": "Service Bill of Material (sBOM)",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Reference to a Service Bill of Materials",
-      "description": "",
+      "name": "Service Bill of Material (SBOM)",
+      "description": "Reference to a Service Bill of Materials",
       "references": []
     },
     {
@@ -817,11 +601,7 @@
       "kingdom": "Hardware",
       "difficulty": 1,
       "name": "Quantity",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The total number of the specified component.",
-      "description": "",
+      "description": "The total number of the specified component.",
       "references": []
     },
     {
@@ -830,11 +610,7 @@
       "kingdom": "Hardware",
       "difficulty": 2,
       "name": "Function",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The purpose of the component (Bluetooth, network, storage, microprocessor, connector, etc)",
-      "description": "",
+      "description": "The purpose of the component (Bluetooth, network, storage, microprocessor, connector, etc)",
       "references": []
     },
     {
@@ -843,11 +619,7 @@
       "kingdom": "Hardware",
       "difficulty": 2,
       "name": "Location",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The location on the board or related daughter-boards where the device exists.",
-      "description": "",
+      "description": "The location on the board or related daughter-boards where the device exists.",
       "references": []
     },
     {
@@ -856,11 +628,7 @@
       "kingdom": "Hardware",
       "difficulty": 1,
       "name": "Device Type",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The type of component such as SMD, thru-hole, etc",
-      "description": "",
+      "description": "The type of component such as SMD, thru-hole, etc",
       "references": []
     },
     {
@@ -869,11 +637,7 @@
       "kingdom": "Hardware",
       "difficulty": 1,
       "name": "Serial Number",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Unique identifier using serial number if available",
-      "description": "",
+      "description": "Unique identifier using serial number if available",
       "references": []
     },
     {
@@ -882,11 +646,7 @@
       "kingdom": "Hardware",
       "difficulty": 1,
       "name": "SKU",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Internal inventory reference if available",
-      "description": "",
+      "description": "Internal inventory reference if available",
       "references": []
     },
     {
@@ -895,11 +655,7 @@
       "kingdom": "Hardware",
       "difficulty": 1,
       "name": "Lot Number",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Lot or batch identification for the component",
-      "description": "",
+      "description": "Lot or batch identification for the component",
       "references": []
     },
     {
@@ -908,11 +664,7 @@
       "kingdom": "Hardware",
       "difficulty": 1,
       "name": "Production Timestamp",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Production timestamp for the component",
-      "description": "",
+      "description": "Production timestamp for the component",
       "references": []
     },
     {
@@ -921,11 +673,7 @@
       "kingdom": "Hardware",
       "difficulty": 1,
       "name": "MAC Address",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Hardware address for network interfaces",
-      "description": "",
+      "description": "Hardware address for network interfaces",
       "references": []
     },
     {
@@ -934,11 +682,7 @@
       "kingdom": "Hardware",
       "difficulty": 2,
       "name": "Certifications",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "Certifications",
-      "description": "",
+      "description": "Certifications",
       "references": []
     },
     {
@@ -947,11 +691,7 @@
       "kingdom": "Hardware",
       "difficulty": 2,
       "name": "Country Code",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "ISO-3166-1 alpha-2 country code of a certifying authority",
-      "description": "",
+      "description": "ISO-3166-1 alpha-2 country code of a certifying authority",
       "references": []
     },
     {
@@ -960,11 +700,7 @@
       "kingdom": "Hardware",
       "difficulty": 2,
       "name": "Authority",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Abbreviation of the certifying authority (e.g. FCC, UL, and CE)",
-      "description": "",
+      "description": "Abbreviation of the certifying authority (e.g. FCC, UL, and CE)",
       "references": []
     },
     {
@@ -973,11 +709,7 @@
       "kingdom": "Hardware",
       "difficulty": 2,
       "name": "Authority Identifier",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Identifier for radio components.",
-      "description": "",
+      "description": "Identifier for radio components.",
       "references": []
     },
     {
@@ -986,11 +718,7 @@
       "kingdom": "Hardware",
       "difficulty": 2,
       "name": "Authority URL",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "URL to certification details.",
-      "description": "",
+      "description": "URL to certification details.",
       "references": []
     },
     {
@@ -999,11 +727,7 @@
       "kingdom": "Service",
       "difficulty": 2,
       "name": "Service",
-      "structure": {
-        "type": "base"
-      },
-      "summary": "Class describing a service resource",
-      "description": "",
+      "description": "Class describing a service resource",
       "references": []
     },
     {
@@ -1012,11 +736,7 @@
       "kingdom": "Service",
       "difficulty": 2,
       "name": "Identity",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Properties describing the identity of the service",
-      "description": "",
+      "description": "Properties describing the identity of the service",
       "references": []
     },
     {
@@ -1025,11 +745,7 @@
       "kingdom": "Service",
       "difficulty": 2,
       "name": "Provider",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The provider of the service",
-      "description": "",
+      "description": "The provider of the service",
       "references": []
     },
     {
@@ -1038,11 +754,7 @@
       "kingdom": "Service",
       "difficulty": 2,
       "name": "Name",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The name of the service",
-      "description": "",
+      "description": "The name of the service",
       "references": []
     },
     {
@@ -1051,11 +763,7 @@
       "kingdom": "Service",
       "difficulty": 2,
       "name": "Version",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The version of the service",
-      "description": "",
+      "description": "The version of the service",
       "references": []
     },
     {
@@ -1064,11 +772,7 @@
       "kingdom": "Service",
       "difficulty": 2,
       "name": "Description",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "A description of the service",
-      "description": "",
+      "description": "A description of the service",
       "references": []
     },
     {
@@ -1077,11 +781,7 @@
       "kingdom": "Service",
       "difficulty": 2,
       "name": "Authentication",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "Class describing the authentication parameters required by the service",
-      "description": "",
+      "description": "Class describing the authentication parameters required by the service",
       "references": []
     },
     {
@@ -1090,11 +790,7 @@
       "kingdom": "Service",
       "difficulty": 2,
       "name": "Protocols",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The authentication protocols supported by the service",
-      "description": "",
+      "description": "The authentication protocols supported by the service",
       "references": []
     },
     {
@@ -1103,11 +799,7 @@
       "kingdom": "Service",
       "difficulty": 2,
       "name": "Factors",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The multiple factors supported by the service",
-      "description": "",
+      "description": "The multiple factors supported by the service",
       "references": []
     },
     {
@@ -1116,11 +808,7 @@
       "kingdom": "Service",
       "difficulty": 2,
       "name": "Data",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "Class describing the data",
-      "description": "",
+      "description": "Class describing the data",
       "references": []
     },
     {
@@ -1129,11 +817,7 @@
       "kingdom": "Service",
       "difficulty": 3,
       "name": "Classifications",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The data classifications supported by the service",
-      "description": "",
+      "description": "The data classifications supported by the service",
       "references": []
     },
     {
@@ -1142,11 +826,7 @@
       "kingdom": "Service",
       "difficulty": 2,
       "name": "Flow",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The directional flow of data to and from the service",
-      "description": "",
+      "description": "The directional flow of data to and from the service",
       "references": []
     },
     {
@@ -1155,11 +835,7 @@
       "kingdom": "Service",
       "difficulty": 2,
       "name": "From",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The source pushing inbound data to the service",
-      "description": "",
+      "description": "The source pushing inbound data to the service",
       "references": []
     },
     {
@@ -1168,11 +844,7 @@
       "kingdom": "Service",
       "difficulty": 2,
       "name": "To",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The destination that the service pushes data to",
-      "description": "",
+      "description": "The destination that the service pushes data to",
       "references": []
     },
     {
@@ -1181,11 +853,7 @@
       "kingdom": "Service",
       "difficulty": 3,
       "name": "Configuration",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The configuration supplied to the service",
-      "description": "",
+      "description": "The configuration supplied to the service",
       "references": []
     },
     {
@@ -1194,11 +862,7 @@
       "kingdom": "Service",
       "difficulty": 2,
       "name": "SBOM",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Reference to an external Software Bill of Materials for the service",
-      "description": "",
+      "description": "Reference to an external Software Bill of Materials for the service",
       "references": []
     },
     {
@@ -1207,10 +871,7 @@
       "kingdom": "Identifiers",
       "difficulty": "",
       "name": "Identifiers",
-      "structure": {
-        "type": "abstract"
-      },
-      "summary": "Properties describing the unique identity of BOM component",
+      "description": "Properties describing the unique identity of BOM component",
       "description": "Properties which assert the identity of BOM components in order to facilitate risk association. Assertions may include a single occurance of one or more identifer types assigned from different domains.",
       "references": []
     },
@@ -1220,10 +881,7 @@
       "kingdom": "Identifiers",
       "difficulty": 3,
       "name": "Common Platform Enumeration (CPE)",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "CPE is a structured naming scheme for information technology systems, software, and packages.",
+      "description": "CPE is a structured naming scheme for information technology systems, software, and packages.",
       "description": "CPE is a structured naming scheme for information technology systems, software, and packages. Based upon the generic syntax for Uniform Resource Identifiers (URI), CPE includes a formal name format, a method for checking names against a system, and a description format for binding text and tests to a name. The CPE standard and official dictionary are maintained by NIST.",
       "references": [
         {
@@ -1233,15 +891,21 @@
       ]
     },
     {
+      "identifier": "urn:owasp:scvs:bom:resource:identifiers:coordinates",
+      "domain": "Resource",
+      "kingdom": "Identifiers",
+      "difficulty": 1,
+      "name": "Coordinates",
+      "description": "The namespace, name, and version of the resource.",
+      "description": "The namespace (or group) is part the coordinates for the resource ecosystems that support it.",
+      "references": []
+    },
+    {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:purl",
       "domain": "Resource",
       "kingdom": "Identifiers",
       "difficulty": 1,
       "name": "Package URL",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -1251,10 +915,6 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "SWID",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "",
       "description": "ISO-IEC 19770-2 Software Identification (SWID) tags",
       "references": []
     },
@@ -1264,10 +924,6 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "name",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "name as defined in the SWID SoftwareIdentity element",
       "references": []
     },
@@ -1277,10 +933,6 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Version",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "version as defined in the SWID SoftwareIdentity element",
       "references": []
     },
@@ -1290,10 +942,6 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Tag ID",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "tagId as defined in the SWID SoftwareIdentity element",
       "references": []
     },
@@ -1303,10 +951,6 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Tag Version",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "tagVersion as defined in the SWID SoftwareIdentity element",
       "references": []
     },
@@ -1316,10 +960,6 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Patch",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "patch as defined in the SWID SoftwareIdentity element",
       "references": []
     },
@@ -1329,10 +969,6 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Software Creator Name",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "name of the entity with a role of softwareCreator",
       "references": []
     },
@@ -1342,10 +978,6 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Software Creator Reg ID",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "regid of the entity with a role of softwareCreator",
       "references": []
     },
@@ -1355,10 +987,6 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Tag Creator Name",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "If the tag creator is different from the software creator, tagCreatorName should be specified",
       "references": []
     },
@@ -1368,10 +996,6 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Tag Creator Reg ID",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "If the tag creator is different from the software creator, tagCreatorRegId should be specified",
       "references": []
     },
@@ -1381,10 +1005,6 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Internal Product ID's",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -1394,10 +1014,6 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Serial Number",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -1407,10 +1023,6 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "SKU",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -1420,11 +1032,7 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "GS1",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "GS1 Standards",
-      "description": "",
+      "description": "GS1 Standards",
       "references": []
     },
     {
@@ -1433,11 +1041,7 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "EPC RFID",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Electronic Product Code - RFID (EPC Tag Data Standard)",
-      "description": "",
+      "description": "Electronic Product Code - RFID (EPC Tag Data Standard)",
       "references": []
     },
     {
@@ -1446,11 +1050,7 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "GIAI",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Global Individual Asset Identifier (GIAI)",
-      "description": "",
+      "description": "Global Individual Asset Identifier (GIAI)",
       "references": []
     },
     {
@@ -1459,11 +1059,7 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "GLN",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Global Location Number (GLN)",
-      "description": "",
+      "description": "Global Location Number (GLN)",
       "references": []
     },
     {
@@ -1472,11 +1068,7 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "GMN",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Global Model Number (GMN)",
-      "description": "",
+      "description": "Global Model Number (GMN)",
       "references": []
     },
     {
@@ -1485,11 +1077,7 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "GTIN-8",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Global Trade Identification Number (GTIN-8 / EAN/UCC-8)",
-      "description": "",
+      "description": "Global Trade Identification Number (GTIN-8 / EAN/UCC-8)",
       "references": []
     },
     {
@@ -1498,11 +1086,7 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "GTIN-12",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Global Trade Identification Number (GTIN-12 / UPC-A)",
-      "description": "",
+      "description": "Global Trade Identification Number (GTIN-12 / UPC-A)",
       "references": []
     },
     {
@@ -1511,11 +1095,7 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "GTIN-13",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Global Trade Identification Number (GTIN-13 / EAN/UCC-13)",
-      "description": "",
+      "description": "Global Trade Identification Number (GTIN-13 / EAN/UCC-13)",
       "references": []
     },
     {
@@ -1524,11 +1104,7 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "GTIN-14",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Global Trade Identification Number (GTIN / EAN/UCC-14 or ITF-14)",
-      "description": "",
+      "description": "Global Trade Identification Number (GTIN / EAN/UCC-14 or ITF-14)",
       "references": []
     },
     {
@@ -1537,10 +1113,6 @@
       "kingdom": "License",
       "difficulty": 1,
       "name": "License",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -1550,10 +1122,6 @@
       "kingdom": "License",
       "difficulty": 1,
       "name": "License Type",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -1563,10 +1131,6 @@
       "kingdom": "License",
       "difficulty": 1,
       "name": "License Identifier",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -1576,10 +1140,6 @@
       "kingdom": "License",
       "difficulty": 1,
       "name": "License Name",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -1589,10 +1149,6 @@
       "kingdom": "License",
       "difficulty": 2,
       "name": "License Text",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -1602,10 +1158,6 @@
       "kingdom": "License",
       "difficulty": 2,
       "name": "License Header",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -1615,10 +1167,6 @@
       "kingdom": "License",
       "difficulty": 2,
       "name": "License URL",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -1628,10 +1176,6 @@
       "kingdom": "License",
       "difficulty": "",
       "name": "Licensing",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -1641,11 +1185,7 @@
       "kingdom": "License",
       "difficulty": 2,
       "name": "Licensor",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The individual or organization that grants a license to another individual or organization",
-      "description": "",
+      "description": "The individual or organization that grants a license to another individual or organization",
       "references": []
     },
     {
@@ -1654,11 +1194,7 @@
       "kingdom": "License",
       "difficulty": 2,
       "name": "Licensee",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The individual or organization for which a license was granted to",
-      "description": "",
+      "description": "The individual or organization for which a license was granted to",
       "references": []
     },
     {
@@ -1667,11 +1203,7 @@
       "kingdom": "License",
       "difficulty": 2,
       "name": "Purchaser",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The individual or organization that purchased the license",
-      "description": "",
+      "description": "The individual or organization that purchased the license",
       "references": []
     },
     {
@@ -1680,11 +1212,7 @@
       "kingdom": "License",
       "difficulty": 2,
       "name": "Purchase Order",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The purchase order identifier the purchaser sent to a supplier or vendor to authorize a purchase",
-      "description": "",
+      "description": "The purchase order identifier the purchaser sent to a supplier or vendor to authorize a purchase",
       "references": []
     },
     {
@@ -1693,11 +1221,7 @@
       "kingdom": "License",
       "difficulty": 2,
       "name": "License Type",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The type of license(s) that was granted to the licensee",
-      "description": "",
+      "description": "The type of license(s) that was granted to the licensee",
       "references": []
     },
     {
@@ -1706,10 +1230,7 @@
       "kingdom": "License",
       "difficulty": 2,
       "name": "Last Renewal",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The timestamp indicating when the license was last renewed.",
+      "description": "The timestamp indicating when the license was last renewed.",
       "description": "The timestamp indicating when the license was last renewed. For new purchases, this is often the purchase or acquisition date. For non-perpetual licenses or subscriptions, this is the timestamp of when the license was last renewed.",
       "references": []
     },
@@ -1719,400 +1240,313 @@
       "kingdom": "License",
       "difficulty": 2,
       "name": "Expiration",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The timestamp indicating when the current license expires (if applicable).",
-      "description": "",
+      "description": "The timestamp indicating when the current license expires (if applicable).",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Relationships",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:vcs",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:ancestors",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
+      "difficulty": 2,
+      "name": "Ancestors",
+      "description": "The lineage describing how components are related. Ancestors describe the origin component in which a component is derived.",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:descendents",
+      "domain": "Resource",
+      "kingdom": "Relationships",
+      "difficulty": 2,
+      "name": "Descendents",
+      "description": "The lineage describing how components are related. Descendents describes a component that is derived from an origin component.",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:variants",
+      "domain": "Resource",
+      "kingdom": "Relationships",
+      "difficulty": 2,
+      "name": "Variants",
+      "description": "The lineage describing how components are related. Describes an ancestral relationship where the precise lineage is not known",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:dependency",
+      "domain": "Resource",
+      "kingdom": "Relationships",
+      "difficulty": 2,
+      "name": "Dependency",
+      "description": "Direct and transitive relationships that specify when a resource requires another resource",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:vcs",
+      "domain": "Resource",
+      "kingdom": "Relationships",
       "difficulty": 1,
       "name": "Version Control System",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:issueTracker",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:issueTracker",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 1,
       "name": "Issue Tracker",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Issue or defect tracking system, or an Application Lifecycle Management (ALM) system",
-      "description": "",
+      "description": "Issue or defect tracking system, or an Application Lifecycle Management (ALM) system",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:website",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:website",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 1,
       "name": "Website",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:advisories",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:advisories",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Security Advisories",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:bom",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:bom",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Bill of Materials",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Bill-of-materials (SBOM, OBOM, HBOM, SaaSBOM, etc)",
-      "description": "",
+      "description": "Bill-of-materials (SBOM, OBOM, HBOM, SaaSBOM, etc)",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:mailingList",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:mailingList",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Mailing List",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Mailing list or discussion group",
-      "description": "",
+      "description": "Mailing list or discussion group",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:social",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:social",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Social Media Account",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:chat",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:chat",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Chat",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Real-time chat platform",
-      "description": "",
+      "description": "Real-time chat platform",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:documentation",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:documentation",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Documentation",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Documentation, guides, or how-to instructions",
-      "description": "",
+      "description": "Documentation, guides, or how-to instructions",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:support",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:support",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Support",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Community or commercial support",
-      "description": "",
+      "description": "Community or commercial support",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:distribution",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:distribution",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 1,
       "name": "Distribution",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Direct or repository download location",
-      "description": "",
+      "description": "Direct or repository download location",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:distributionIntake",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:distributionIntake",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 1,
       "name": "Distribution Intake",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The location where a component was published to.",
+      "description": "The location where a component was published to.",
       "description": "The location where a component was published to. This is often the same as \"distribution\" but may also include specialized publishing processes that act as an intermediary",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:buildMeta",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:buildMeta",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": "",
       "name": "Build Metadata",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:buildSystem",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:buildSystem",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": "",
       "name": "Build System",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:securityContact",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:securityContact",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Security Contact",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Specifies a way to contact the maintainer, supplier, or provider in the event of a security incident.",
-      "description": "",
+      "description": "Specifies a way to contact the maintainer, supplier, or provider in the event of a security incident.",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:attestation",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:attestation",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 3,
       "name": "Attestation",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Human or machine-readable statements containing facts, evidence, or testimony",
-      "description": "",
+      "description": "Human or machine-readable statements containing facts, evidence, or testimony",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:threatModel",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:threatModel",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 3,
       "name": "Threat Model",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "An enumeration of identified weaknesses, threats, and countermeasures, dataflow diagram (DFD), attack tree, and other supporting documentation in human-readable or machine-readable format",
-      "description": "",
+      "description": "An enumeration of identified weaknesses, threats, and countermeasures, dataflow diagram (DFD), attack tree, and other supporting documentation in human-readable or machine-readable format",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:vulnerabilityAssertion",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:vulnerabilityAssertion",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Vulnerability Assertion",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "A Vulnerability Disclosure Report (VDR) which asserts the known and previously unknown vulnerabilities that affect a component, service, or product including the analysis and findings describing the impact (or lack of impact) that the reported vulnerability has on a component, service, or product.",
-      "description": "",
+      "description": "A Vulnerability Disclosure Report (VDR) which asserts the known and previously unknown vulnerabilities that affect a component, service, or product including the analysis and findings describing the impact (or lack of impact) that the reported vulnerability has on a component, service, or product.",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:exploitabilityStatement",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:exploitabilityStatement",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 3,
       "name": "Exploitability Statement",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "A Vulnerability Exploitability eXchange (VEX) which asserts the known vulnerabilities that do not affect a product, product family, or organization, and optionally the ones that do. The VEX should include the analysis and findings describing the impact (or lack of impact) that the reported vulnerability has on the product, product family, or organization.",
-      "description": "",
+      "description": "A Vulnerability Exploitability eXchange (VEX) which asserts the known vulnerabilities that do not affect a product, product family, or organization, and optionally the ones that do. The VEX should include the analysis and findings describing the impact (or lack of impact) that the reported vulnerability has on the product, product family, or organization.",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:pentestReport",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:pentestReport",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 3,
       "name": "Pentest Report",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Results from an authorized simulated cyberattack on a component or service, otherwise known as a penetration test",
-      "description": "",
+      "description": "Results from an authorized simulated cyberattack on a component or service, otherwise known as a penetration test",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:staticAnalysisReport",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:staticAnalysisReport",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Static Analysis Report",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "SARIF or proprietary machine or human-readable report for which static analysis has identified code quality, security, and other potential issues with the source code",
-      "description": "",
+      "description": "SARIF or proprietary machine or human-readable report for which static analysis has identified code quality, security, and other potential issues with the source code",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:dynamicAnalysisReport",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:dynamicAnalysisReport",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Dynamic Analysis Report",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Dynamic analysis report that has identified issues such as vulnerabilities and misconfigurations",
-      "description": "",
+      "description": "Dynamic analysis report that has identified issues such as vulnerabilities and misconfigurations",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:runtimeAnalysisReport",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:runtimeAnalysisReport",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Runtime Analysis Report",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Report generated by analyzing the call stack of a running application",
-      "description": "",
+      "description": "Report generated by analyzing the call stack of a running application",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:componentAnalysisReport",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:componentAnalysisReport",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Component Analysis Report",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Report generated by Software Composition Analysis (SCA), container analysis, or other forms of component analysis",
-      "description": "",
+      "description": "Report generated by Software Composition Analysis (SCA), container analysis, or other forms of component analysis",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:maturityReport",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:maturityReport",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 3,
       "name": "Maturity Report",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Report containing a formal assessment of an organization, business unit, or team against a maturity model",
-      "description": "",
+      "description": "Report containing a formal assessment of an organization, business unit, or team against a maturity model",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:certificationReport",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:certificationReport",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 3,
       "name": "Certification Report",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Industry, regulatory, or other certification from an accredited (if applicable) certification body",
-      "description": "",
+      "description": "Industry, regulatory, or other certification from an accredited (if applicable) certification body",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:qualityMetrics",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:qualityMetrics",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Quality Metrics",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Report or system in which quality metrics can be obtained",
-      "description": "",
+      "description": "Report or system in which quality metrics can be obtained",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:codifiedInfrastructure",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:codifiedInfrastructure",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 2,
       "name": "Codified Infrastructure",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Code or configuration that defines and provisions virtualized infrastructure, commonly referred to as Infrastructure as Code (IaC)",
-      "description": "",
+      "description": "Code or configuration that defines and provisions virtualized infrastructure, commonly referred to as Infrastructure as Code (IaC)",
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:references:riskAssessment",
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:riskAssessment",
       "domain": "Resource",
-      "kingdom": "References",
+      "kingdom": "Relationships",
       "difficulty": 3,
       "name": "Risk Assessment",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2122,10 +1556,6 @@
       "kingdom": null,
       "difficulty": 2,
       "name": "Pedigree",
-      "structure": {
-        "type": "base"
-      },
-      "summary": "",
       "description": "Data which describes the lineage for which software has been created or altered. Pedigree includes the ancestors, descendants, and variants which describe component lineage from any viewpoint and the commits, patches, and diffs which make a component unique. Maintaining accurate pedigree information is especially important with open source components whos source code is readily available, modifiable, and redistributable.",
       "references": []
     },
@@ -2135,10 +1565,6 @@
       "kingdom": "Source",
       "difficulty": 2,
       "name": "Source",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2148,11 +1574,7 @@
       "kingdom": "Source",
       "difficulty": 2,
       "name": "Commits",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The commit information made to version control systems which document the alterations made to a component",
-      "description": "",
+      "description": "The commit information made to version control systems which document the alterations made to a component",
       "references": []
     },
     {
@@ -2161,63 +1583,7 @@
       "kingdom": "Source",
       "difficulty": 2,
       "name": "Diffs",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The comparison between two components which describe the alteration delta",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:pedigree:relationships",
-      "domain": "Pedigree",
-      "kingdom": "Relationships",
-      "difficulty": 2,
-      "name": "Relationships",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "The lineage describing how components are related",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:pedigree:relationships:ancestors",
-      "domain": "Pedigree",
-      "kingdom": "Relationships",
-      "difficulty": 2,
-      "name": "Ancestors",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Describes the origin component in which a component is derived from",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:pedigree:relationships:descendents",
-      "domain": "Pedigree",
-      "kingdom": "Relationships",
-      "difficulty": 2,
-      "name": "Descendents",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Describes a component that is derived from an origin component",
-      "description": "",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:pedigree:relationships:variants",
-      "domain": "Pedigree",
-      "kingdom": "Relationships",
-      "difficulty": 2,
-      "name": "Variants",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Describes an ancestral relationship where the precise lineage is not known",
-      "description": "",
+      "description": "The comparison between two components which describe the alteration delta",
       "references": []
     },
     {
@@ -2226,10 +1592,7 @@
       "kingdom": "Resolves",
       "difficulty": 3,
       "name": "Resolves",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "The purposes for modifying a component as documented in an ALM",
+      "description": "The purposes for modifying a component as documented in an ALM",
       "description": "The purposes for modifying a component as documented in an Application Lifecycle Management (ALM) system or issue tracker",
       "references": []
     },
@@ -2239,11 +1602,7 @@
       "kingdom": "Resolves",
       "difficulty": 3,
       "name": "Enhancement",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The ALM ticket describing additional features or capabilities in a modified component",
-      "description": "",
+      "description": "The ALM ticket describing additional features or capabilities in a modified component",
       "references": []
     },
     {
@@ -2252,11 +1611,7 @@
       "kingdom": "Resolves",
       "difficulty": 3,
       "name": "Defect",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The ALM ticket describing the defects that have been corrected in a modified component",
-      "description": "",
+      "description": "The ALM ticket describing the defects that have been corrected in a modified component",
       "references": []
     },
     {
@@ -2265,11 +1620,7 @@
       "kingdom": "Resolves",
       "difficulty": 3,
       "name": "Security",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The ALM ticket describing the security changes that have been made in a modified component",
-      "description": "",
+      "description": "The ALM ticket describing the security changes that have been made in a modified component",
       "references": []
     },
     {
@@ -2278,10 +1629,7 @@
       "kingdom": null,
       "difficulty": 1,
       "name": "Provenance",
-      "structure": {
-        "type": "base"
-      },
-      "summary": "The traceability of all authorship, build, release, packaging, and distribution across the entire supply chain.",
+      "description": "The traceability of all authorship, build, release, packaging, and distribution across the entire supply chain.",
       "description": "Provenance may include individual and community authorship of software components, manufacturers, suppliers, software repositories, and country of origin. For high assurance applications, provenance plays an important role in determining Foreign Ownership, Control, or Influence (FOCI).",
       "references": []
     },
@@ -2291,11 +1639,7 @@
       "kingdom": "Storage",
       "difficulty": 1,
       "name": "Storage",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "A network locatable service that stores artifacts",
-      "description": "",
+      "description": "A network locatable service that stores artifacts",
       "references": []
     },
     {
@@ -2304,11 +1648,7 @@
       "kingdom": "Storage",
       "difficulty": 1,
       "name": "Package Repository",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "A service that stores software packages using a formal structure",
-      "description": "",
+      "description": "A service that stores software packages using a formal structure",
       "references": []
     },
     {
@@ -2317,11 +1657,7 @@
       "kingdom": "Storage",
       "difficulty": 1,
       "name": "Arbitrary Repository",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "A service that stores data objects",
-      "description": "",
+      "description": "A service that stores data objects",
       "references": []
     },
     {
@@ -2330,11 +1666,7 @@
       "kingdom": "Storage",
       "difficulty": 1,
       "name": "BOM Repository",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "A service that stores Bills of Materials",
-      "description": "",
+      "description": "A service that stores Bills of Materials",
       "references": []
     },
     {
@@ -2343,11 +1675,7 @@
       "kingdom": null,
       "difficulty": 1,
       "name": "Version Control System",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "A category of software tools that records changes made to files by keeping track of all modifications",
-      "description": "",
+      "description": "A category of software tools that records changes made to files by keeping track of all modifications",
       "references": []
     },
     {
@@ -2356,11 +1684,7 @@
       "kingdom": null,
       "difficulty": 1,
       "name": "Ecosystem",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "An ecosystem of components that add extra functionality to core installation functions",
-      "description": "",
+      "description": "An ecosystem of components that add extra functionality to core installation functions",
       "references": []
     },
     {
@@ -2369,11 +1693,7 @@
       "kingdom": "Role",
       "difficulty": 1,
       "name": "Role",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "The purpose an entity plays in the supply chain",
-      "description": "",
+      "description": "The purpose an entity plays in the supply chain",
       "references": []
     },
     {
@@ -2382,11 +1702,7 @@
       "kingdom": "Role",
       "difficulty": 1,
       "name": "Supplier",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "The organization that supplied the component. The supplier may often be the manufacturer, but may also be a distributor or repackager.",
-      "description": "",
+      "description": "The organization that supplied the component. The supplier may often be the manufacturer, but may also be a distributor or repackager.",
       "references": []
     },
     {
@@ -2395,10 +1711,6 @@
       "kingdom": "Role",
       "difficulty": 2,
       "name": "Organizational Entity",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "Corporate entities, companies, foundations, and other structured and formally recognized organizations",
       "references": []
     },
@@ -2408,10 +1720,6 @@
       "kingdom": "Role",
       "difficulty": 2,
       "name": "Non-Organizational Entity",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "Non-corporate entities such as individuals",
       "references": []
     },
@@ -2421,11 +1729,7 @@
       "kingdom": "Role",
       "difficulty": 2,
       "name": "Manufacturer",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The entity that built the software",
-      "description": "",
+      "description": "The entity that built the software",
       "references": []
     },
     {
@@ -2434,10 +1738,6 @@
       "kingdom": "Role",
       "difficulty": 2,
       "name": "Organizational Entity",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "Corporate entities, companies, foundations, and other structured and formally recognized organizations",
       "references": []
     },
@@ -2447,10 +1747,6 @@
       "kingdom": "Role",
       "difficulty": 2,
       "name": "Non-Organizational Entity",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "Non-corporate entities such as individuals",
       "references": []
     },
@@ -2460,11 +1756,7 @@
       "kingdom": "Role",
       "difficulty": 2,
       "name": "Publisher",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The entity which makes available the software for public distribution",
-      "description": "",
+      "description": "The entity which makes available the software for public distribution",
       "references": []
     },
     {
@@ -2473,10 +1765,6 @@
       "kingdom": "Role",
       "difficulty": 2,
       "name": "Organizational Entity",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "Corporate entities, companies, foundations, and other structured and formally recognized organizations",
       "references": []
     },
@@ -2486,10 +1774,6 @@
       "kingdom": "Role",
       "difficulty": 2,
       "name": "Non-Organizational Entity",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "Non-corporate entities such as individuals",
       "references": []
     },
@@ -2499,11 +1783,7 @@
       "kingdom": "Role",
       "difficulty": 2,
       "name": "Author",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "The entities who contributed to writing the software",
-      "description": "",
+      "description": "The entities who contributed to writing the software",
       "references": []
     },
     {
@@ -2512,10 +1792,6 @@
       "kingdom": "Role",
       "difficulty": 2,
       "name": "Organizational Entity",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "Corporate entities, companies, foundations, and other structured and formally recognized organizations",
       "references": []
     },
@@ -2525,10 +1801,6 @@
       "kingdom": "Role",
       "difficulty": 2,
       "name": "Non-Organizational Entity",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "",
       "description": "Non-corporate entities such as individuals",
       "references": []
     },
@@ -2538,10 +1810,6 @@
       "kingdom": "Ledger",
       "difficulty": 3,
       "name": "Ledger",
-      "structure": {
-        "type": "class"
-      },
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2551,10 +1819,7 @@
       "kingdom": "Ledger",
       "difficulty": 3,
       "name": "Chain of Custody",
-      "structure": {
-        "type": "property"
-      },
-      "summary": "Chain ledger? Discuss.",
+      "description": "Chain ledger? Discuss.",
       "description": "Chain of custody over time",
       "references": []
     },
@@ -2564,9 +1829,7 @@
       "kingdom": "Ledger",
       "difficulty": "",
       "name": "Transparency Log",
-      "Structure / Type": "property",
-      "summary": "See https://securitytrails.com/blog/what-are-certificate-transparency-logs for examples",
-      "description": "",
+      "description": "See https://securitytrails.com/blog/what-are-certificate-transparency-logs for examples",
       "references": []
     },
     {
@@ -2574,8 +1837,7 @@
       "domain": "Formulation",
       "difficulty": "3",
       "name": "Formulation",
-      "Structure / Type": "class",
-      "summary": "Declared and observed formulations for precise reproducibility",
+      "description": "Declared and observed formulations for precise reproducibility",
       "description": "A collection of formulas, each describing how a component or service was manufactured or deployed.",
       "references": []
     },
@@ -2584,8 +1846,7 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Formula",
-      "Structure / Type": "",
-      "summary": "Describes how a component or service was manufactured or deployed.",
+      "description": "Describes how a component or service was manufactured or deployed.",
       "description": "Describes how a component or service was manufactured or deployed. This is achieved through the use of formulas, workflows, tasks, and steps, which declare the precise steps to reproduce along with the observed formulas describing the steps which transpired in the manufacturing process.",
       "references": []
     },
@@ -2594,8 +1855,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Resource",
-      "Structure / Type": "class",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2604,9 +1863,7 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Components",
-      "Structure / Type": "",
-      "summary": "Transient components that are used in tasks that constitute one or more of this formula's workflows",
-      "description": "",
+      "description": "Transient components that are used in tasks that constitute one or more of this formula's workflows",
       "references": []
     },
     {
@@ -2614,9 +1871,7 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Services",
-      "Structure / Type": "",
-      "summary": "Transient services that are used in tasks that constitute one or more of this formula's workflows",
-      "description": "",
+      "description": "Transient services that are used in tasks that constitute one or more of this formula's workflows",
       "references": []
     },
     {
@@ -2624,9 +1879,7 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Workflows",
-      "Structure / Type": "",
-      "summary": "List of workflows that can be declared to accomplish specific orchestrated goals and independently triggered.",
-      "description": "",
+      "description": "List of workflows that can be declared to accomplish specific orchestrated goals and independently triggered.",
       "references": []
     },
     {
@@ -2634,9 +1887,7 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Tasks",
-      "Structure / Type": "",
-      "summary": "The tasks that comprise the workflow.",
-      "description": "",
+      "description": "The tasks that comprise the workflow.",
       "references": []
     },
     {
@@ -2644,8 +1895,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Task Type",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2654,8 +1903,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Trigger",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2664,8 +1911,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Steps",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2674,8 +1919,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Inputs",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2684,8 +1927,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Outputs",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2694,8 +1935,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Time Started",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2704,8 +1943,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Time Ended",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2714,8 +1951,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Workspaces",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2724,8 +1959,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Runtime Topology",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2734,8 +1967,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Task Types",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2744,8 +1975,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Trigger",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2754,8 +1983,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Steps",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2764,8 +1991,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Inputs",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2774,8 +1999,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Outputs",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2784,8 +2007,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Time Started",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2794,8 +2015,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Time Ended",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2804,8 +2023,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Workspaces",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     },
@@ -2814,8 +2031,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Runtime Topology",
-      "Structure / Type": "",
-      "summary": "",
       "description": "",
       "references": []
     }

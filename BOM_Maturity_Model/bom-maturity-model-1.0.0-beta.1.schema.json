@@ -7,6 +7,7 @@
   "required": [
     "model"
   ],
+  "additionalProperties": false,
   "properties": {
     "$schema": {
       "type": "string",
@@ -14,75 +15,61 @@
         "https://scvs.owasp.org/bom-maturity-model-1.0.0-beta.1.schema.json"
       ]
     },
-    "model": {"$ref": "#/definitions/model_type"}
+    "model": {"$ref": "#/definitions/modelType"}
   },
-  "additionalProperties": false,
   "definitions": {
-    "structure_type": {
-      "type": "object",
-      "properties": {
-        "type": {
-          "type": "string",
-          "examples": ["property"],
-          "default": ""
-        }
-      },
-      "additionalProperties": false
-    },
-    "references_type": {
+    "referencesType": {
       "type": "array",
       "minItems": 0,
       "additionalItems": false
     },
-    "model_type": {
+    "modelType": {
       "type": "array",
       "minItems": 0,
       "items": {
         "type": "object",
+        "required": [
+          "identifier",
+          "domain",
+          "kingdom",
+          "name",
+          "description",
+          "difficulty",
+          "references"
+        ],
+        "additionalProperties": false,
         "properties": {
           "identifier": {
             "type": "string",
-            "examples": ["urn:owasp:scvs:bom:resource"]
+            "pattern": "^urn:owasp:scvs:bom:*"
           },
           "domain": {
             "type": "string",
+            "minLength": 1,
             "examples": ["Resource"]
           },
           "kingdom": {
             "type": [ "string", "null" ]
           },
-          "difficulty": {
-            "type": "integer"
-          },
           "name": {
             "type": "string",
+            "minLength": 1,
             "examples": ["Resource"]
           },
-          "structure": {"$ref": "#/definitions/structure_type"},
-          "summary": {
-            "type": "string"
-          },
           "description": {
-            "type": "string"
-          },
-          "references": {"$ref": "#/definitions/references_type"},
-          "Structure / Type": {
             "type": "string",
-            "examples": ["property (array)"]
+            "minLength": 1
+          },
+          "difficulty": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3
+          },
+          "references": {
+            "$ref": "#/definitions/referencesType"
           }
-        },
-        "required": [
-          "difficulty",
-          "summary",
-          "identifier",
-          "references",
-          "domain",
-          "name",
-          "description"
-        ],
-        "additionalProperties": false
-      },
-      "additionalItems": false
+        }
+      }
     }
   }
 }
