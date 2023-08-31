@@ -10,10 +10,10 @@
   "additionalProperties": false,
   "properties": {
     "$schema": {"type": "string"},
-    "profiles": {"$ref": "#/definitions/profiles_type"}
+    "profiles": {"$ref": "#/definitions/profilesType"}
   },
   "definitions": {
-    "elements_type": {
+    "elementsType": {
       "type": "array",
       "minItems": 0,
       "items": {
@@ -51,9 +51,10 @@
         }
       }
     },
-    "profiles_type": {
+    "profilesType": {
       "type": "array",
       "items": {
+        "type": "object",
         "required": [
           "name",
           "version",
@@ -65,7 +66,7 @@
           "version": {"type": "string"},
           "description": {"type": "string"},
           "creator": {"type": "string"},
-          "elements": {"$ref": "#/definitions/elements_type"}
+          "elements": {"$ref": "#/definitions/elementsType"}
         }
       }
     }

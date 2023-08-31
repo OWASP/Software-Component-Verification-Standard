@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://scvs.owasp.org/bom-maturity-model-1.0.0-beta.1.schema.json",
   "type": "object",
   "title": "OWASP SCVS BOM Maturity Model",
@@ -18,10 +18,9 @@
     "model": {"$ref": "#/definitions/modelType"}
   },
   "definitions": {
-    "referencesType": {
-      "type": "array",
-      "minItems": 0,
-      "additionalItems": false
+    "identifierType": {
+      "type": "string",
+      "pattern": "^urn:owasp:scvs:bom:*"
     },
     "modelType": {
       "type": "array",
@@ -66,7 +65,21 @@
             "maximum": 3
           },
           "references": {
-            "$ref": "#/definitions/referencesType"
+            "type": "array",
+            "minItems": 0,
+            "items": {
+              "type": "object",
+              "additionalProperties": true,
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "url": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       }
