@@ -871,8 +871,7 @@
       "kingdom": "Identifiers",
       "difficulty": "",
       "name": "Identifiers",
-      "description": "Properties describing the unique identity of BOM component",
-      "description": "Properties which assert the identity of BOM components in order to facilitate risk association. Assertions may include a single occurance of one or more identifer types assigned from different domains.",
+      "description": "Properties which assert the identity of BOM components. Assertions should include a single occurrence of one or more identifier types assigned from different domains.",
       "references": []
     },
     {
@@ -881,7 +880,6 @@
       "kingdom": "Identifiers",
       "difficulty": 3,
       "name": "Common Platform Enumeration (CPE)",
-      "description": "CPE is a structured naming scheme for information technology systems, software, and packages.",
       "description": "CPE is a structured naming scheme for information technology systems, software, and packages. Based upon the generic syntax for Uniform Resource Identifiers (URI), CPE includes a formal name format, a method for checking names against a system, and a description format for binding text and tests to a name. The CPE standard and official dictionary are maintained by NIST.",
       "references": [
         {
@@ -896,8 +894,7 @@
       "kingdom": "Identifiers",
       "difficulty": 1,
       "name": "Coordinates",
-      "description": "The namespace, name, and version of the resource.",
-      "description": "The namespace (or group) is part the coordinates for the resource ecosystems that support it.",
+      "description": "The namespace, name, and version of the resource. The namespace (or group) is part the coordinates for the resource ecosystems that support it.",
       "references": []
     },
     {
@@ -1230,7 +1227,6 @@
       "kingdom": "License",
       "difficulty": 2,
       "name": "Last Renewal",
-      "description": "The timestamp indicating when the license was last renewed.",
       "description": "The timestamp indicating when the license was last renewed. For new purchases, this is often the purchase or acquisition date. For non-perpetual licenses or subscriptions, this is the timestamp of when the license was last renewed.",
       "references": []
     },
@@ -1393,7 +1389,6 @@
       "kingdom": "Relationships",
       "difficulty": 1,
       "name": "Distribution Intake",
-      "description": "The location where a component was published to.",
       "description": "The location where a component was published to. This is often the same as \"distribution\" but may also include specialized publishing processes that act as an intermediary",
       "references": []
     },
@@ -1592,7 +1587,6 @@
       "kingdom": "Resolves",
       "difficulty": 3,
       "name": "Resolves",
-      "description": "The purposes for modifying a component as documented in an ALM",
       "description": "The purposes for modifying a component as documented in an Application Lifecycle Management (ALM) system or issue tracker",
       "references": []
     },
@@ -1629,8 +1623,7 @@
       "kingdom": null,
       "difficulty": 1,
       "name": "Provenance",
-      "description": "The traceability of all authorship, build, release, packaging, and distribution across the entire supply chain.",
-      "description": "Provenance may include individual and community authorship of software components, manufacturers, suppliers, software repositories, and country of origin. For high assurance applications, provenance plays an important role in determining Foreign Ownership, Control, or Influence (FOCI).",
+      "description": "The traceability of all authorship, build, release, packaging, and distribution across the entire supply chain. Provenance may include individual and community authorship of software components, manufacturers, suppliers, software repositories, and country of origin. For high assurance applications, provenance plays an important role in determining Foreign Ownership, Control, or Influence (FOCI).",
       "references": []
     },
     {
@@ -1819,7 +1812,6 @@
       "kingdom": "Ledger",
       "difficulty": 3,
       "name": "Chain of Custody",
-      "description": "Chain ledger? Discuss.",
       "description": "Chain of custody over time",
       "references": []
     },
@@ -1837,7 +1829,6 @@
       "domain": "Formulation",
       "difficulty": "3",
       "name": "Formulation",
-      "description": "Declared and observed formulations for precise reproducibility",
       "description": "A collection of formulas, each describing how a component or service was manufactured or deployed.",
       "references": []
     },
@@ -1846,7 +1837,6 @@
       "domain": "Formulation",
       "difficulty": 3,
       "name": "Formula",
-      "description": "Describes how a component or service was manufactured or deployed.",
       "description": "Describes how a component or service was manufactured or deployed. This is achieved through the use of formulas, workflows, tasks, and steps, which declare the precise steps to reproduce along with the observed formulas describing the steps which transpired in the manufacturing process.",
       "references": []
     },
