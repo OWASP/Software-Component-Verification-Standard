@@ -12,7 +12,7 @@ function transformJSON(json, basePath = '')  {
                 { "text": "Profile Generator", "data": { "path": "/bom-maturity-model/profiles/profile-generator/" } },
                 { "text": "Examples", "data": { "id": "profiles-examples" }, "children":
                     [
-                        { "text": comingSoon + " NTIA Minimum Elements", "data": { "path": "/bom-maturity-model/profiles/examples/ntia-minimum-elements/" }, state: { selectable: false } },
+                        { "text": "NTIA Minimum Elements", "data": { "path": "/bom-maturity-model/profiles/examples/ntia-minimum-elements/" }, state: { selectable: true } },
                         { "text": comingSoon + " Security (AppSec)", "data": { "id": "profiles-ntia-minimum", "path": "/bom-maturity-model/profiles/security-appsec/" }, state: { selectable: false } },
                         { "text": comingSoon + " Security (FOCI)", "data": { "path": "/bom-maturity-model/profiles/examples/security-foci/" }, state: { selectable: false } },
                         { "text": comingSoon + " Security (Operational)", "data": { "path": "/bom-maturity-model/profiles/examples/security-operational/" }, state: { selectable: false } },
