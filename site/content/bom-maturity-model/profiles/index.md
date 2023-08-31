@@ -29,18 +29,18 @@ The following is an example profile that describes the [NTIA Minimum Elements fo
       "creator": "OWASP Foundation",
       "elements": [
         {
-          "structure": [ "metadata", "inventory" ],
+          "structure": [ "urn:owasp:scvs:bom:structure:metadata", "urn:owasp:scvs:bom:structure:inventory" ],
           "identifiers": [
             "urn:owasp:scvs:bom:provenance:role:supplier",
             "urn:owasp:scvs:bom:resource:identifiers:coordinates",
             "urn:owasp:scvs:bom:resource:software:identity",
-            "assembly"
+            "urn:owasp:scvs:bom:resource:relationships:assembly"
           ],
           "weight": 1.0,
           "required": true
         },
         {
-          "structure": [ "metadata" ],
+          "structure": [ "urn:owasp:scvs:bom:structure:metadata" ],
           "identifiers": [
             "urn:owasp:scvs:bom:provenance:role:author",
             "timestamp"
@@ -49,7 +49,7 @@ The following is an example profile that describes the [NTIA Minimum Elements fo
           "required": true
         },
         {
-          "structure": [ "metadata", "inventory" ],
+          "structure": [ "urn:owasp:scvs:bom:structure:metadata", "urn:owasp:scvs:bom:structure:inventory" ],
           "identifiers": [
             "urn:owasp:scvs:bom:resource:identifiers:cpe",
             "urn:owasp:scvs:bom:resource:identifiers:purl"

@@ -1285,6 +1285,15 @@
       "references": []
     },
     {
+      "identifier": "urn:owasp:scvs:bom:resource:relationships:assembly",
+      "domain": "Resource",
+      "kingdom": "Relationships",
+      "difficulty": 2,
+      "name": "Assembly",
+      "description": "A list of software and hardware components included in other component. This is not a dependency tree, rather, assemblies provide a way to specify a hierarchical or exploded representation, similar to system → subsystem → parts assembly in physical supply chains.",
+      "references": []
+    },
+    {
       "identifier": "urn:owasp:scvs:bom:resource:relationships:vcs",
       "domain": "Resource",
       "kingdom": "Relationships",
