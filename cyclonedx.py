@@ -50,18 +50,18 @@ class CycloneDX:
     bom['metadata']['supplier'] = {}
     bom['metadata']['supplier']['name'] = "OWASP Foundation"
     bom['metadata']['supplier']['url'] = [ "https://owasp.org" ]
-    bom['declarations'] = {}
-    bom['declarations']['standards'] = []
-    bom['declarations']['standards'].append({})
+    bom['definitions'] = {}
+    bom['definitions']['standards'] = []
+    bom['definitions']['standards'].append({})
 
     def __init__(self, scvs_model_in):
         scvs = scvs_model_in
         bom_ref = "SCVS-" + scvs["version"]
-        self.bom['declarations']['standards'][0]['bom-ref'] = bom_ref
-        self.bom['declarations']['standards'][0]['name'] = "Software Component Verification Standard (SCVS)"
-        self.bom['declarations']['standards'][0]['version'] = scvs["version"]
-        self.bom['declarations']['standards'][0]['description'] = scvs["description"]
-        self.bom['declarations']['standards'][0]['owner'] = "OWASP Software Component Verification Standard Project"
+        self.bom['definitions']['standards'][0]['bom-ref'] = bom_ref
+        self.bom['definitions']['standards'][0]['name'] = "Software Component Verification Standard (SCVS)"
+        self.bom['definitions']['standards'][0]['version'] = scvs["version"]
+        self.bom['definitions']['standards'][0]['description'] = scvs["description"]
+        self.bom['definitions']['standards'][0]['owner'] = "OWASP Software Component Verification Standard Project"
 
         requirements = []
         l1_requirements = []
@@ -81,44 +81,44 @@ class CycloneDX:
                     if 'l3' in scvs_requirement and scvs_requirement['l3'] is True:
                         l3_requirements.append(requirement['bom-ref'])
 
-        self.bom['declarations']['standards'][0]['requirements'] = requirements
+        self.bom['definitions']['standards'][0]['requirements'] = requirements
 
-        self.bom['declarations']['standards'][0]['levels'] = []
-        self.bom['declarations']['standards'][0]['levels'].append({})
-        self.bom['declarations']['standards'][0]['levels'][0] = {}
-        self.bom['declarations']['standards'][0]['levels'][0]['bom-ref'] = "level-1"
-        self.bom['declarations']['standards'][0]['levels'][0]['identifier'] = "Level 1"
-        self.bom['declarations']['standards'][0]['levels'][0]['description'] = "SCVS level 1 lays the groundwork from which to build upon."
-        self.bom['declarations']['standards'][0]['levels'][0]['requirements'] = l1_requirements
-        self.bom['declarations']['standards'][0]['levels'].append({})
-        self.bom['declarations']['standards'][0]['levels'][1] = {}
-        self.bom['declarations']['standards'][0]['levels'][1]['bom-ref'] = "level-2"
-        self.bom['declarations']['standards'][0]['levels'][1]['identifier'] = "Level 2"
-        self.bom['declarations']['standards'][0]['levels'][1]['description'] = "SCVS level 2 expands the breadth of level 1 capabilities. Level 2 is appropriate for software intensive enterprises and organizations with existing risk management frameworks and regulatory and/or contractual requirements. Level 2 also expands the number of stakeholders including those with non-technical roles. Adoption of level 2 may require additional resources and domain expertise to achieve."
-        self.bom['declarations']['standards'][0]['levels'][1]['requirements'] = l2_requirements
-        self.bom['declarations']['standards'][0]['levels'].append({})
-        self.bom['declarations']['standards'][0]['levels'][2] = {}
-        self.bom['declarations']['standards'][0]['levels'][2]['bom-ref'] = "level-3"
-        self.bom['declarations']['standards'][0]['levels'][2]['identifier'] = "Level 3"
-        self.bom['declarations']['standards'][0]['levels'][2]['description'] = "SCVS level 3 extends the depth of level 2 capabilities. Level 3 is applicable in critical infrastructure and systems with safety requirements. Auditability and end-to-end transparency in the supply chain is required to maintain a high security posture in these systems and the organizations that produce and maintain them."
-        self.bom['declarations']['standards'][0]['levels'][2]['requirements'] = l3_requirements
+        self.bom['definitions']['standards'][0]['levels'] = []
+        self.bom['definitions']['standards'][0]['levels'].append({})
+        self.bom['definitions']['standards'][0]['levels'][0] = {}
+        self.bom['definitions']['standards'][0]['levels'][0]['bom-ref'] = "level-1"
+        self.bom['definitions']['standards'][0]['levels'][0]['identifier'] = "Level 1"
+        self.bom['definitions']['standards'][0]['levels'][0]['description'] = "SCVS level 1 lays the groundwork from which to build upon."
+        self.bom['definitions']['standards'][0]['levels'][0]['requirements'] = l1_requirements
+        self.bom['definitions']['standards'][0]['levels'].append({})
+        self.bom['definitions']['standards'][0]['levels'][1] = {}
+        self.bom['definitions']['standards'][0]['levels'][1]['bom-ref'] = "level-2"
+        self.bom['definitions']['standards'][0]['levels'][1]['identifier'] = "Level 2"
+        self.bom['definitions']['standards'][0]['levels'][1]['description'] = "SCVS level 2 expands the breadth of level 1 capabilities. Level 2 is appropriate for software intensive enterprises and organizations with existing risk management frameworks and regulatory and/or contractual requirements. Level 2 also expands the number of stakeholders including those with non-technical roles. Adoption of level 2 may require additional resources and domain expertise to achieve."
+        self.bom['definitions']['standards'][0]['levels'][1]['requirements'] = l2_requirements
+        self.bom['definitions']['standards'][0]['levels'].append({})
+        self.bom['definitions']['standards'][0]['levels'][2] = {}
+        self.bom['definitions']['standards'][0]['levels'][2]['bom-ref'] = "level-3"
+        self.bom['definitions']['standards'][0]['levels'][2]['identifier'] = "Level 3"
+        self.bom['definitions']['standards'][0]['levels'][2]['description'] = "SCVS level 3 extends the depth of level 2 capabilities. Level 3 is applicable in critical infrastructure and systems with safety requirements. Auditability and end-to-end transparency in the supply chain is required to maintain a high security posture in these systems and the organizations that produce and maintain them."
+        self.bom['definitions']['standards'][0]['levels'][2]['requirements'] = l3_requirements
 
-        self.bom['declarations']['standards'][0]['externalReferences'] = []
-        self.bom['declarations']['standards'][0]['externalReferences'].append({})
-        self.bom['declarations']['standards'][0]['externalReferences'][0]['type'] = 'website'
-        self.bom['declarations']['standards'][0]['externalReferences'][0]['url'] = 'https://owasp.org/scvs'
-        self.bom['declarations']['standards'][0]['externalReferences'].append({})
-        self.bom['declarations']['standards'][0]['externalReferences'][1]['type'] = 'website'
-        self.bom['declarations']['standards'][0]['externalReferences'][1]['url'] = 'https://scvs.owasp.org'
-        self.bom['declarations']['standards'][0]['externalReferences'].append({})
-        self.bom['declarations']['standards'][0]['externalReferences'][2]['type'] = 'vcs'
-        self.bom['declarations']['standards'][0]['externalReferences'][2]['url'] = 'https://github.com/OWASP/Software-Component-Verification-Standard'
-        self.bom['declarations']['standards'][0]['externalReferences'].append({})
-        self.bom['declarations']['standards'][0]['externalReferences'][3]['type'] = 'issue-tracker'
-        self.bom['declarations']['standards'][0]['externalReferences'][3]['url'] = 'https://github.com/OWASP/Software-Component-Verification-Standard/issues'
-        self.bom['declarations']['standards'][0]['externalReferences'].append({})
-        self.bom['declarations']['standards'][0]['externalReferences'][4]['type'] = 'social'
-        self.bom['declarations']['standards'][0]['externalReferences'][4]['url'] = 'https://twitter.com/OWASP_SCVS'
+        self.bom['definitions']['standards'][0]['externalReferences'] = []
+        self.bom['definitions']['standards'][0]['externalReferences'].append({})
+        self.bom['definitions']['standards'][0]['externalReferences'][0]['type'] = 'website'
+        self.bom['definitions']['standards'][0]['externalReferences'][0]['url'] = 'https://owasp.org/scvs'
+        self.bom['definitions']['standards'][0]['externalReferences'].append({})
+        self.bom['definitions']['standards'][0]['externalReferences'][1]['type'] = 'website'
+        self.bom['definitions']['standards'][0]['externalReferences'][1]['url'] = 'https://scvs.owasp.org'
+        self.bom['definitions']['standards'][0]['externalReferences'].append({})
+        self.bom['definitions']['standards'][0]['externalReferences'][2]['type'] = 'vcs'
+        self.bom['definitions']['standards'][0]['externalReferences'][2]['url'] = 'https://github.com/OWASP/Software-Component-Verification-Standard'
+        self.bom['definitions']['standards'][0]['externalReferences'].append({})
+        self.bom['definitions']['standards'][0]['externalReferences'][3]['type'] = 'issue-tracker'
+        self.bom['definitions']['standards'][0]['externalReferences'][3]['url'] = 'https://github.com/OWASP/Software-Component-Verification-Standard/issues'
+        self.bom['definitions']['standards'][0]['externalReferences'].append({})
+        self.bom['definitions']['standards'][0]['externalReferences'][4]['type'] = 'social'
+        self.bom['definitions']['standards'][0]['externalReferences'][4]['url'] = 'https://twitter.com/OWASP_SCVS'
 
     def convert_domain(self, scvs_requirement, parent):
         requirement = {}
