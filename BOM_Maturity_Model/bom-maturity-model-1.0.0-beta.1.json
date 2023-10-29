@@ -128,6 +128,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Media Type",
+      "description": "A media type, also known as a MIME type, is an identifier used to communicate an intended data format.",
       "references": []
     },
     {
@@ -154,6 +155,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Release Notes",
+      "description": "Documents that are distributed alongside the release of a component.",
       "references": []
     },
     {
@@ -180,6 +182,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Featured Image",
+      "description": "An image that may be prominently displayed with the release note.",
       "references": []
     },
     {
@@ -188,6 +191,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Social Image",
+      "description": "An image that may be used in messaging on social media platforms.",
       "references": []
     },
     {
@@ -195,7 +199,8 @@
       "domain": "Resource",
       "kingdom": "Software",
       "difficulty": 2,
-      "name": "description",
+      "name": "Description",
+      "description": "A short description of the release.",
       "references": []
     },
     {
@@ -204,6 +209,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Timestamp",
+      "description": "The date and time (timestamp) when the release note was created.",
       "references": []
     },
     {
@@ -212,6 +218,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Aliases",
+      "description": "One or more alternate names the release may be referred to. This may include unofficial terms used by development and marketing teams (e.g. code names).",
       "references": []
     },
     {
@@ -220,6 +227,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Tags",
+      "description": "One or more tags that may aid in search or retrieval of the release note.",
       "references": []
     },
     {
@@ -246,6 +254,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Notes",
+      "description": "Zero or more release notes containing the locale and content. Multiple note objects may be specified to support release notes in a wide variety of languages.",
       "references": []
     },
     {
@@ -254,7 +263,21 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Locale",
-      "references": []
+      "description": "The ISO-639 (or higher) language code and optional ISO-3166 (or higher) country code.",
+      "references": [
+        {
+          "title": "ISO 639 Langauge Codes",
+          "url": "https://www.iso.org/iso-639-language-codes.html"
+        },
+        {
+          "title": "Codes for the Representation of Names of Languages",
+          "url": "https://www.loc.gov/standards/iso639-2/php/code_list.php"
+        },
+        {
+          "title": "ISO 3166 Country Codes",
+          "url": "https://www.iso.org/iso-3166-country-codes.html"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:software:releasenotes:notes:text",
@@ -262,6 +285,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Text",
+      "description": "Specifies the full content of the release note.",
       "references": []
     },
     {
@@ -369,6 +393,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Licenses",
+      "description": "Evidence of any and all licenses that were observed during analysis.",
       "references": []
     },
     {
@@ -377,6 +402,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Copyrights",
+      "description": "Evidence of any and all copyright statements that were observed during analysis.",
       "references": []
     },
     {
@@ -394,6 +420,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Model Parameters",
+      "description": "Hyper-parameters for construction of the model.",
       "references": []
     },
     {
@@ -402,6 +429,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Approach",
+      "description": "The overall approach to learning used by the model for problem solving. This may include 'supervised', 'unsupervised', and other learning types.",
       "references": []
     },
     {
@@ -410,6 +438,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Task",
+      "description": "Directly influences the input and/or output. Examples include classification, regression, clustering, etc.",
       "references": []
     },
     {
@@ -418,6 +447,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Architecture Family",
+      "description": "The model architecture family such as transformer network, convolutional neural network, residual neural network, LSTM neural network, etc.",
       "references": []
     },
     {
@@ -426,6 +456,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Model Architecture",
+      "description": "The specific architecture of the model such as GPT-1, ResNet-50, YOLOv3, etc.",
       "references": []
     },
     {
@@ -434,6 +465,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Datasets",
+      "description": "Information about and location to the datasets used to train and evaluate the model.",
       "references": []
     },
     {
@@ -442,6 +474,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Inputs",
+      "description": "The input format(s) of the model",
       "references": []
     },
     {
@@ -450,6 +483,7 @@
       "kingdom": "Software",
       "difficulty": 1,
       "name": "Outputs",
+      "description": "The output format(s) from the model",
       "references": []
     },
     {
@@ -458,6 +492,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Quantitative Analysis",
+      "description": "A quantitative analysis of the model",
       "references": []
     },
     {
@@ -466,6 +501,7 @@
       "kingdom": "Software",
       "difficulty": 2,
       "name": "Performance Metrics",
+      "description": "The model performance metrics being reported. Examples may include accuracy, F1 score, precision, top-3 error rates, MSC, etc.",
       "references": []
     },
     {
@@ -474,6 +510,7 @@
       "kingdom": "Software",
       "difficulty": 3,
       "name": "Considerations",
+      "description": "The considerations that should be taken into account regarding the model's construction, training, and application.",
       "references": []
     },
     {
@@ -482,6 +519,7 @@
       "kingdom": "Software",
       "difficulty": 3,
       "name": "Users",
+      "description": "The intended users of the model",
       "references": []
     },
     {
@@ -490,6 +528,7 @@
       "kingdom": "Software",
       "difficulty": 3,
       "name": "Use Cases",
+      "description": "The intended use cases the model is designed to achieve.",
       "references": []
     },
     {
@@ -498,6 +537,7 @@
       "kingdom": "Software",
       "difficulty": 3,
       "name": "Technical Limitations",
+      "description": "The known technical limitations of the model. E.g. The kind(s) of data should the model be expected not to perform well on, and the factors that might degrade model performance.",
       "references": []
     },
     {
@@ -506,6 +546,7 @@
       "kingdom": "Software",
       "difficulty": 3,
       "name": "Performance Tradeoffs",
+      "description": "The known tradeoffs in accuracy and/or performance of the model.",
       "references": []
     },
     {
@@ -514,6 +555,7 @@
       "kingdom": "Software",
       "difficulty": 3,
       "name": "Ethical Considerations",
+      "description": "The ethical or environmental risks involved in the application of the model.",
       "references": []
     },
     {
@@ -522,6 +564,7 @@
       "kingdom": "Software",
       "difficulty": 3,
       "name": "Fairness Assessments",
+      "description": "How does the model affect groups at risk of being systematically disadvantaged? What are the harms and benefits to the various affected groups?",
       "references": []
     },
     {
@@ -692,7 +735,12 @@
       "difficulty": 2,
       "name": "Country Code",
       "description": "ISO-3166-1 alpha-2 country code of a certifying authority",
-      "references": []
+      "references": [
+        {
+          "title": "ISO 3166 Country Codes",
+          "url": "https://www.iso.org/iso-3166-country-codes.html"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:hardware:certifications:countryCode:authority",
@@ -883,7 +931,7 @@
       "description": "CPE is a structured naming scheme for information technology systems, software, and packages. Based upon the generic syntax for Uniform Resource Identifiers (URI), CPE includes a formal name format, a method for checking names against a system, and a description format for binding text and tests to a name. The CPE standard and official dictionary are maintained by NIST.",
       "references": [
         {
-          "title": "Official Common Platform Enumeration (CPE) Dictionary",
+          "title": "Official Common Platform Enumeration (CPE) Dictionary.",
           "url": "https://nvd.nist.gov/products/cpe"
         }
       ]
@@ -903,8 +951,13 @@
       "kingdom": "Identifiers",
       "difficulty": 1,
       "name": "Package URL",
-      "description": "",
-      "references": []
+      "description": "A URL string used to identify and locate a software package in a mostly universal and uniform way across programing languages, package managers, packaging conventions, tools, APIs and databases.",
+      "references": [
+        {
+          "title": "Package URL specification GitHub repository",
+          "url": "https://github.com/package-url/purl-spec"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid",
@@ -912,17 +965,27 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "SWID",
-      "description": "ISO-IEC 19770-2 Software Identification (SWID) tags",
-      "references": []
+      "description": "ISO/IEC 19770-2 Software Identification (SWID) tags",
+      "references": [
+        {
+          "title": "ISO/IEC 19770-2:2015",
+          "url": "https://www.iso.org/standard/65666.html"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:name",
       "domain": "Resource",
       "kingdom": "Identifiers",
       "difficulty": 2,
-      "name": "name",
+      "name": "Name",
       "description": "name as defined in the SWID SoftwareIdentity element",
-      "references": []
+      "references": [
+        {
+          "title": "ISO/IEC 19770-2:2015",
+          "url": "https://www.iso.org/standard/65666.html"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:version",
@@ -931,7 +994,12 @@
       "difficulty": 2,
       "name": "Version",
       "description": "version as defined in the SWID SoftwareIdentity element",
-      "references": []
+      "references": [
+        {
+          "title": "ISO/IEC 19770-2:2015",
+          "url": "https://www.iso.org/standard/65666.html"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:tagId",
@@ -940,7 +1008,12 @@
       "difficulty": 2,
       "name": "Tag ID",
       "description": "tagId as defined in the SWID SoftwareIdentity element",
-      "references": []
+      "references": [
+        {
+          "title": "ISO/IEC 19770-2:2015",
+          "url": "https://www.iso.org/standard/65666.html"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:tagVersion",
@@ -949,7 +1022,12 @@
       "difficulty": 2,
       "name": "Tag Version",
       "description": "tagVersion as defined in the SWID SoftwareIdentity element",
-      "references": []
+      "references": [
+        {
+          "title": "ISO/IEC 19770-2:2015",
+          "url": "https://www.iso.org/standard/65666.html"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:patch",
@@ -958,7 +1036,12 @@
       "difficulty": 2,
       "name": "Patch",
       "description": "patch as defined in the SWID SoftwareIdentity element",
-      "references": []
+      "references": [
+        {
+          "title": "ISO/IEC 19770-2:2015",
+          "url": "https://www.iso.org/standard/65666.html"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:softwareCreatorName",
@@ -967,7 +1050,12 @@
       "difficulty": 2,
       "name": "Software Creator Name",
       "description": "name of the entity with a role of softwareCreator",
-      "references": []
+      "references": [
+        {
+          "title": "ISO/IEC 19770-2:2015",
+          "url": "https://www.iso.org/standard/65666.html"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:softwareCreatorRegId",
@@ -976,7 +1064,12 @@
       "difficulty": 2,
       "name": "Software Creator Reg ID",
       "description": "regid of the entity with a role of softwareCreator",
-      "references": []
+      "references": [
+        {
+          "title": "ISO/IEC 19770-2:2015",
+          "url": "https://www.iso.org/standard/65666.html"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:tagCreatorName",
@@ -985,7 +1078,12 @@
       "difficulty": 2,
       "name": "Tag Creator Name",
       "description": "If the tag creator is different from the software creator, tagCreatorName should be specified",
-      "references": []
+      "references": [
+        {
+          "title": "ISO/IEC 19770-2:2015",
+          "url": "https://www.iso.org/standard/65666.html"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:swid:tagCreatorRegId",
@@ -994,7 +1092,12 @@
       "difficulty": 2,
       "name": "Tag Creator Reg ID",
       "description": "If the tag creator is different from the software creator, tagCreatorRegId should be specified",
-      "references": []
+      "references": [
+        {
+          "title": "ISO/IEC 19770-2:2015",
+          "url": "https://www.iso.org/standard/65666.html"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:internalproductids",
@@ -1030,7 +1133,12 @@
       "difficulty": 2,
       "name": "GS1",
       "description": "GS1 Standards",
-      "references": []
+      "references": [
+        {
+          "title": "GS1 Standards",
+          "url": "https://www.gs1.org/standards"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:epcRfid",
@@ -1039,7 +1147,12 @@
       "difficulty": 2,
       "name": "EPC RFID",
       "description": "Electronic Product Code - RFID (EPC Tag Data Standard)",
-      "references": []
+      "references": [
+        {
+          "title": "GS1 RFID Standard",
+          "url": "https://www.gs1.org/standards/rfid"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:giai",
@@ -1048,7 +1161,12 @@
       "difficulty": 2,
       "name": "GIAI",
       "description": "Global Individual Asset Identifier (GIAI)",
-      "references": []
+      "references": [
+        {
+          "title": "GS1 Global Individual Asset Identifier (GIAI)",
+          "url": "https://www.gs1.org/standards/id-keys/global-individual-asset-identifier-giai"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:gln",
@@ -1057,7 +1175,12 @@
       "difficulty": 2,
       "name": "GLN",
       "description": "Global Location Number (GLN)",
-      "references": []
+      "references": [
+        {
+          "title": "GS1 Global Location Number (GLN)",
+          "url": "https://www.gs1.org/standards/id-keys/gln"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:gmn",
@@ -1066,7 +1189,12 @@
       "difficulty": 2,
       "name": "GMN",
       "description": "Global Model Number (GMN)",
-      "references": []
+      "references": [
+        {
+          "title": "GS1 Global Model Number (GMN)",
+          "url": "https://www.gs1.org/standards/id-keys/global-model-number-gmn"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:gtin-8",
@@ -1075,7 +1203,12 @@
       "difficulty": 2,
       "name": "GTIN-8",
       "description": "Global Trade Identification Number (GTIN-8 / EAN/UCC-8)",
-      "references": []
+      "references": [
+        {
+          "title": "GS1 Global Trade Identification Number",
+          "url": "https://www.gs1.org/standards/id-keys/gtin"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:gtin-12",
@@ -1084,7 +1217,12 @@
       "difficulty": 2,
       "name": "GTIN-12",
       "description": "Global Trade Identification Number (GTIN-12 / UPC-A)",
-      "references": []
+      "references": [
+        {
+          "title": "GS1 Global Trade Identification Number",
+          "url": "https://www.gs1.org/standards/id-keys/gtin"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:gtin-13",
@@ -1093,7 +1231,12 @@
       "difficulty": 2,
       "name": "GTIN-13",
       "description": "Global Trade Identification Number (GTIN-13 / EAN/UCC-13)",
-      "references": []
+      "references": [
+        {
+          "title": "GS1 Global Trade Identification Number",
+          "url": "https://www.gs1.org/standards/id-keys/gtin"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:identifiers:gs1:gtin-14",
@@ -1102,7 +1245,12 @@
       "difficulty": 2,
       "name": "GTIN-14",
       "description": "Global Trade Identification Number (GTIN / EAN/UCC-14 or ITF-14)",
-      "references": []
+      "references": [
+        {
+          "title": "GS1 Global Trade Identification Number",
+          "url": "https://www.gs1.org/standards/id-keys/gtin"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:license",
