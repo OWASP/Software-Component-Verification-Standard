@@ -53,7 +53,7 @@ function transformJSON(json, basePath = '')  {
         let referencesRow = "";
         if (model.references && model.references.length > 0) {
             for (let i=0; i<model.references.length; i++) {
-                references+= '<a href="' + model.references[i].url + '">' + model.references[i].title + '</a><br>'
+                references+= '<a href="' + model.references[i].url + '" target="_blank">' + model.references[i].title + '</a><br>'
             }
             referencesRow = "| **References**: | " + references + "|";
         }
