@@ -9,7 +9,6 @@ function transformJSON(json, basePath = '')  {
         { "text": "Taxonomy", "data": { "id": "urn:owasp:scvs:bom" }, "children": []},
         { "text": "Profiles", "data": { "id": "profiles", "path": "/bom-maturity-model/profiles/" }, "children":
             [
-                { "text": "Profile Generator", "data": { "path": "/bom-maturity-model/profiles/profile-generator/" } },
                 { "text": "Examples", "data": { "id": "profiles-examples" }, "children":
                     [
                         { "text": "NTIA Minimum Elements", "data": { "path": "/bom-maturity-model/profiles/examples/ntia-minimum-elements/" }, state: { selectable: true } },

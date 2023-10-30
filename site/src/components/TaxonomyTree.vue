@@ -9,7 +9,7 @@
                   @node:selected="onNodeSelected" />
     </ClientOnly>
     <h3 class="text-sm tracking-tight uppercase border-none">
-      <a href=""><DownloadIcon size="1.5x" style="display:inline"/><span class="text-ui-primary"> Download Model</span></a>
+      <a href="https://github.com/OWASP/Software-Component-Verification-Standard/tree/BOM_Maturity_Model/BOM_Maturity_Model" target="_blank"><DownloadIcon size="1.5x" style="display:inline"/><span class="text-ui-primary"> Download Model</span></a>
     </h3>
   </div>
 </template>>
