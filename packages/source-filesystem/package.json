@@ -1,0 +1,28 @@
+{
+  "version": "0.6.2",
+  "name": "@gridsome/source-filesystem-scvs",
+  "description": "Filesystem source for Gridsome",
+  "homepage": "https://github.com/gridsome/gridsome/tree/master/packages/source-filesystem#readme",
+  "repository": "https://github.com/gridsome/gridsome/tree/master/packages/source-filesystem",
+  "main": "index.js",
+  "keywords": [
+    "gridsome",
+    "gridsome-plugin",
+    "gridsome-source"
+  ],
+  "dependencies": {
+    "chokidar": "^2.0.4",
+    "fs-extra": "^7.0.0",
+    "globby": "^8.0.1",
+    "lodash": "^4.17.10",
+    "mime-types": "^2.1.21",
+    "slash": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "gitHead": "de4cc25dd1d3d0e33631d92914a5bf760f09f3fd"
+}

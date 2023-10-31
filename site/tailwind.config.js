@@ -7,7 +7,8 @@ module.exports = {
           sidebar: 'var(--color-ui-sidebar)',
           typo: 'var(--color-ui-typo)',
           primary: 'var(--color-ui-primary)',
-          border: 'var(--color-ui-border)'
+          border: 'var(--color-ui-border)',
+          highlight: 'var(--color-ui-highlight)'
         }
       },
       spacing: {

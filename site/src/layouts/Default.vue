@@ -18,7 +18,10 @@
           :class="{ 'open': sidebarOpen }"
           :style="sidebarStyle"
         >
-          <div class="w-full pb-16 bg-ui-background">
+          <div v-if="taxonomy === true" class="w-full pb-16 bg-ui-background">
+            <TaxonomyTree />
+          </div>
+          <div v-else class="w-full pb-16 bg-ui-background">
             <Sidebar @navigate="sidebarOpen = false" />
           </div>
         </aside>
@@ -54,6 +57,7 @@ query {
 
 <script>
 import Sidebar from "@/components/Sidebar";
+import TaxonomyTree from "../components/TaxonomyTree";
 import LayoutHeader from "@/components/LayoutHeader";
 import Footer from "@/components/Footer";
 import { MenuIcon, XIcon } from 'vue-feather-icons';
@@ -61,15 +65,19 @@ import { MenuIcon, XIcon } from 'vue-feather-icons';
 export default {
   components: {
     Sidebar,
+    TaxonomyTree,
     LayoutHeader,
     Footer,
     MenuIcon,
     XIcon
   },
+  props: {
+    taxonomy: Boolean
+  },
   data() {
     return {
       headerHeight: 0,
-      sidebarOpen: false,
+      sidebarOpen: false
     }
   },
   watch: {
@@ -92,7 +100,7 @@ export default {
       }
     },
     hasSidebar() {
-      return this.$page && this.headerHeight > 0;
+      return (this.$page && this.headerHeight > 0) || this.taxonomy === true;
     }
   },
   mounted() {
@@ -134,20 +142,22 @@ export default {
 
 <style lang="scss">
 :root {
-  --color-ui-background: theme('colors.white');
-  --color-ui-typo: theme('colors.gray.700');
-  --color-ui-sidebar: theme('colors.gray.200');
-  --color-ui-border: theme('colors.gray.300');
+  --color-ui-background: #F4F5FA;
+  --color-ui-typo: #111F36;
+  --color-ui-sidebar: #ffffff;
+  --color-ui-border: #BBC9DC;
   --color-ui-primary: #007BE3;
+  --color-ui-highlight: #0064B6;
   --color-ui-inner-wasp: #555658;
 }
 
 html[lights-out] {
-  --color-ui-background: theme('colors.gray.900');
-  --color-ui-typo: theme('colors.gray.100');
-  --color-ui-sidebar: theme('colors.gray.800');
-  --color-ui-border: theme('colors.gray.800');
+  --color-ui-background: #101827;
+  --color-ui-typo: #f7fafc;
+  --color-ui-sidebar: #2d3748;
+  --color-ui-border: #2d3748;
   --color-ui-primary: #44AAFF;
+  --color-ui-highlight: #FE9536;
   --color-ui-inner-wasp: #97989B;
 
   pre[class*="language-"],
@@ -157,9 +167,11 @@ html[lights-out] {
 }
 
 * {
+  /*
   transition-property: color, background-color, border-color;
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
+   */
 }
 
 h1,
@@ -270,7 +282,7 @@ blockquote {
 }
 
 code {
-  @apply px-1 py-1 text-ui-typo bg-ui-sidebar font-mono border-b border-r border-ui-border text-sm rounded;
+  @apply px-1 py-1 text-ui-highlight bg-ui-sidebar font-mono border-b border-r border-ui-border text-sm rounded;
 }
 
 pre[class*="language-"] {
@@ -293,6 +305,10 @@ header {
 table {
   @apply text-left mb-6;
 
+  th {
+    @apply text-ui-highlight;
+  }
+
   td, th {
     @apply py-3 px-4;
     &:first-child {
@@ -309,6 +325,12 @@ table {
       @apply border-b-0;
     }
   }
+}
+
+.tree-arrow.has-child:after {
+  border: 1.5px solid var(--color-ui-primary) !important;
+  border-left: 0 !important;
+  border-top: 0 !important;
 }
 
 .sidebar {

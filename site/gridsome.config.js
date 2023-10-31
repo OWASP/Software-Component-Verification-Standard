@@ -10,6 +10,14 @@ module.exports = {
     touchicon: './src/assets/favicon.png'
   },
   siteUrl: 'https://scvs.owasp.org',
+  permalinks: {
+    slugify: {
+      use: '@sindresorhus/slugify',
+      options: {
+        decamelize: false
+      }
+    }
+  },
   settings: {
     web: false,
     twitter: 'https://twitter.com/OWASP_SCVS',
@@ -48,7 +56,7 @@ module.exports = {
   },
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
+      use: '@gridsome/source-filesystem-scvs',
       options: {
         baseDir: './content',
         path: '**/*.md',

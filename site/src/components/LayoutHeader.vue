@@ -28,13 +28,13 @@
             </g-link>
           </div>
         </div>
-
+<!--
         <div class="px-2 sm:px-4">
           <ClientOnly>
             <Search />
           </ClientOnly>
         </div>
-
+-->
         <div class="flex items-center justify-end px-2 sm:px-4">
 
           <a v-if="settings.web" :href="settings.web" class="hidden ml-3 sm:block" target="_blank" rel="noopener noreferrer" title="Website" name="Website">

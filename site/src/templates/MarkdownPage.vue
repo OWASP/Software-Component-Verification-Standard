@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :taxonomy="$page.markdownPage.sidebar === 'taxonomy'">
       <div class="flex flex-wrap items-start justify-start">
 
         <!--
@@ -11,7 +11,7 @@
         <div class="order-1 w-full">
           <div class="content" v-html="$page.markdownPage.content" />
 
-          <div class="mt-8 pt-8 lg:mt-12 lg:pt-12 border-t border-ui-border">
+          <div v-if="hasNextOrPrevLinks" class="mt-8 pt-8 lg:mt-12 lg:pt-12 border-t border-ui-border">
             <NextPrevLinks />
           </div>
         </div>
@@ -91,6 +91,13 @@ export default {
           content: description,
         },
       ]
+    }
+  },
+  computed: {
+    hasNextOrPrevLinks() {
+      if (this.$page.markdownPage.prev || this.$page.markdownPage.next) {
+        return true;
+      }
     }
   }
 }
