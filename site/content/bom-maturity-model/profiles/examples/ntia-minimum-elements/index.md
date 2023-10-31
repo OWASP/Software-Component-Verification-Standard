@@ -32,7 +32,7 @@ The following is an example profile that describes the [NTIA Minimum Elements fo
           "structure": [ "urn:owasp:scvs:bom:structure:metadata" ],
           "identifiers": [
             "urn:owasp:scvs:bom:provenance:role:author",
-            "timestamp"
+            "urn:owasp:scvs:bom:core:timestamp"
           ],
           "weight": 1.0,
           "required": true

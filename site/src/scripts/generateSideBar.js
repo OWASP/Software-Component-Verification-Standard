@@ -190,7 +190,7 @@ function duplicateCheck(json) {
 }
 
 console.log("Reading BOM Maturity Model Taxonomy")
-const jsonString = fs.readFileSync("../BOM_Maturity_Model/bom-maturity-model-1.0.0-beta.1.json");
+const jsonString = fs.readFileSync("../BOM_Maturity_Model/bom-maturity-model-1.0.0-rc.1.json");
 console.log("Parsing BOM Maturity Model Taxonomy")
 const originalJSON = JSON.parse(jsonString);
 duplicateCheck(originalJSON);

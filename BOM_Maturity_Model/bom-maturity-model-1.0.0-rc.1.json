@@ -2,11 +2,30 @@
   "$schema": "https://scvs.owasp.org/bom-maturity-model-1.0.0-rc.1.schema.json",
   "model": [
     {
+      "identifier": "urn:owasp:scvs:bom:core",
+      "domain": "Core",
+      "kingdom": null,
+      "difficulty": 1,
+      "name": "Core",
+      "description": "",
+      "references": []
+    },
+    {
+      "identifier": "urn:owasp:scvs:bom:core:timestamp",
+      "domain": "Timestamp",
+      "kingdom": null,
+      "difficulty": 1,
+      "name": "Timestamp",
+      "description": "",
+      "references": []
+    },
+    {
       "identifier": "urn:owasp:scvs:bom:structure",
       "domain": "Structure",
       "kingdom": null,
       "difficulty": 1,
       "name": "Structure",
+      "description": "",
       "references": []
     },
     {
@@ -15,6 +34,7 @@
       "kingdom": null,
       "difficulty": 1,
       "name": "Metadata",
+      "description": "",
       "references": []
     },
     {
@@ -23,6 +43,7 @@
       "kingdom": null,
       "difficulty": 1,
       "name": "Inventory",
+      "description": "",
       "references": []
     },
     {
@@ -31,6 +52,7 @@
       "kingdom": null,
       "difficulty": 1,
       "name": "Resource",
+      "description": "",
       "references": []
     },
     {
