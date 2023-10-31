@@ -1,5 +1,5 @@
 {
-  "$schema": "https://scvs.owasp.org/bom-maturity-model-1.0.0-beta.1.schema.json",
+  "$schema": "https://scvs.owasp.org/bom-maturity-model-1.0.0-rc.1.schema.json",
   "model": [
     {
       "identifier": "urn:owasp:scvs:bom:structure",
@@ -129,7 +129,16 @@
       "difficulty": 1,
       "name": "Media Type",
       "description": "A media type, also known as a MIME type, is an identifier used to communicate an intended data format.",
-      "references": []
+      "references": [
+        {
+          "title": "Registered Media Types",
+          "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+        },
+        {
+          "title": "RFC 6838: Media Type Specifications and Registration Procedures",
+          "url": "https://www.rfc-editor.org/rfc/rfc6838"
+        }
+      ]
     },
     {
       "identifier": "urn:owasp:scvs:bom:resource:software:integrity",
@@ -1114,7 +1123,7 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "Serial Number",
-      "description": "",
+      "description": "A serial number is a unique identifier assigned to an item.",
       "references": []
     },
     {
@@ -1123,7 +1132,7 @@
       "kingdom": "Identifiers",
       "difficulty": 2,
       "name": "SKU",
-      "description": "",
+      "description": "A stock-keeping unit (SKU) is a unique identifier used by retailers and wholesalers to identify and track inventory.",
       "references": []
     },
     {
@@ -1258,7 +1267,7 @@
       "kingdom": "License",
       "difficulty": 1,
       "name": "License",
-      "description": "",
+      "description": "Grants permission to use a resource under agreed-upon terms and conditions.",
       "references": []
     },
     {
@@ -1276,7 +1285,7 @@
       "kingdom": "License",
       "difficulty": 1,
       "name": "License Identifier",
-      "description": "",
+      "description": "An identifier that uniquely identifies a specific license.",
       "references": []
     },
     {
@@ -1285,7 +1294,7 @@
       "kingdom": "License",
       "difficulty": 1,
       "name": "License Name",
-      "description": "",
+      "description": "The name of the license",
       "references": []
     },
     {
@@ -1294,7 +1303,7 @@
       "kingdom": "License",
       "difficulty": 2,
       "name": "License Text",
-      "description": "",
+      "description": "The textual content of the license.",
       "references": []
     },
     {
@@ -1303,7 +1312,7 @@
       "kingdom": "License",
       "difficulty": 2,
       "name": "License Header",
-      "description": "",
+      "description": "An abbreviated snippet of the full license text often found at the top of source code.",
       "references": []
     },
     {
@@ -1312,7 +1321,7 @@
       "kingdom": "License",
       "difficulty": 2,
       "name": "License URL",
-      "description": "",
+      "description": "The URL to where the full text of the license can be found.",
       "references": []
     },
     {
@@ -1321,7 +1330,7 @@
       "kingdom": "License",
       "difficulty": "",
       "name": "Licensing",
-      "description": "",
+      "description": "Licensing details describing the licensor/licensee, license type, renewal and expiration dates, and other important metadata.",
       "references": []
     },
     {
