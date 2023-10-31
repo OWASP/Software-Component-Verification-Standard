@@ -706,24 +706,6 @@
       "references": []
     },
     {
-      "identifier": "urn:owasp:scvs:bom:resource:hardware:serialNumber",
-      "domain": "Resource",
-      "kingdom": "Hardware",
-      "difficulty": 1,
-      "name": "Serial Number",
-      "description": "Unique identifier using serial number if available",
-      "references": []
-    },
-    {
-      "identifier": "urn:owasp:scvs:bom:resource:hardware:sku",
-      "domain": "Resource",
-      "kingdom": "Hardware",
-      "difficulty": 1,
-      "name": "SKU",
-      "description": "Internal inventory reference if available",
-      "references": []
-    },
-    {
       "identifier": "urn:owasp:scvs:bom:resource:hardware:lotNumber",
       "domain": "Resource",
       "kingdom": "Hardware",
