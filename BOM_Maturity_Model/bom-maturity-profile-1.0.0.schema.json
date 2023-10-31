@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://scvs.owasp.org/bom-maturity-model-1.0.0.schema.json",
+  "$id": "https://scvs.owasp.org/bom-maturity-profile-1.0.0.schema.json",
   "type": "object",
   "title": "OWASP SCVS BOM Maturity Model - Profile Schema",
   "$comment": "OWASP SCVS BOM Maturity Model schemas are published under the terms of the Apache License 2.0.",
