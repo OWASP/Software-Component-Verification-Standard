@@ -15,7 +15,7 @@ The following resources may be useful to users and adopters of this standard:
 ## Others
 
 * [InnerSource](https://www.oreilly.com/library/view/adopting-innersource/9781492041863/ch01.html)
-* [Cybersecurity Maturity Model Certification (CMMC)](https://www.acq.osd.mil/cmmc/)
+* [Cybersecurity Maturity Model Certification (CMMC)](https://dodcio.defense.gov/CMMC/)
 * [NIST 800-53 Security and Privacy Controls for Federal Information Systems and Organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf)
 * [NIST 800-161 Supply Chain Risk Management Practices for Federal Information Systems and Organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-161.pdf)
 * [NIST 800-171 Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations](https://csrc.nist.gov/publications/detail/sp/800-171/rev-2/final) 
