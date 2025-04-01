@@ -64,7 +64,7 @@ function transformJSON(json, basePath = '')  {
         }
 
         return `---
-title: BOM Maturity Model - ${model.name} (${model.identifier})
+title: BOM Maturity Model - ${model.name} (${model.identifier} | SCVS | OWASP)
 description: ${model.description}
 sidebar: 'taxonomy'
 ---

@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: 'SCVS',
+  titleTemplate: '%s | SCVS | OWASP',
   icon: {
     touchicon: './src/assets/favicon.png'
   },
